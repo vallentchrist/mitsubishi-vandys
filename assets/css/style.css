@@ -58,7 +58,7 @@ body {
   z-index: 1000;
 }
 
-#navbar {
+.sticky-navbar {
   /* background: rgba(0, 0, 0, 0.3); */
   background: black;
 }

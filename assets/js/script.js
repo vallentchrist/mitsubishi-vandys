@@ -3,7 +3,7 @@ window.onscroll = function () {
   stickyNavbar();
 };
 
-const navbar = document.getElementById("navbar");
+const navbar = document.querySelector(".sticky-navbar");
 const sticky = navbar.offsetTop;
 
 function stickyNavbar() {

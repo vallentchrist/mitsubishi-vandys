@@ -15,7 +15,6 @@ function myFunction() {
 
 const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
   slidesPerView: 3,
-  slidesPerColumn: 2,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -36,7 +35,6 @@ const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
 
 const swiperProduct = new Swiper(".swiper-container-product", {
   slidesPerView: 3,
-  centeredSlides: true,
   spaceBetween: 30,
   breakpoints: {
     800: {

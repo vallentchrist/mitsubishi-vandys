@@ -73,7 +73,7 @@ body {
   cursor: pointer;
 }
 
-.swiper-slide {
+.swiper-slide-testimoni {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -95,4 +95,20 @@ body {
 
 .container-100 {
   width: 100%;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-areas:
+    "n1"
+    "n2";
+  gap: 10px;
+}
+
+.n1 {
+  grid-area: n1;
+}
+
+.n2 {
+  grid-area: n2;
 }

@@ -34,7 +34,7 @@
           </a>
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
+          <label class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
           <a href="#">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
@@ -103,52 +103,52 @@
     </div>
     <div class="swiper-container swiper-container-testimoni">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>        
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>          
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
             <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
           </a>
@@ -161,81 +161,93 @@
 
     <!-- Product -->
     <div class="container-100 mt-5">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="mmc-bold text-center">Produk Mitsubishi</h1>
-        </div>
-      </div>
-      <div class="swiper-container swiper-container-product">
+      <h1 class="mmc-bold text-center">Produk Mitsubishi</h1>
+      <div class="swiper-container swiper-container-product text-dark">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="row">
-              <div class="col-4">
-                <div class="card">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
+            <div class="display-grid">
+              <div class="card n1">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
+              <div class="card n2">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-4">
-                <div class="card">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="card">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
-                </div>
-              </div>        
-            </div>    
           </div>
-        </div> 
-      </div>      
+          <div class="swiper-slide">
+            <div class="display-grid">
+              <div class="card n1">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
+                </div>
+              </div>
+              <div class="card n2">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="display-grid">
+              <div class="card n1">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
+                </div>
+              </div>
+              <div class="card n2">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="display-grid">
+              <div class="card n1">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
+                </div>
+              </div>
+              <div class="card n2">
+                <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <!-- Akhir Product -->
 

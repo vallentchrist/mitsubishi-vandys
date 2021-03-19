@@ -1,0 +1,98 @@
+@font-face {
+  font-family: mmc-regular;
+  src: url(../fonts/MMCOFFICE-Regular.ttf);
+}
+@font-face {
+  font-family: mmc-bold;
+  src: url(../fonts/MMCOFFICE-Bold.ttf);
+}
+@font-face {
+  font-family: mmc-medium;
+  src: url(../fonts/MMC-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: mmc-regular;
+}
+
+body {
+  background: #e6dada; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #274046,
+    #e6dada
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #274046,
+    #e6dada
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 2000px;
+}
+
+.mmc-bold {
+  font-family: mmc-bold;
+}
+
+.mmc-medium {
+  font-family: mmc-medium;
+}
+
+.mmc-regular {
+  font-family: mmc-regular;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#navbar {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.thumb {
+  width: 200px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.container-100 {
+  width: 100%;
+}

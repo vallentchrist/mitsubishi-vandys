@@ -51,7 +51,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
-      <a class="navbar-brand" href="#">Navbar w/ text</a>
+      <a class="navbar-brand" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi"> 0823-7030-4974</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -75,8 +75,8 @@
     <!-- Akhir Navbar -->
 
     <!-- Profile -->
-    <div class="container">
-      <!-- <div class="row p-4 align-items-center">
+    <!-- <div class="container">
+      <div class="row p-4 align-items-center">
         <div class="col-12 col-lg-6 text-center">
           <img class="thumb" src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho">
         </div>
@@ -85,13 +85,22 @@
           <label class="mmc-medium">Counter Sales</label>
           <p class="text-left">Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.</p>
         </div>
-      </div> -->      
-    </div>
+      </div>    
+    </div> -->
     <!-- Akhir Profile -->
 
-    <div class="container-100">
-      <img src="<?= BASE_URL.DS.'assets/img/banner-profile-1.jpg'; ?>" alt="Vandystio Danatho" class="w-100">
+    <!-- Profile -->
+    <div class="container-100" style="
+    background: url(http://localhost/vandys/assets/img/banner-profile-pic.jpg);
+    background-size: cover;">
+      <div class="col-12 col-lg-6 text-right container-profile">
+        <h1 class="mmc-bold">Vandystio Danatho</h1>
+        <label class="mmc-bold">Counter Sales</label>
+        <p>Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.
+      </div>  
+      <a target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger" style="margin-left: 1150px;margin-bottom: 100px;">Hubungi Saya!</a>
     </div>
+    <!-- Akhir Profile -->
 
     <!-- Testimoni -->
     <div class="container mt-5">
@@ -104,55 +113,20 @@
     <div class="swiper-container swiper-container-testimoni">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
+          <a href="<?= BASE_URL.DS.'assets/img/testimoni/1.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+            <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/1.jpeg" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>        
         <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
+          <a href="<?= BASE_URL.DS.'assets/img/testimoni/3.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+            <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/3.jpeg" alt="Vandystio Danantho" class="w-100">
           </a>
         </div>
         <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
+          <a href="<?= BASE_URL.DS.'assets/img/testimoni/4.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+            <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/4.jpeg" alt="Vandystio Danantho" class="w-100">
           </a>
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>          
-        </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/user.png'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>
+        </div>        
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>

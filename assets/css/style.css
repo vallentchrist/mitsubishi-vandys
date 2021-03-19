@@ -112,3 +112,11 @@ body {
 .n2 {
   grid-area: n2;
 }
+
+.container-profile {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  padding-right: 50px;
+  margin-left: auto;
+  width: 800px;
+}

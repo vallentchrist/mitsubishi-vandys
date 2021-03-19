@@ -28,19 +28,19 @@
     <!-- Header -->
     <div class="container">
       <div class="row p-2">
-        <div class="col-6 col-lg-2 order-1 order-sm-1">
+        <div class="col-3 col-lg-2">
           <a href="#">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
           </a>
         </div>
-        <div class="col-12 col-lg-8 d-flex justify-content-center align-items-center order-3 order-sm-2">
+        <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
           <label class="text-uppercase d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
           <a href="#">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-panjang.png" alt="Sardana" class="w-100 d-block d-sm-none">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
           </a>
         </div>
-        <div class="col-6 col-lg-2 text-right order-2 order-sm-3">
+        <div class="col-3 col-lg-2 text-right">
           <a href="#">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso.png" alt="Sardana" class="logo">
           </a>
@@ -94,10 +94,10 @@
     </div>
 
     <!-- Testimoni -->
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-12">
-          <h1 class="mmc-bold text-center">Galeri DO</h1>
+          <h1 class="mmc-bold text-center">Testimoni</h1>
         </div>
       </div>
     </div>
@@ -158,6 +158,86 @@
       <div class="swiper-pagination"></div>
     </div>
     <!-- Akhir Testimoni -->
+
+    <!-- Product -->
+    <div class="container-100 mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="mmc-bold text-center">Produk Mitsubishi</h1>
+        </div>
+      </div>
+      <div class="swiper-container swiper-container-product">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Detail</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <div class="card-body">
+                    <h5 class="card-title text-uppercase mmc-medium">Xpander</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Detail</a>
+                  </div>
+                </div>
+              </div>        
+            </div>    
+          </div>
+        </div> 
+      </div>      
+    </div>
+    <!-- Akhir Product -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

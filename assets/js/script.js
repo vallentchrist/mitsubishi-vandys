@@ -36,12 +36,9 @@ const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
 });
 
 const swiperProduct = new Swiper(".swiper-container-product", {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 30,
   breakpoints: {
-    800: {
-      slidesPerView: 3,
-    },
     600: {
       slidesPerView: 2,
     },
@@ -63,3 +60,7 @@ acc.forEach((v) =>
   })
 );
 // Akhir Simulasi Kredit
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});

@@ -20,7 +20,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="<?= BASE_URL.DS.'assets/css/lightbox.css'; ?>">
+    <link rel="stylesheet" href="<?= BASE_URL.DS.'assets/css/lightbox.css'; ?>">      
+    <script src="https://kit.fontawesome.com/00610b519d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?= BASE_URL.DS; ?>assets/css/style.css" />
     <title>Vandys Mitsubishi Medan - Promo & Simulasi Kredit Mitsubishi</title>
   </head>
@@ -51,10 +52,8 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
-      <i class="fab fa-lg fa-whatsapp text-white">
-      <span>0823 7030 4974</span>
-      </i>
+      <a class="navbar-brand text-success" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
+        <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -139,7 +138,7 @@
 
     <!-- Product -->
     <section class="product" id="product">
-      <div class="container-100 mt-5">
+      <div class="container-100 mt-5 p-4">
         <h1 class="mmc-bold text-center">Produk Mitsubishi</h1>
         <div class="swiper-container swiper-container-product text-dark">
           <div class="swiper-wrapper">
@@ -148,7 +147,7 @@
                 <div class="card n1">
                   <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold">Xpander</h3>
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" style="background: #050505"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" style="background: #F4F4F4"></span>
@@ -161,9 +160,10 @@
                       <span>Harga Mulai</span>
                       <span>Rp. 250.000.000,-</span>
                     </div>
-                    <div class="container-100 d-flex justify-content-between">
-                      <a href="#" class="btn btn-danger">Detail</a>               
-                    </div>                                   
+                    <div class="container-100 mt-3 d-flex justify-content-between">
+                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                    </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>
                   <div class="panel">

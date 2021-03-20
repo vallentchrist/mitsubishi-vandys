@@ -63,4 +63,15 @@ acc.forEach((v) =>
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
+
+  $("#black-xpander").click(() =>
+    // remove /vandys when upload to live
+    $("#img-xpander").attr(
+      "src",
+      window.location.protocol +
+        "//" +
+        window.location.host +
+        "/vandys/assets/img/xpander/xpander-black.webp"
+    )
+  );
 });

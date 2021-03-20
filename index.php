@@ -174,9 +174,9 @@
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander Cross</h5>
                     
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
@@ -187,17 +187,17 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">Pajero Sport</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">Eclipse Cross</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>
@@ -207,17 +207,17 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">L300</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>
@@ -227,17 +227,17 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    <h5 class="card-title text-uppercase text-center mmc-medium">L300</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>

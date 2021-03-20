@@ -52,10 +52,8 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
-      <i class="fab fa-lg fa-whatsapp text-white">
-      <span>0823 7030 4974</span>
-      </i>
+      <a class="navbar-brand text-success" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
+        <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

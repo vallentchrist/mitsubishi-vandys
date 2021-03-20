@@ -29,19 +29,19 @@
     <div class="container">
       <div class="row p-2">
         <div class="col-3 col-lg-2">
-          <a href="#">
+          <a target="_blank" href="https://mitsubishi-motors.co.id">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
           </a>
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
           <label class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
-          <a href="#">
+          <a href="https://mitsusbishimedan-vandys.id">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
           </a>
         </div>
         <div class="col-3 col-lg-2 text-right">
-          <a href="#">
+          <a target="_blank" href="https://ktbfuso.co.id">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso.png" alt="Sardana" class="logo">
           </a>
         </div>
@@ -51,7 +51,11 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi"> 0823-7030-4974</a>
+      <a class="navbar-brand" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
+      <i class="fab fa-lg fa-whatsapp text-white">
+      <span>0823 7030 4974</span>
+      </i>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -173,6 +177,7 @@
                   <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Xpander</h5>
+                    
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-danger">Detail</a>
                   </div>

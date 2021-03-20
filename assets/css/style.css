@@ -188,3 +188,8 @@ body {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 /* Akhir Testing */
+
+.btn-product {
+  width: 150px;
+  border-radius: 0 !important;
+}

@@ -227,7 +227,7 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

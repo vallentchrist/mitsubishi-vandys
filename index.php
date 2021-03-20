@@ -61,18 +61,18 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produk <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Promo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Testimoni</a>
           </li>
         </ul>
         <span class="navbar-text">
-          Navbar text with an inline element
+          Vandystio Danantho
         </span>
       </div>
     </nav>  
@@ -98,7 +98,7 @@
     background: url(http://localhost/vandys/assets/img/banner-profile-pic.jpg);
     background-size: cover;">
       <div class="col-12 col-lg-6 text-right container-profile">
-        <h1 class="mmc-bold">Vandystio Danatho</h1>
+        <h1 class="mmc-bold">Vandystio Danantho</h1>
         <label class="mmc-bold">Counter Sales</label>
         <p>Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.
       </div>  

@@ -145,16 +145,17 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander">
+                  <hr class="line">
                   <div class="card-body">
-                    <h3 class="card-title text-uppercase text-center mmc-bold">Xpander</h3>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Mitsubishi Xpander</h3>
                     <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" style="background: #050505"></span>      
-                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" style="background: #F4F4F4"></span>
-                      <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" style="background: #303034"></span>
-                      <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" style="background: #81817F" ></span>
-                      <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Metallic" style="background: #AB0104"></span>    
-                      <span class="color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" style="background: #664019"></span>
+                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-xpander"></span>      
+                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-xpander"></span>
+                      <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" id="grey-xpander"></span>
+                      <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" id="silver-xpander"></span>
+                      <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Metallic" id="red-xpander"></span>    
+                      <span class="color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" id="bronze-xpander"></span>
                     </p>
                     <div class="container-100 d-flex justify-content-between">
                       <span>Harga Mulai</span>
@@ -165,12 +166,66 @@
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
-                  <button class="simulasi">Simulasi Kredit</button>
+                  <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-                      tempora nam quae mollitia reiciendis, alias sint amet soluta nulla sunt!
-                    </p>
+                    <div class="row mt-3 mb-3">
+                      <div class="col-6 mmc-bold">
+                        Harga OTR
+                      </div>  
+                      <div class="col-6 text-right mmc-bold">
+                        Rp. 250.000.000
+                      </div>                        
+                    </div>
+                    <hr class="line" />
+                    <form>
+                      <div class="form-group row">
+                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
+                        <div class="col-sm-6">
+                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        </div>
+                      </div>            
+                      <div class="form-group row">
+                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
+                        <div class="col-sm-6">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                            <option value="48">48</option>
+                            <option value="60">60</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                      </div>
+                    </form>
+                    <form>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
+                        <div class="col-sm-6">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
                 <div class="card n2">

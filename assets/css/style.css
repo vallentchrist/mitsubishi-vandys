@@ -132,19 +132,22 @@ body {
 }
 
 .color-black {
-  background: black;
+  background: #050505;
 }
 .color-white {
-  background: white;
+  background: #f4f4f4;
 }
 .color-grey {
-  background: grey;
+  background: #303034;
 }
 .color-silver {
-  background: silver;
+  background: #81817f;
 }
 .color-bronze {
-  background: brown;
+  background: #664019;
+}
+.text-black {
+  color: black;
 }
 
 /* Style the buttons that are used to open and close the simulasi panel */
@@ -192,4 +195,8 @@ body {
 .btn-product {
   width: 150px;
   border-radius: 0 !important;
+}
+
+.line {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }

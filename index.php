@@ -158,8 +158,13 @@
                       <span class="color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" id="bronze-xpander"></span>
                     </p>
                     <div class="container-100 d-flex justify-content-between">
-                      <span>Harga Mulai</span>
-                      <span>Rp. 250.000.000,-</span>
+                      <span>Harga OTR Mulai</span>
+                      <?php
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER'");
+                        $harga = mysqli_fetch_array($harga);
+                        $harga = $harga[0];
+                      ?>
+                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -168,12 +173,17 @@
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
+                    <div class="row">
+                      <div class="col-12">
+                        <small class="text-muted">* Harga OTR Varian Xpander GLX MT</small>
+                      </div>
+                    </div>
                     <div class="row mt-3 mb-3">
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
                       <div class="col-6 text-right mmc-bold">
-                        Rp. 250.000.000
+                        Rp <?= number_format($harga, 0, ",", "."); ?>
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -477,7 +487,7 @@
                     </form>
                   </div>
                 </div>
-</div>
+              </div>
             </div>
             <div class="swiper-slide">
               <div class="display-grid">
@@ -574,23 +584,13 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="display-grid">
-                <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
-                </div>
-                <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
-                  <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">L300</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
-                  </div>
+            <div class="swiper-slide">              
+              <div class="card n1">
+                <img src="<?= BASE_URL.DS.'assets/img/triton/triton-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <div class="card-body">
+                  <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">Detail</a>
                 </div>
               </div>
             </div>
@@ -617,5 +617,44 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
     <script src="<?= BASE_URL.DS; ?>assets/js/lightbox.js"></script>
     <script src="<?= BASE_URL.DS; ?>assets/js/script.js"></script>
+    <script>
+    // Format Currency
+    function formatCurrency(input) {
+      // appends $ to value, validates titik side
+      // and puts cursor back in right position.
+      // get input value
+      let input_val = input.val();
+
+      // don't validate empty input
+      if (input_val === "") {
+        return;
+      }
+
+      // original length
+      let original_len = input_val.length;
+
+      // initial caret position
+      let caret_pos = input.prop("selectionStart");
+
+      // no decimal entered
+      // add titik to number
+      // remove all non-digits
+      input_val = formatNumber(input_val);
+      input_val = "Rp " + input_val;
+
+      // send updated string to input
+      input.val(input_val);
+
+      // put caret back in the right position
+      let updated_len = input_val.length;
+      caret_pos = updated_len - original_len + caret_pos;
+      input[0].setSelectionRange(caret_pos, caret_pos);
+    }
+    // Akhir Format Currency
+      $("input[data-type='currency']").each(function (index) {
+        console.log(index, this);
+        formatCurrency($(this));
+      });
+    </script>
   </body>
 </html>

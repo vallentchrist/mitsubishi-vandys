@@ -48,7 +48,7 @@ const swiperProduct = new Swiper(".swiper-container-product", {
   },
 });
 
-// Simulasi Kredit
+// Simulasi Kredit Accordion
 const acc = document.querySelectorAll(".simulasi");
 acc.forEach((v) =>
   v.addEventListener("click", function () {
@@ -59,7 +59,7 @@ acc.forEach((v) =>
       : (panel.style.maxHeight = null);
   })
 );
-// Akhir Simulasi Kredit
+// Akhir Simulasi Kredit Accordion
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
@@ -72,7 +72,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/xpander/xpander-black.webp"
-        
     )
   );
 
@@ -84,7 +83,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/xpander/xpander-white.webp"
-        
     )
   );
 
@@ -96,7 +94,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/xpander/xpander-grey.webp"
-        
     )
   );
 
@@ -108,7 +105,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/xpander/xpander-silver.webp"
-        
     )
   );
 
@@ -120,7 +116,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/xpander/xpander-red.webp"
-        
     )
   );
 
@@ -132,11 +127,10 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/xpander/xpander-bronze.webp"
+    )
+  );
 
-     )
-   );
-
-   $("#black-xpander-cross").click(() =>
+  $("#black-xpander-cross").click(() =>
     // remove /vandys when upload to live
     $("#img-xpander-cross").attr(
       "src",
@@ -144,7 +138,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/cross/xpander-cross-black.webp"
-        
     )
   );
 
@@ -156,7 +149,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/cross/xpander-cross-white.webp"
-        
     )
   );
 
@@ -168,7 +160,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/cross/xpander-cross-gray.webp"
-        
     )
   );
 
@@ -180,10 +171,9 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/cross/xpander-cross-silver.webp"
-        
     )
   );
-  
+
   $("#orange-xpander-cross").click(() =>
     // remove /vandys when upload to live
     $("#img-xpander-cross").attr(
@@ -192,11 +182,10 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/cross/xpander-cross-orange.webp"
+    )
+  );
 
-     )
-   );
-
-   $("#black-pajero").click(() =>
+  $("#black-pajero").click(() =>
     // remove /vandys when upload to live
     $("#img-pajero").attr(
       "src",
@@ -204,7 +193,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/pajero/pajero-sport-black.webp"
-        
     )
   );
 
@@ -216,7 +204,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/pajero/pajero-sport-white.webp"
-        
     )
   );
 
@@ -228,7 +215,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/pajero/pajero-sport-grey.webp"
-        
     )
   );
 
@@ -240,10 +226,9 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/pajero/pajero-sport-silver.webp"
-        
     )
   );
-  
+
   $("#bronze-pajero").click(() =>
     // remove /vandys when upload to live
     $("#img-pajero").attr(
@@ -252,11 +237,10 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/pajero/pajero-sport-bronze.webp"
+    )
+  );
 
-     )
-   );
-
-   $("#black-eclipse-cross").click(() =>
+  $("#black-eclipse-cross").click(() =>
     // remove /vandys when upload to live
     $("#img-eclipse-cross").attr(
       "src",
@@ -264,7 +248,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/eclipse/eclipse-cross-black.webp"
-        
     )
   );
 
@@ -276,7 +259,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/eclipse/eclipse-cross-white.webp"
-        
     )
   );
 
@@ -288,9 +270,8 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/eclipse/eclipse-cross-red.webp"
-
-     )
-   );
+    )
+  );
 
   $("#white-diamond-triton").click(() =>
     // remove /vandys when upload to live
@@ -300,11 +281,10 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/triton/triton-white-diamond.webp"
+    )
+  );
 
-     )
-   );
-
-   $("#black-triton").click(() =>
+  $("#black-triton").click(() =>
     // remove /vandys when upload to live
     $("#img-triton").attr(
       "src",
@@ -312,7 +292,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/triton/triton-black.webp"
-        
     )
   );
 
@@ -324,7 +303,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/triton/triton-white.webp"
-        
     )
   );
 
@@ -336,7 +314,6 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/triton/triton-gray.webp"
-        
     )
   );
 
@@ -348,10 +325,9 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/triton/triton-silver.webp"
-        
     )
   );
-  
+
   $("#red-triton").click(() =>
     // remove /vandys when upload to live
     $("#img-triton").attr(
@@ -360,8 +336,39 @@ $(document).ready(function () {
         "//" +
         window.location.host +
         "/vandys/assets/img/triton/triton-red.webp"
+    )
+  );
 
-     )
-   );
+  //  Simulasi Kredit
+  $("#buttonHitung").click(function () {
+    let rpFormat = new Intl.NumberFormat("id-id", {
+      style: "currency",
+      currency: "IDR",
+    });
+    let sukuBunga = parseFloat($("#inputSukuBunga").val());
+    let tenor = parseInt($("#selectTenor option:selected").val());
+    let uangMuka = parseInt(
+      $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+    );
+    let hargaOtr = parseInt(
+      $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+    );
+    let pokokCicilan = hargaOtr - uangMuka;
+    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+    let totalCicilan = pokokCicilan + bungaCicilan;
+    let cicilanPerBulan = totalCicilan / tenor;
+    let totalUangMuka = uangMuka + cicilanPerBulan;
+    // let tampilTotalCicilan = rpFormat.format(totalCicilan);
+    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+    // $('#plainTextTotalCicilan').val(tampilTotalCicilan.substring(0, tampilTotalCicilan.length - 3));
+    $("#plainTextTotalUangMuka").val(
+      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+    );
+    $("#plainTextCicilan").val(
+      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+    );
+    $("#plainTextTenor").val(tenor - 1 + " bulan");
+  });
+  // Akhir Simulasi Kredit
 });
-

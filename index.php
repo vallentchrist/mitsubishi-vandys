@@ -617,44 +617,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
     <script src="<?= BASE_URL.DS; ?>assets/js/lightbox.js"></script>
     <script src="<?= BASE_URL.DS; ?>assets/js/script.js"></script>
-    <script>
-    // Format Currency
-    function formatCurrency(input) {
-      // appends $ to value, validates titik side
-      // and puts cursor back in right position.
-      // get input value
-      let input_val = input.val();
-
-      // don't validate empty input
-      if (input_val === "") {
-        return;
-      }
-
-      // original length
-      let original_len = input_val.length;
-
-      // initial caret position
-      let caret_pos = input.prop("selectionStart");
-
-      // no decimal entered
-      // add titik to number
-      // remove all non-digits
-      input_val = formatNumber(input_val);
-      input_val = "Rp " + input_val;
-
-      // send updated string to input
-      input.val(input_val);
-
-      // put caret back in the right position
-      let updated_len = input_val.length;
-      caret_pos = updated_len - original_len + caret_pos;
-      input[0].setSelectionRange(caret_pos, caret_pos);
-    }
-    // Akhir Format Currency
-      $("input[data-type='currency']").each(function (index) {
-        console.log(index, this);
-        formatCurrency($(this));
-      });
+    <script>    
     </script>
   </body>
 </html>

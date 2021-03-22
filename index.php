@@ -168,7 +168,7 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Xpander" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
@@ -261,7 +261,7 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Xpander Cross" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
@@ -357,14 +357,14 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Pajero Sport" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
                     <div class="row">
                       <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian Pajero Sport Exceed 4x2MT</small>
+                        <small class="text-muted">* Harga OTR Varian New Pajero Sport Exceed 4x2MT</small>
                       </div>
                     </div>
                     <div class="row mt-3 mb-3">
@@ -447,7 +447,7 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Eclipse Cross" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
@@ -544,7 +544,7 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Triton" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
@@ -629,7 +629,7 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk L300" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  

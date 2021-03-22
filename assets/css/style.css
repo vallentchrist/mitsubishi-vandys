@@ -250,6 +250,28 @@ body {
   margin-bottom: 20px;
 }
 
+section.footer {
+  color: white;
+}
+
+section.footer .tetap {
+  font-size: 12px;
+  font-weight: 700;
+  color: #9b9b9b;
+  text-align: center;
+}
+
+section.footer .tetap::before,
+section.footer .tetap::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 3px;
+  border-radius: 4px;
+  background: #da291c;
+}
+
 @media (max-width: 576px) {
   #img-pajero {
     margin-top: 0;

@@ -105,14 +105,7 @@
     </div>
     <!-- Akhir Profile -->
 
-    <!-- Testimoni -->
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-12">
-
-        </div>
-      </div>
-    </div>
+    <!-- Testimoni -->    
     <div class="swiper-container swiper-container-testimoni">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide-testimoni">
@@ -896,6 +889,10 @@
       </div>
     </section>
     <!-- Akhir Product -->
+
+    <!-- Footer -->
+    <?php require_once 'footer.php'; ?>
+    <!-- Akhir Footer -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

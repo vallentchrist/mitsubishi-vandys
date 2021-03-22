@@ -61,13 +61,6 @@ acc.forEach((v) =>
 );
 // Akhir Simulasi Kredit Accordion
 
-$("input[data-type='currency']").each(function () {
-  $(this).keyup(function () {
-    formatCurrency($(this));
-    console.log("ok");
-  });
-});
-
 // Format Currency
 function formatNumber(n) {
   // format number 1000000 to 1.234.567
@@ -109,6 +102,11 @@ function formatCurrency(input) {
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
+  $("input[data-type='currency']").each(function () {
+    $(this).keyup(function () {
+      formatCurrency($(this));
+    });
+  });
 
   $("#black-xpander").click(() =>
     // remove /vandys when upload to live

@@ -246,8 +246,16 @@ body {
   margin-top: -35px;
 }
 
+#img-eclipse-cross {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 576px) {
   #img-pajero {
     margin-top: 0;
+  }
+
+  #img-eclipse-cross {
+    margin-bottom: 0;
   }
 }

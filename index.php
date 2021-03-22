@@ -52,7 +52,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand text-success" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
+      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
         <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,16 +61,16 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Produk <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="#">Produk <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Promo</a>
+            <a class="nav-link text-white" href="#">Promo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimoni</a>
+            <a class="nav-link text-white" href="#">Testimoni</a>
           </li>
         </ul>
-        <span class="navbar-text">
+        <span class="navbar-text text-white mmc-bold">
           Vandystio Danantho
         </span>
       </div>
@@ -164,7 +164,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -257,7 +257,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -354,7 +354,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -445,7 +445,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -543,7 +543,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -629,7 +629,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -727,7 +727,7 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -813,8 +813,8 @@
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
-                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
-                    </div>g
+                      <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                    </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk L300" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>

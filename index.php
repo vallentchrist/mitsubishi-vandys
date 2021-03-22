@@ -336,7 +336,7 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Pajero Sport" id="img-pajero-sport">
+                  <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Pajero Sport" id="img-pajero">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Pajero Sport</h5>
                     <p class="card-text text-center">

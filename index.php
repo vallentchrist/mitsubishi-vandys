@@ -808,7 +808,7 @@
                         $harga = $harga[0];
                       ?>
                       <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
-                    </div>
+                    </div>g
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk L300" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>

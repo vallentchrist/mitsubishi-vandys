@@ -239,7 +239,7 @@
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander-cross">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Xpander Cross</h5>
                     
@@ -251,8 +251,13 @@
                       <span class="color-orange palet" data-toggle="tooltip" data-placement="bottom" title="Orange Metallic" id="orange-xpander-cross"></span>    
                     </p>
                     <div class="container-100 d-flex justify-content-between">
-                      <span>Harga Mulai</span>
-                      <span>Rp. 250.000.000,-</span>
+                    <span>Harga OTR Mulai</span>
+                      <?php
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER CROSS'");
+                        $harga = mysqli_fetch_array($harga);
+                        $harga = $harga[0];
+                      ?>
+                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -261,12 +266,17 @@
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
+                    <div class="row">
+                      <div class="col-12">
+                        <small class="text-muted">* Harga OTR Varian Xpander Cross MT</small>
+                      </div>
+                    </div>
                     <div class="row mt-3 mb-3">
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
                       <div class="col-6 text-right mmc-bold">
-                        Rp. 250.000.000
+                        Rp <?= number_format($harga, 0, ",", "."); ?>
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -326,7 +336,7 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Pajero Sport" id="img-pajero-sport">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Pajero Sport</h5>
                     <p class="card-text text-center">
@@ -337,8 +347,13 @@
                       <span class="color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" id="bronze-pajero"></span>
                     </p>
                     <div class="container-100 d-flex justify-content-between">
-                      <span>Harga Mulai</span>
-                      <span>Rp. 250.000.000,-</span>
+                    <span>Harga OTR Mulai</span>
+                      <?php
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'PAJERO SPORT'");
+                        $harga = mysqli_fetch_array($harga);
+                        $harga = $harga[0];
+                      ?>
+                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -347,12 +362,17 @@
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
+                    <div class="row">
+                      <div class="col-12">
+                        <small class="text-muted">* Harga OTR Varian Pajero Sport Exceed 4x2MT</small>
+                      </div>
+                    </div>
                     <div class="row mt-3 mb-3">
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
                       <div class="col-6 text-right mmc-bold">
-                        Rp. 250.000.000
+                        Rp <?= number_format($harga, 0, ",", "."); ?>
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -408,7 +428,7 @@
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>" class="card-img-top" alt="Eclipse Cross" id="img-eclipse-cross">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Eclipse Cross</h5>
                     <p class="card-text text-center">
@@ -417,8 +437,13 @@
                       <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Diamond" id="red-eclipse-cross"></span>    
                     </p>
                     <div class="container-100 d-flex justify-content-between">
-                      <span>Harga Mulai</span>
-                      <span>Rp. 250.000.000,-</span>
+                    <span>Harga OTR Mulai</span>
+                      <?php
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'ECLIPSE CROSS'");
+                        $harga = mysqli_fetch_array($harga);
+                        $harga = $harga[0];
+                      ?>
+                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -427,12 +452,17 @@
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
+                    <div class="row">
+                      <div class="col-12">
+                        <small class="text-muted">* Harga OTR Varian Eclipse Cross Black</small>
+                      </div>
+                    </div>
                     <div class="row mt-3 mb-3">
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
                       <div class="col-6 text-right mmc-bold">
-                        Rp. 250.000.000
+                        Rp <?= number_format($harga, 0, ",", "."); ?>
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -492,7 +522,7 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1">
-                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi triton" id="img-triton">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
                     <p class="card-text text-center">
@@ -504,8 +534,13 @@
                       <span class="color-white-diamond palet" data-toggle="tooltip" data-placement="bottom" title="White Diamond Metallic" id="white-diamond-triton"></span>
                     </p>
                     <div class="container-100 d-flex justify-content-between">
-                      <span>Harga Mulai</span>
-                      <span>Rp. 250.000.000,-</span>
+                    <span>Harga OTR Mulai</span>
+                      <?php
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'TRITON'");
+                        $harga = mysqli_fetch_array($harga);
+                        $harga = $harga[0];
+                      ?>
+                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="#" class="btn btn-dark btn-product">Detail</a>
@@ -514,12 +549,17 @@
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
+                    <div class="row">
+                      <div class="col-12">
+                        <small class="text-muted">* Harga OTR Varian Triton GLX MT 4x2 Single Cabin</small>
+                      </div>
+                    </div>
                     <div class="row mt-3 mb-3">
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
                       <div class="col-6 text-right mmc-bold">
-                        Rp. 250.000.000
+                        Rp <?= number_format($harga, 0, ",", "."); ?>
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -575,15 +615,92 @@
                   </div>
                 </div>
                 <div class="card n2">
-                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">
+                <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">L300</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Detail</a>
+                    <div class="container-100 d-flex justify-content-between">
+                    <span>Harga OTR Mulai</span>
+                      <?php
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'L300'");
+                        $harga = mysqli_fetch_array($harga);
+                        $harga = $harga[0];
+                      ?>
+                      <span>Rp <?= number_format($harga, 0, ",", "."); ?></span>
+                    </div>
+                    <div class="container-100 mt-3 d-flex justify-content-between">
+                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                  <button class="simulasi">Simulasi Kredit</button>                  
+                  <div class="panel">
+                    <div class="row">
+                      <div class="col-12">
+                        <small class="text-muted">* Harga OTR Varian L300 Pick Up Standard</small>
+                      </div>
+                    </div>
+                    <div class="row mt-3 mb-3">
+                      <div class="col-6 mmc-bold">
+                        Harga OTR
+                      </div>  
+                      <div class="col-6 text-right mmc-bold">
+                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      </div>                        
+                    </div>
+                    <hr class="line" />
+                    <form>
+                      <div class="form-group row">
+                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
+                        <div class="col-sm-6">
+                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        </div>
+                      </div>            
+                      <div class="form-group row">
+                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
+                        <div class="col-sm-6">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                            <option value="48">48</option>
+                            <option value="60">60</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                      </div>
+                    </form>
+                    <form>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
+                        <div class="col-sm-6">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
+                        <div class="col-sm-6">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
             <div class="swiper-slide">              
               <div class="card n1">
                 <img src="<?= BASE_URL.DS.'assets/img/triton/triton-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander">

@@ -144,7 +144,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="display-grid">
-                <div class="card n1">
+                <div class="card n1 bg-xpander">
                   <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander">
                   <hr class="line">
                   <div class="card-body">
@@ -238,7 +238,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="card n2">
+                <div class="card n2 bg-xpander-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander-cross">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Xpander Cross</h5>
@@ -335,7 +335,7 @@
             </div>
             <div class="swiper-slide">
               <div class="display-grid">
-                <div class="card n1">
+                <div class="card n1 bg-pajero-sport">
                   <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Pajero Sport" id="img-pajero">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Pajero Sport</h5>
@@ -427,7 +427,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="card n2">
+                <div class="card n2 bg-eclipse-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>" class="card-img-top" alt="Eclipse Cross" id="img-eclipse-cross">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Eclipse Cross</h5>
@@ -521,7 +521,7 @@
             </div>
             <div class="swiper-slide">
               <div class="display-grid">
-                <div class="card n1">
+                <div class="card n1 bg-triton">
                   <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi triton" id="img-triton">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
@@ -614,7 +614,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="card n2">
+                <div class="card n2 bg-l300">
                 <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
                   <div class="card-body">
                     <h5 class="card-title text-uppercase text-center mmc-medium">L300</h5>

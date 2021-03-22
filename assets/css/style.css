@@ -209,3 +209,27 @@ body {
 .line {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.bg-xpander {
+  background-color: #dadada;
+}
+
+.bg-xpander-cross {
+  background-color: #fff;
+}
+
+.bg.pajero-sport {
+  background-color: #dadada;
+}
+
+.bg-eclipse-cross {
+  background-color: #dadada;
+}
+
+.bg-triton {
+  background-color: #dadada;
+}
+
+.bg-l300 {
+  background-color: #fff;
+}

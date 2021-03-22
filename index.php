@@ -139,7 +139,7 @@
     <!-- Product -->
     <section class="product" id="product">
       <div class="container-100 mt-5 p-4">
-        <h1 class="mmc-bold text-center">Produk Mitsubishi</h1>
+        <h1 class="mmc-bold text-center mb-3">Produk Mitsubishi</h1>
         <div class="swiper-container swiper-container-product text-dark">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -148,7 +148,7 @@
                   <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander">
                   <hr class="line">
                   <div class="card-body">
-                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Mitsubishi Xpander</h3>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Xpander</h3>
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-xpander"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-xpander"></span>
@@ -178,12 +178,12 @@
                         <small class="text-muted">* Harga OTR Varian Xpander GLX MT</small>
                       </div>
                     </div>
-                    <div class="row mt-3 mb-3">
+                    <div class="row mb-3 align-items-center">
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">                        
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -191,19 +191,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right text-black" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right text-black" id="inputSukuBunga" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right text-black" id="selectTenor">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -220,19 +220,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTotalUangMuka" value="Rp -">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextCicilan" value="Rp -">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTenor" value="-">
                         </div>
                       </div>
                     </form>
@@ -240,9 +240,9 @@
                 </div>
                 <div class="card n2 bg-xpander-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander-cross">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Xpander Cross</h5>
-                    
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Xpander Cross</h3>                    
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-xpander-cross"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-xpander-cross"></span>
@@ -337,8 +337,9 @@
               <div class="display-grid">
                 <div class="card n1 bg-pajero-sport">
                   <img src="<?= BASE_URL.DS.'assets/img/pajero/pajero-sport-grey.webp'; ?>" class="card-img-top" alt="Mitsubishi Pajero Sport" id="img-pajero">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Pajero Sport</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Pajero Sport</h3>
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-pajero"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-pajero"></span>
@@ -429,8 +430,9 @@
                 </div>
                 <div class="card n2 bg-eclipse-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>" class="card-img-top" alt="Eclipse Cross" id="img-eclipse-cross">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Eclipse Cross</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Eclipse Cross</h3>
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-eclipse-cross"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-eclipse-cross"></span>
@@ -523,8 +525,9 @@
               <div class="display-grid">
                 <div class="card n1 bg-triton">
                   <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi triton" id="img-triton">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Triton</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">TRITON</h3>
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-triton"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-triton"></span>
@@ -615,9 +618,10 @@
                   </div>
                 </div>
                 <div class="card n2 bg-l300">
-                <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
+                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">L300</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">L300</h3>
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
@@ -705,8 +709,9 @@
             <div class="display-grid">
                 <div class="card n1 bg-colt-diesel">
                   <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi triton" id="img-triton">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">Colt Diesel</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">COLT DIESEL</h3>
                     <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-triton"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-triton"></span>
@@ -797,9 +802,10 @@
                   </div>
                 </div>
                 <div class="card n2 bg-l300">
-                <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
+                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
+                  <hr class="line">
                   <div class="card-body">
-                    <h5 class="card-title text-uppercase text-center mmc-medium">FUSO</h5>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">FUSO</h3>
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php

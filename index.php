@@ -52,7 +52,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi">
+      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi">
         <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -175,7 +175,7 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6">                        
+                      <div class="col-6">
                         <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
@@ -206,24 +206,24 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungXpander" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
                       <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
+                        <label for="plainTextTotalUangMuka" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
                         <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTotalUangMuka" value="Rp -">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
+                        <label for="plainTextCicilan" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
                           <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextCicilan" value="Rp -">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
+                        <label for="plainTextTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
                           <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTenor" value="-">
                         </div>
@@ -268,8 +268,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -299,7 +299,7 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungXpanderCross" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
@@ -365,8 +365,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -396,7 +396,7 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungPajeroSport" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
@@ -456,8 +456,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -487,7 +487,7 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungEclipse" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
@@ -554,8 +554,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -585,7 +585,7 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungTriton" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
@@ -643,8 +643,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -674,7 +674,7 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungL300" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
@@ -736,8 +736,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -767,7 +767,7 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungColt" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
@@ -825,8 +825,8 @@
                       <div class="col-6 mmc-bold">
                         Harga OTR
                       </div>  
-                      <div class="col-6 text-right mmc-bold">
-                        Rp <?= number_format($harga, 0, ",", "."); ?>
+                      <div class="col-6">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -840,13 +840,13 @@
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right text-black" id="inputSukuBunga" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right text-black" class="selectTenor" id="selectTenor">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -856,26 +856,26 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <a id="buttonHitung" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <a id="hitungFuso" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
                     </form>
                     <form>
                       <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
+                        <label for="plainTextTotalUangMuka" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTotalUangMuka" value="Rp -">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
+                        <label for="plainTextCicilan" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextCicilan" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
+                        <label for="plainTextTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTenor" value="0">
                         </div>
                       </div>
                     </form>

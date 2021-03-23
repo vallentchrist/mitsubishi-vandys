@@ -70,7 +70,7 @@ function formatNumber(n) {
 function formatCurrency(input) {
   // appends $ to value, validates titik side
   // and puts cursor back in right position.
-  // get input value
+  // first()put value
   let input_val = input.val();
 
   // don't validate empty input
@@ -96,7 +96,7 @@ function formatCurrency(input) {
   // put caret back in the right position
   let updated_len = input_val.length;
   caret_pos = updated_len - original_len + caret_pos;
-  input[0].setSelectionRange(caret_pos, caret_pos);
+  input.first().setSelectionRange(caret_pos, caret_pos);
 }
 // Akhir Format Currency
 
@@ -384,35 +384,296 @@ $(document).ready(function () {
   );
 
   //  Simulasi Kredit
-  $("#buttonHitung").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBunga").val());
-    let tenor = parseInt($("#selectTenor option:selected").val());
-    let uangMuka = parseInt(
-      $("#inputUangMuka").val().substr(3).replace(/\./g, "")
-    );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    // let tampilTotalCicilan = rpFormat.format(totalCicilan);
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    // $('#plainTextTotalCicilan').val(tampilTotalCicilan.substring(0, tampilTotalCicilan.length - 3));
-    $("#plainTextTotalUangMuka").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilan").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenor").val(tenor - 1 + " bulan");
-  });
+  // function hitungKredit() {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   // let tampilTotalCicilan = rpFormat.format(totalCicilan);
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   // $('#plainTextTotalCicilan').val(tampilTotalCicilan.substring(0, tampilTotalCicilan.length - 3));
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // }
+
+  // $("#hitungXpander").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").first().val());
+  //   let tenor = parseInt($("#selectTenor option:selected").first().val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").first().val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").first().val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka")
+  //     .first()
+  //     .val(tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3));
+  //   $("#plainTextCicilan")
+  //     .first()
+  //     .val(
+  //       tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //     );
+  //   $("#plainTextTenor")
+  //     .first()
+  //     .val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungXpanderCross").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").first().val());
+  //   let tenor = parseInt($("#selectTenor option:selected").first().val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").first().val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").first().val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka")
+  //     .first()
+  //     .val(tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3));
+  //   $("#plainTextCicilan")
+  //     .first()
+  //     .val(
+  //       tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //     );
+  //   $("#plainTextTenor")
+  //     .first()
+  //     .val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungPajero").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungEclipse").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungTriton").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungL300").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungColt").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // });
+  // $("#hitungFuso").click(function () {
+  //   let rpFormat = new Intl.NumberFormat("id-id", {
+  //     style: "currency",
+  //     currency: "IDR",
+  //   });
+  //   let sukuBunga = parseFloat($("#inputSukuBunga").val());
+  //   let tenor = parseInt($("#selectTenor option:selected").val());
+  //   let uangMuka = parseInt(
+  //     $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let hargaOtr = parseInt(
+  //     $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+  //   );
+  //   let pokokCicilan = hargaOtr - uangMuka;
+  //   let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+  //   let totalCicilan = pokokCicilan + bungaCicilan;
+  //   let cicilanPerBulan = totalCicilan / tenor;
+  //   let totalUangMuka = uangMuka + cicilanPerBulan;
+  //   let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+  //   let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+  //   $("#plainTextTotalUangMuka").val(
+  //     tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+  //   );
+  //   $("#plainTextCicilan").val(
+  //     tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+  //   );
+  //   $("#plainTextTenor").val(tenor - 1 + " bulan");
+  // });
+
+  // const hitung = document.querySelectorAll("#hitungSimulasi");
+  // hitung.forEach((el) => {
+  //   el.addEventListener("click", function (e) {
+  //     hitungKredit();
+  //     console.log(e.tarfirst()  //   });
+  // });
+
+  // const buttonHitung = [
+  //   "#hitungXpander",
+  //   "#hitungXpanderCross",
+  //   "#hitungPajero",
+  //   "#hitungEclipse",
+  //   "#hitungTriton",
+  //   "#hitungL300",
+  //   "#hitungColt",
+  //   "#hitungFuso",
+  // ];
+  // buttonHitung.forEach(function (v) {
+  //   console.log(v);
+  //   let btnHitung = document.first()mentById(v);
+  //   btnHitung.addEventListener("click", hitungKredit());
+  // });
+  // $.each(buttonHitung, (v) => {
+  //   v.addEventListener("click", hitungKredit());
+  // });
+  // buttonHitung.forEach((v) => console.log(v));
+  // buttonHitung.forEach((v) => v.addEventListener("click", hitungKredit()));
   // Akhir Simulasi Kredit
 });

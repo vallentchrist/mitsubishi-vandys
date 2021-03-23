@@ -281,6 +281,17 @@ section.footer .tetap::after {
   background: #da291c;
 }
 
+.outer-container-profile {
+  background: url(http://localhost/vandys/assets/img/banner-profile-pic.jpg);
+  background-size: cover;
+  text-align: right;
+}
+
+.profile-hubungi {
+  margin-left: 1150px;
+  margin-bottom: 100px;
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .container-dealer {
@@ -301,6 +312,16 @@ section.footer .tetap::after {
   .container-dealer,
   .container-tetap {
     margin-bottom: 1.5rem;
+  }
+
+  .outer-container-profile {
+    background: url(http://localhost/vandys/assets/img/banner-mobile.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+
+  .kosong {
+    height: 400px;
   }
 }
 

@@ -615,6 +615,9 @@
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">L300</h3>
+                    <p class="card-text text-center">
+                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Black" id="black-l300"></span>
+                    </p>  
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
@@ -701,18 +704,13 @@
             <div class="swiper-slide">              
             <div class="display-grid">
                 <div class="card n1 bg-colt-diesel">
-                  <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" class="card-img-top" alt="Mitsubishi triton" id="img-triton">
+                  <img src="<?= BASE_URL.DS.'assets/img/colt-diesel/1.webp'; ?>" class="card-img-top" alt="Mitsubishi Colt Diesel" id="img-colt-diesel">
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">COLT DIESEL</h3>
                     <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-triton"></span>      
-                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-triton"></span>
-                      <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" id="grey-triton"></span>
-                      <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" id="silver-triton"></span>
-                      <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Metallic" id="red-triton"></span>    
-                      <span class="color-white-diamond palet" data-toggle="tooltip" data-placement="bottom" title="White Diamond Metallic" id="white-diamond-triton"></span>
-                    </p>
+                      <span class="color-yellow palet" data-toggle="tooltip" data-placement="bottom" title="Yellow" id="yellow-colt-diesel"></span>
+                    </p>  
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
@@ -794,11 +792,14 @@
                     </form>
                   </div>
                 </div>
-                <div class="card n2 bg-l300">
-                  <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
+                <div class="card n2 bg-eclipse-cross">
+                  <img src="<?= BASE_URL.DS.'assets/img/colt-diesel/2.webp'; ?>" class="card-img-top" alt="L300">
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">FUSO</h3>
+                    <p class="card-text text-center">
+                      <span class="color-orange palet" data-toggle="tooltip" data-placement="bottom" title="Orange" id="orange-fuso"></span>
+                    </p>  
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php

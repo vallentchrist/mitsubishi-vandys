@@ -242,14 +242,6 @@ body {
   border-radius: 0;
 }
 
-#img-pajero {
-  margin-top: -35px;
-}
-
-#img-eclipse-cross {
-  margin-bottom: 20px;
-}
-
 section.footer {
   color: white;
 }
@@ -269,10 +261,6 @@ section.footer ul {
   justify-content: center;
   font-size: 22px;
 }
-
-/* section.footer ul li {
-  margin-right: 25px;
-} */
 
 section.footer .tetap {
   font-size: 12px;
@@ -309,14 +297,6 @@ section.footer .tetap::after {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
-  #img-pajero {
-    margin-top: 0;
-  }
-
-  #img-eclipse-cross {
-    margin-bottom: 0;
-  }
-
   .container-dealer,
   .container-tetap {
     margin-bottom: 1.5rem;

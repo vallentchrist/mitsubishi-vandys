@@ -170,7 +170,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-bronze.webp"
+        "/vandys/assets/img/xpander/xpander-brown.png"
     )
   );
 

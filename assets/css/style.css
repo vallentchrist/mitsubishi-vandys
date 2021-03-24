@@ -323,6 +323,15 @@ section.footer .tetap::after {
   .kosong {
     height: 400px;
   }
+
+  .palet {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-product {
+    width: 140px;
+  }
 }
 
 /* iPads Pro (Portrait) */

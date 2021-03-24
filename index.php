@@ -268,7 +268,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrXpanderCross" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -276,19 +276,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaXpanderCross" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right" id="inputSukuBungaXpanderCross" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorXpanderCross">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -305,19 +305,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaXpanderCross" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanXpanderCross" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorXpanderCross" value="0">
                         </div>
                       </div>
                     </form>
@@ -365,7 +365,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrPajero" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -373,19 +373,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaPajero" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right" id="inputSukuBungaPajero" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorPajero">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -402,19 +402,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaPajero" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanPajero" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorPajero" value="0">
                         </div>
                       </div>
                     </form>
@@ -456,7 +456,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrEclipse" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -464,19 +464,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaEclipse" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
+                        <label for="inputSukuBungaEclipse" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right" id="inputSukuBungaEclipse" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorEclipse">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -493,19 +493,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaEclipse" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanEclipse" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorEclipse" value="0">
                         </div>
                       </div>
                     </form>
@@ -554,7 +554,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrTriton" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -562,19 +562,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaTriton" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right" id="inputSukuBungaTriton" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorTriton">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -591,19 +591,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaTriton" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanTriton" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorTriton" value="0">
                         </div>
                       </div>
                     </form>
@@ -643,7 +643,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrL300" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -651,19 +651,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaL300" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right" id="inputSukuBungaL300" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorL300">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -680,19 +680,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaL300" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanL300" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorL300" value="0">
                         </div>
                       </div>
                     </form>
@@ -736,7 +736,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrColt" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -744,19 +744,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaColt" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right" id="inputSukuBungaColt" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorColt">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -773,19 +773,19 @@
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMuka" value="Rp 0">
+                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaColt" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanColt" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorColt" value="0">
                         </div>
                       </div>
                     </form>
@@ -825,7 +825,7 @@
                         Harga OTR
                       </div>  
                       <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
+                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrFuso" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
                       </div>                        
                     </div>
                     <hr class="line" />
@@ -833,19 +833,19 @@
                       <div class="form-group row">
                         <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMuka" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
+                        <input type="text" class="form-control text-right" id="inputUangMukaFuso" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
                         </div>
                       </div>            
                       <div class="form-group row">
                         <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
                         <div class="col-sm-6">
-                          <input type="text" class="form-control text-right text-black" id="inputSukuBunga" placeholder="10">
+                          <input type="text" class="form-control text-right text-black" id="inputSukuBungaFuso" placeholder="10">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right text-black" class="selectTenor" id="selectTenor">
+                          <select class="form-control form-control-sm form-control-width text-right text-black" class="selectTenor" id="selectTenorFuso">
                             <option value="12">12</option>
                             <option value="24">24</option>
                             <option value="36">36</option>
@@ -862,19 +862,19 @@
                       <div class="form-group row">
                         <label for="plainTextTotalUangMuka" class="col-sm-6 col-form-label">Total Uang Muka</label>
                         <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTotalUangMuka" value="Rp -">
+                        <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTotalUangMukaFuso" value="Rp -">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="plainTextCicilan" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextCicilan" value="Rp 0">
+                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextCicilanFuso" value="Rp 0">
                         </div>
                       </div>
                       <div class="form-group row">
                         <label for="plainTextTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
                         <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTenor" value="0">
+                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTenorFuso" value="0">
                         </div>
                       </div>
                     </form>

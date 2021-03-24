@@ -25,8 +25,8 @@
       </div>      
     </div>   
     <div class="row">
-      <div class="col-12">
-        <p class="text-right">Copyright &copy; <?= date('Y'); ?> by JaVa</p>
+      <div class="col-12 text-right">
+        <small>Copyright &copy; <?= date('Y'); ?> by JaVa</small>
       </div>
     </div> 
   </div>

@@ -287,6 +287,14 @@ section.footer .tetap::after {
   text-align: right;
 }
 
+.bg-profile {
+  width: 50%;
+}
+
+.p-profile {
+  text-align: right;
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .container-dealer {
@@ -322,6 +330,27 @@ section.footer .tetap::after {
 
   .btn-product {
     width: 140px;
+  }
+
+  .bg-profile {
+    margin-top: 30px;
+    width: 50%;
+  }
+
+  .container-profile {
+    margin-top: 20px !important;
+    padding: 0;
+    width: auto;
+    margin: auto;
+  }
+
+  .p-profile {
+    padding: 0 40px;
+    text-align: left;
+  }
+
+  .bg-profile {
+    width: 60%;
   }
 }
 

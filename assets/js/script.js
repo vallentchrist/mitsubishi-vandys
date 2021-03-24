@@ -16,6 +16,9 @@ function stickyNavbar() {
 // Akhir Sticky Navbar
 
 const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
+  autoplay: {
+    delay: 2000,
+  },
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {

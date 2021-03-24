@@ -282,14 +282,9 @@ section.footer .tetap::after {
 }
 
 .outer-container-profile {
-  background: url(http://localhost/vandys/assets/img/banner-profile-pic.jpg);
+  background: url(http://localhost/vandys/assets/img/bg-profile.jpg);
   background-size: cover;
   text-align: right;
-}
-
-.profile-hubungi {
-  margin-left: 1150px;
-  margin-bottom: 100px;
 }
 
 /* Tablet */
@@ -315,13 +310,9 @@ section.footer .tetap::after {
   }
 
   .outer-container-profile {
-    background: url(http://localhost/vandys/assets/img/banner-mobile.jpg);
+    background: url(http://localhost/vandys/assets/img/bg-profile-mb.jpg);
     background-size: cover;
     text-align: center;
-  }
-
-  .kosong {
-    height: 400px;
   }
 
   .palet {

@@ -75,32 +75,21 @@
         </span>
       </div>
     </nav>  
-    <!-- Akhir Navbar -->
-
-    <!-- Profile -->
-    <!-- <div class="container">
-      <div class="row p-4 align-items-center">
-        <div class="col-12 col-lg-6 text-center">
-          <img class="thumb" src="<?= BASE_URL.DS; ?>/assets/img/user.png" alt="Vandystio Danantho">
-        </div>
-        <div class="col-12 col-lg-6 text-center">
-          <h1 class="mmc-medium">Vandystio Danatho</h1>
-          <label class="mmc-medium">Counter Sales</label>
-          <p class="text-left">Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.</p>
-        </div>
-      </div>    
-    </div> -->
-    <!-- Akhir Profile -->
+    <!-- Akhir Navbar -->  
 
     <!-- Profile -->
     <div class="container-100 outer-container-profile">
-      <div class="col-12 col-lg-6 container-profile">
-        <span class="kosong"></span>
-        <h1 class="mmc-bold">Vandystio Danantho</h1>
-        <label class="mmc-bold">Counter Sales</label>
-        <p>Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.
-      </div>  
-      <!-- <a target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger profile-hubungi">Hubungi Saya!</a> -->
+      <div class="row">
+        <div class="col-12 col-lg-6 text-center">
+          <img class="rounded-circle" src="<?= BASE_URL.DS.'assets/img/bg-foto.png'; ?>" alt="Mitsubishi Vandys">
+        </div>
+        <div class="col-12 col-lg-6 container-profile">        
+          <h1 class="mmc-bold">Vandystio Danantho</h1>
+          <h3 class="mmc-bold">Counter Sales</h3>
+          <p>Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.
+          <a target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger">Hubungi Saya!</a>
+        </div>  
+      </div>      
     </div>
     <!-- Akhir Profile -->
 

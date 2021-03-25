@@ -114,71 +114,92 @@ $(document).ready(function () {
     });
   });
 
-  $("#black-xpander").click(() =>
-    // remove /vandys when upload to live
-    $("#img-xpander").attr(
-      "src",
-      window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/img/xpander/xpander-black.webp"
-    )
-  );
+  const warnaMobil = [
+    "black-xpander",
+    "white-xpander",
+    "grey-xpander",
+    "silver-xpander",
+    "red-xpander",
+    "bronze-xpander",
+  ];
 
-  $("#white-xpander").click(() =>
-    // remove /vandys when upload to live
-    $("#img-xpander").attr(
-      "src",
-      window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/img/xpander/xpander-white.webp"
-    )
-  );
+  warnaMobil.forEach(function (v, i) {
+    v.addEventListener("click", () => {
+      $("#img-xpander").attr(
+        "src",
+        window.location.protocol +
+          "//" +
+          window.location.host +
+          `/vandys/assets/img/xpander/${warnaMobil[i]}.webp`
+      );
+    });
+  });
 
-  $("#grey-xpander").click(() =>
-    // remove /vandys when upload to live
-    $("#img-xpander").attr(
-      "src",
-      window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/img/xpander/xpander-grey.webp"
-    )
-  );
+  // $("#black-xpander").click(() =>
+  //   // remove /vandys when upload to live
+  //   $("#img-xpander").attr(
+  //     "src",
+  //     window.location.protocol +
+  //       "//" +
+  //       window.location.host +
+  //       "/assets/img/xpander/xpander-black.webp"
+  //   )
+  // );
 
-  $("#silver-xpander").click(() =>
-    // remove /vandys when upload to live
-    $("#img-xpander").attr(
-      "src",
-      window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/img/xpander/xpander-silver.webp"
-    )
-  );
+  // $("#white-xpander").click(() =>
+  //   // remove /vandys when upload to live
+  //   $("#img-xpander").attr(
+  //     "src",
+  //     window.location.protocol +
+  //       "//" +
+  //       window.location.host +
+  //       "/assets/img/xpander/xpander-white.webp"
+  //   )
+  // );
 
-  $("#red-xpander").click(() =>
-    // remove /vandys when upload to live
-    $("#img-xpander").attr(
-      "src",
-      window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/img/xpander/xpander-red.webp"
-    )
-  );
+  // $("#grey-xpander").click(() =>
+  //   // remove /vandys when upload to live
+  //   $("#img-xpander").attr(
+  //     "src",
+  //     window.location.protocol +
+  //       "//" +
+  //       window.location.host +
+  //       "/assets/img/xpander/xpander-grey.webp"
+  //   )
+  // );
 
-  $("#bronze-xpander").click(() =>
-    // remove /vandys when upload to live
-    $("#img-xpander").attr(
-      "src",
-      window.location.protocol +
-        "//" +
-        window.location.host +
-        "/assets/img/xpander/xpander-brown.png"
-    )
-  );
+  // $("#silver-xpander").click(() =>
+  //   // remove /vandys when upload to live
+  //   $("#img-xpander").attr(
+  //     "src",
+  //     window.location.protocol +
+  //       "//" +
+  //       window.location.host +
+  //       "/assets/img/xpander/xpander-silver.webp"
+  //   )
+  // );
+
+  // $("#red-xpander").click(() =>
+  //   // remove /vandys when upload to live
+  //   $("#img-xpander").attr(
+  //     "src",
+  //     window.location.protocol +
+  //       "//" +
+  //       window.location.host +
+  //       "/assets/img/xpander/xpander-red.webp"
+  //   )
+  // );
+
+  // $("#bronze-xpander").click(() =>
+  //   // remove /vandys when upload to live
+  //   $("#img-xpander").attr(
+  //     "src",
+  //     window.location.protocol +
+  //       "//" +
+  //       window.location.host +
+  //       "/assets/img/xpander/xpander-brown.png"
+  //   )
+  // );
 
   $("#black-xpander-cross").click(() =>
     // remove /vandys when upload to live

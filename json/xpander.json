@@ -1,0 +1,110 @@
+{
+   "MITSUBISHI XPANDER GLX MT" : {
+      "Displacement" : "1499",
+      "Transmission" : "5 Speed MT",
+      "Wheel & Tire" : "Steel Wheel With Cover 185/65",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Not Available",
+      "Ground Clearance" : "200"
+   },
+   "MITSUBISHI XPANDER GLS MT" : {
+      "Displacement" : "1499",
+      "Transmission" : "5 Speed MT",
+      "Wheel & Tire" : "Alloy Wheel 185/65 R15",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Not Available",
+      "Ground Clearance" : "200"
+   },
+   "MITSUBISHI XPANDER GLS AT" : {
+      "Displacement" : "1499",
+      "Transmission" : "4 Speed AT",
+      "Wheel & Tire" : "Alloy Wheel 185/65 R15",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Not Available",
+      "Ground Clearance" : "200"
+   },
+   "MITSUBISHI XPANDER EXCEED MT" : {
+      "Displacement" : "1499",
+      "Transmission" : "5 Speed MT",
+      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Not Available",
+      "Ground Clearance" : "205"
+   },
+   "MITSUBISHI XPANDER EXCEED AT" : {
+      "Displacement" : "1499",
+      "Transmission" : "4 Speed AT",
+      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Not Available",
+      "Ground Clearance" : "205"
+   },
+   "MITSUBISHI XPANDER SPORT MT" : {
+      "Displacement" : "1499",
+      "Transmission" : "5 Speed MT",
+      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   },
+   "MITSUBISHI XPANDER SPORT AT" : {
+      "Displacement" : "1499",
+      "Transmission" : "4 Speed AT",
+      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   },
+   "MITSUBISHI XPANDER ULTIMATE AT" : {
+      "Displacement" : "1499",
+      "Transmission" : "4 Speed AT",
+      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   },
+   "XPANDER EXCEED LIMITED M/T" : {
+      "Displacement" : "1499",
+      "Transmission" : "5 Speed M/T",
+      "Wheel & Tire" : "Black Paint Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   },
+   "XPANDER EXCEED LIMITED A/T" : {
+      "Displacement" : "1499",
+      "Transmission" : "4 Speed A/T",
+      "Wheel & Tire" : "Black Paint Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   },
+   "MITSUBISHI XPANDER BLACK EDITION EXCEED LIMITED M/T" : {
+      "Displacement" : "1499",
+      "Transmission" : "5 Speed M/T",
+      "Wheel & Tire" : "Black Paint Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   },
+   "MITSUBISHI XPANDER BLACK EDITION EXCEED LIMITED A/T" : {
+      "Displacement" : "1499",
+      "Transmission" : "4 Speed A/T",
+      "Wheel & Tire" : "Black Paint Alloy Wheel 205/55 R16",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "205"
+   }
+}

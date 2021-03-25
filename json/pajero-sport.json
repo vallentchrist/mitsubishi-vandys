@@ -1,0 +1,56 @@
+{
+   "PAJERO SPORT EXCEED (4X2) MT" : {
+      "Displacement (cc)" : "2477",
+      "Transmission" : "5 Speed MT",
+      "Wheel & Tire" : "265/70 R16 112S",
+      "Hill Start Assist" : "Not Available",
+      "Blind Spot Warning" : "Not Available",
+      "Ground Clearance" : "218",
+      "SRS Airbag" : "2 Points"
+   },
+   "PAJERO SPORT EXCEED (4X2) AT" : {
+      "Displacement (cc)" : "2477",
+      "Transmission" : "5 Speed AT",
+      "Wheel & Tire" : "265/60 R18 110H",
+      "Hill Start Assist" : "Not Available",
+      "Blind Spot Warning" : "Not Available",
+      "Ground Clearance" : "218",
+      "SRS Airbag" : "2 Points"
+   },
+   "PAJERO SPORT GLX (4X4) MT" : {
+      "Displacement (cc)" : "2477",
+      "Transmission" : "5 Speed MT",
+      "Wheel & Tire" : "265/70 R16 112S",
+      "Hill Start Assist" : "Not Available",
+      "Blind Spot Warning" : "Not Available",
+      "Ground Clearance" : "218",
+      "SRS Airbag" : "2 Points"
+   },
+   "PAJERO SPORT DAKAR (4X2) AT" : {
+      "Displacement (cc)" : "2477",
+      "Transmission" : "5 Speed AT",
+      "Wheel & Tire" : "265/60 R18 110H",
+      "Hill Start Assist" : "Not Available",
+      "Blind Spot Warning" : "Not Available",
+      "Ground Clearance" : "218",
+      "SRS Airbag" : "2 Points"
+   },
+   "PAJERO SPORT DAKAR ULTIMATE (4X2) AT" : {
+      "Displacement (cc)" : "2477",
+      "Transmission" : "5 Speed AT",
+      "Wheel & Tire" : "265/60 R18 110H",
+      "Hill Start Assist" : "Not Available",
+      "Blind Spot Warning" : "Not Available",
+      "Ground Clearance" : "218",
+      "SRS Airbag" : "2 Points"
+   },
+   "PAJERO SPORT DAKAR (4X4) AT" : {
+      "Displacement (cc)" : "2477",
+      "Transmission" : "5 Speed AT",
+      "Wheel & Tire" : "265/60 R18 110H",
+      "Hill Start Assist" : "Not Available",
+      "Blind Spot Warning" : "Not Available",
+      "Ground Clearance" : "218",
+      "SRS Airbag" : "2 Points"
+   }
+}

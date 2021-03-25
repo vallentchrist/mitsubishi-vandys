@@ -1,0 +1,29 @@
+{
+   "OUTLANDER SPORT GLX-E" : {
+      "Displacement (cc)" : "1998",
+      "Transmission" : "CVT INVECS III With Sport Mode",
+      "Wheel & Tire" : "Alloy Wheel 215/60 R17 96H",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "195"
+   },
+   "OUTLANDER SPORT GLS-E" : {
+      "Displacement (cc)" : "1998",
+      "Transmission" : "CVT INVECS III With Sport Mode",
+      "Wheel & Tire" : "Alloy Wheel 215/60 R17 96H",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "195"
+   },
+   "OUTLANDER SPORT PX-E ACTION" : {
+      "Displacement (cc)" : "1998",
+      "Transmission" : "CVT INVECS III With Sport Mode",
+      "Wheel & Tire" : "Alloy Wheel 215/60 R17 96H",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Not Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "195"
+   }
+}

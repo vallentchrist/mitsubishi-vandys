@@ -1,0 +1,56 @@
+{
+   "TRITON GLX MT 4X2 SINGLE CABIN" : {
+      "Displacement (cc)" : "2447",
+      "Transmission" : "6 Speed MT",
+      "Wheel & Tire" : "18' Alloy Wheel 265/60 R18",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "220"
+   },
+   "TRITON HDX MT SINGLE CABIN 4X4" : {
+      "Displacement (cc)" : "2447",
+      "Transmission" : "6 Speed MT",
+      "Wheel & Tire" : "18' Alloy Wheel 265/60 R18",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "220"
+   },
+   "TRITON HDX MT D-CABIN 4X4" : {
+      "Displacement (cc)" : "2447",
+      "Transmission" : "6 Speed MT",
+      "Wheel & Tire" : "18' Alloy Wheel 265/60 R18",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "220"
+   },
+   "TRITON GLS MT D-CABIN 4X4" : {
+      "Displacement (cc)" : "2447",
+      "Transmission" : "6 Speed MT",
+      "Wheel & Tire" : "18' Alloy Wheel 265/60 R18",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "220"
+   },
+   "TRITON EXCEED MT 4X4" : {
+      "Displacement (cc)" : "2447",
+      "Transmission" : "6 Speed MT",
+      "Wheel & Tire" : "18' Alloy Wheel 265/60 R18",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "220"
+   },
+   "TRITON ULTIMATE AT 4X4" : {
+      "Displacement (cc)" : "2447",
+      "Transmission" : "6 Speed MT",
+      "Wheel & Tire" : "18' Alloy Wheel 265/60 R18",
+      "Dual SRS Airbags" : "Available",
+      "Hill Start Assist" : "Available",
+      "Keyless Operation System" : "Available",
+      "Ground Clearance" : "220"
+   }
+}

@@ -1,3 +1,4 @@
 1. Koneksi live dan koneksi local diatur di config.php
 2. Konstanta BASE_URL diatur di config.php
 3. Warna mobil diatur di script.js (remove /vandys untuk upload live)
+4. Source image dari logo sardana, fuso, mitsubishimotors di header.php

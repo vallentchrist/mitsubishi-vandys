@@ -26,56 +26,7 @@
     <title>Vandys Mitsubishi Medan - Promo & Simulasi Kredit Mitsubishi</title>
   </head>
   <body>    
-    <!-- Header -->
-    <div class="container">
-      <div class="row p-2">
-        <div class="col-3 col-lg-2">
-          <a target="_blank" href="https://mitsubishi-motors.co.id">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
-          </a>
-        </div>
-        <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
-          <a href="https://mitsusbishimedan-vandys.id">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
-          </a>
-        </div>
-        <div class="col-3 col-lg-2 text-right">
-          <a target="_blank" href="https://ktbfuso.co.id">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso.png" alt="Sardana" class="logo">
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Akhir Header -->
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi">
-        <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Produk <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Promo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Testimoni</a>
-          </li>
-        </ul>
-        <span class="navbar-text text-white mmc-bold">
-          Vandystio Danantho
-        </span>
-      </div>
-    </nav>  
-    <!-- Akhir Navbar -->  
+    <?php readfile("header.php"); ?>
 
     <!-- Profile -->
     <div class="container-100 outer-container-profile">
@@ -128,7 +79,7 @@
             <div class="swiper-slide">
               <div class="display-grid">
                 <div class="card n1 bg-xpander">
-                  <img src="<?= BASE_URL.DS.'assets/img/xpander/xpander-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander">
+                  <img src="<?= BASE_URL.DS.'assets/img/xpander/white-xpander.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander">
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">Xpander</h3>
@@ -150,7 +101,7 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="<?= BASE_URL.DS.'product/xpander.php'; ?>" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Xpander" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
@@ -900,7 +851,5 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
     <script src="<?= BASE_URL.DS; ?>assets/js/lightbox.js"></script>
     <script src="<?= BASE_URL.DS; ?>assets/js/script.js"></script>
-    <script>    
-    </script>
   </body>
 </html>

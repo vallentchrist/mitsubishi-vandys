@@ -285,7 +285,8 @@ section.footer .tetap::after {
 }
 
 .outer-container-profile {
-  background: url(http://localhost/vandys/assets/img/bg-profile.jpg);
+  background: url(https://mitsubishimedan-vandys.id/assets/img/bg-profile.jpg);
+  /* background: url(https://localhost/vandys/assets/img/bg-profile.jpg); */
   background-size: cover;
   text-align: right;
 }
@@ -321,7 +322,8 @@ section.footer .tetap::after {
   }
 
   .outer-container-profile {
-    background: url(http://localhost/vandys/assets/img/bg-profile-mb.jpg);
+    background: url(https://mitsubishimedan-vandys.id/assets/img/bg-profile-mb.jpg);
+    /* background: url(http://localhost/vandys/assets/img/bg-profile-mb.jpg); */
     background-size: cover;
     text-align: center;
   }

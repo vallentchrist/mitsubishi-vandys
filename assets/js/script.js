@@ -121,7 +121,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-black.webp"
+        "/assets/img/xpander/xpander-black.webp"
     )
   );
 
@@ -132,7 +132,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-white.webp"
+        "/assets/img/xpander/xpander-white.webp"
     )
   );
 
@@ -143,7 +143,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-grey.webp"
+        "/assets/img/xpander/xpander-grey.webp"
     )
   );
 
@@ -154,7 +154,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-silver.webp"
+        "/assets/img/xpander/xpander-silver.webp"
     )
   );
 
@@ -165,7 +165,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-red.webp"
+        "/assets/img/xpander/xpander-red.webp"
     )
   );
 
@@ -176,7 +176,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/xpander/xpander-brown.png"
+        "/assets/img/xpander/xpander-brown.png"
     )
   );
 
@@ -187,7 +187,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/cross/xpander-cross-black.webp"
+        "/assets/img/cross/xpander-cross-black.webp"
     )
   );
 
@@ -198,7 +198,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/cross/xpander-cross-white.webp"
+        "/assets/img/cross/xpander-cross-white.webp"
     )
   );
 
@@ -209,7 +209,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/cross/xpander-cross-gray.webp"
+        "/assets/img/cross/xpander-cross-gray.webp"
     )
   );
 
@@ -220,7 +220,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/cross/xpander-cross-silver.webp"
+        "/assets/img/cross/xpander-cross-silver.webp"
     )
   );
 
@@ -231,7 +231,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/cross/xpander-cross-orange.webp"
+        "/assets/img/cross/xpander-cross-orange.webp"
     )
   );
 
@@ -242,7 +242,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/pajero/pajero-sport-black.webp"
+        "/assets/img/pajero/pajero-sport-black.webp"
     )
   );
 
@@ -253,7 +253,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/pajero/pajero-sport-white.webp"
+        "/assets/img/pajero/pajero-sport-white.webp"
     )
   );
 
@@ -264,7 +264,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/pajero/pajero-sport-grey.webp"
+        "/assets/img/pajero/pajero-sport-grey.webp"
     )
   );
 
@@ -275,7 +275,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/pajero/pajero-sport-silver.webp"
+        "/assets/img/pajero/pajero-sport-silver.webp"
     )
   );
 
@@ -286,7 +286,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/pajero/pajero-sport-bronze.webp"
+        "/assets/img/pajero/pajero-sport-bronze.webp"
     )
   );
 
@@ -297,7 +297,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/eclipse/eclipse-cross-black.webp"
+        "/assets/img/eclipse/eclipse-cross-black.webp"
     )
   );
 
@@ -308,7 +308,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/eclipse/eclipse-cross-white.webp"
+        "/assets/img/eclipse/eclipse-cross-white.webp"
     )
   );
 
@@ -319,7 +319,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/eclipse/eclipse-cross-red.webp"
+        "/assets/img/eclipse/eclipse-cross-red.webp"
     )
   );
 
@@ -330,7 +330,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/triton/triton-white-diamond.webp"
+        "/assets/img/triton/triton-white-diamond.webp"
     )
   );
 
@@ -341,7 +341,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/triton/triton-black.webp"
+        "/assets/img/triton/triton-black.webp"
     )
   );
 
@@ -352,7 +352,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/triton/triton-white.webp"
+        "/assets/img/triton/triton-white.webp"
     )
   );
 
@@ -363,7 +363,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/triton/triton-gray.webp"
+        "/assets/img/triton/triton-gray.webp"
     )
   );
 
@@ -374,7 +374,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/triton/triton-silver.webp"
+        "/assets/img/triton/triton-silver.webp"
     )
   );
 
@@ -385,7 +385,7 @@ $(document).ready(function () {
       window.location.protocol +
         "//" +
         window.location.host +
-        "/vandys/assets/img/triton/triton-red.webp"
+        "/assets/img/triton/triton-red.webp"
     )
   );
 

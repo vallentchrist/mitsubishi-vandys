@@ -124,7 +124,7 @@ $(document).ready(function () {
   ];
 
   warnaMobil.forEach(function (v, i) {
-    v.addEventListener("click", () => {
+    $("#" + v).click(() => {
       $("#img-xpander").attr(
         "src",
         window.location.protocol +
@@ -134,72 +134,6 @@ $(document).ready(function () {
       );
     });
   });
-
-  // $("#black-xpander").click(() =>
-  //   // remove /vandys when upload to live
-  //   $("#img-xpander").attr(
-  //     "src",
-  //     window.location.protocol +
-  //       "//" +
-  //       window.location.host +
-  //       "/assets/img/xpander/xpander-black.webp"
-  //   )
-  // );
-
-  // $("#white-xpander").click(() =>
-  //   // remove /vandys when upload to live
-  //   $("#img-xpander").attr(
-  //     "src",
-  //     window.location.protocol +
-  //       "//" +
-  //       window.location.host +
-  //       "/assets/img/xpander/xpander-white.webp"
-  //   )
-  // );
-
-  // $("#grey-xpander").click(() =>
-  //   // remove /vandys when upload to live
-  //   $("#img-xpander").attr(
-  //     "src",
-  //     window.location.protocol +
-  //       "//" +
-  //       window.location.host +
-  //       "/assets/img/xpander/xpander-grey.webp"
-  //   )
-  // );
-
-  // $("#silver-xpander").click(() =>
-  //   // remove /vandys when upload to live
-  //   $("#img-xpander").attr(
-  //     "src",
-  //     window.location.protocol +
-  //       "//" +
-  //       window.location.host +
-  //       "/assets/img/xpander/xpander-silver.webp"
-  //   )
-  // );
-
-  // $("#red-xpander").click(() =>
-  //   // remove /vandys when upload to live
-  //   $("#img-xpander").attr(
-  //     "src",
-  //     window.location.protocol +
-  //       "//" +
-  //       window.location.host +
-  //       "/assets/img/xpander/xpander-red.webp"
-  //   )
-  // );
-
-  // $("#bronze-xpander").click(() =>
-  //   // remove /vandys when upload to live
-  //   $("#img-xpander").attr(
-  //     "src",
-  //     window.location.protocol +
-  //       "//" +
-  //       window.location.host +
-  //       "/assets/img/xpander/xpander-brown.png"
-  //   )
-  // );
 
   $("#black-xpander-cross").click(() =>
     // remove /vandys when upload to live

@@ -123,6 +123,7 @@ $(document).ready(function () {
     "bronze-xpander",
   ];
 
+  // Remove vandys when upload to live
   warnaMobil.forEach(function (v, i) {
     $("#" + v).click(() => {
       $("#img-xpander").attr(
@@ -130,7 +131,7 @@ $(document).ready(function () {
         window.location.protocol +
           "//" +
           window.location.host +
-          `/vandys/assets/img/xpander/${warnaMobil[i]}.webp`
+          `/assets/img/xpander/${warnaMobil[i]}.webp`
       );
     });
   });

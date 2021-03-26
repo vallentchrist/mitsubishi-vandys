@@ -10,7 +10,7 @@
     </div>
     <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
       <label class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
-      <a href="https://mitsusbishimedan-vandys.id">
+      <a href="https://mitsubishimedan-vandys.id">
         <img src="https://mitsubishimedan-vandys.id/assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
         <img src="https://mitsubishimedan-vandys.id/assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
         <!-- <img src="https://localhost/vandys/assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">

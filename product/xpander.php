@@ -138,43 +138,43 @@
             <div class="swiper-container-detail">            
               <div class="swiper-wrapper">
                 <div class="swiper-slide">                
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/1.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/1.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/1.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/1.webp'; ?>" width="100%">
                   </a>                  
                 </div>                
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/2.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/2.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/2.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/2.webp'; ?>" width="100%">
                   </a>                  
                 </div>                                         
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/3.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/3.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/3.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/3.webp'; ?>" width="100%">
                   </a>                  
                 </div>                
                 <div class="swiper-slide mt-2">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/4.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/4.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/4.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/4.webp'; ?>" width="100%">
                   </a>     
                 </div>  
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/5.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/5.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/5.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/5.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/6.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/6.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/6.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/6.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/7.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/7.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/7.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/7.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/xpander/8.png'; ?>" data-lightbox="view-xpander" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/xpander/8.png'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/xpander/8.webp'; ?>" data-lightbox="view-xpander" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/xpander/8.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
               </div>                   
@@ -703,6 +703,8 @@
     </div>
   </div>
 </section> -->
+
+<?php require_once "../footer.php"; ?>
 <!-- Akhir Rekomendasi -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script
@@ -729,12 +731,12 @@
 
     function setWarna() {
       $('[data-toggle="tooltip"]').tooltip();
-      $('.color-black').click(() => $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/xpander-black.png'));
-      $('.color-red').click(() => $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/xpander-red.png'));
-      $('.color-silver').click(() => $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/xpander-silver.png'));
-      $('.color-grey').click(() => $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/xpander-grey.png'));
-      $('.color-white').click(() => $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/xpander-white.png'));
-      $('.color-bronze').click(() => $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/xpander-bronze.png'));      
+      $('.color-black').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>'));
+      $('.color-red').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/red-xpander.webp'; ?>'));
+      $('.color-silver').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/silver-xpander.webp'; ?>'));
+      $('.color-grey').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/grey-xpander.webp'; ?>'));
+      $('.color-white').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/white-xpander.webp'; ?>'));
+      $('.color-bronze').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/bronze-xpander.webp'; ?>'));      
     }
 
     $('#selectTipe').change(function() {                  
@@ -847,7 +849,51 @@
       });
     });           
 
-    setWarna();
-    setHiddenNavbar();
+    setWarna();    
+
+    const swiperContainerExterior = new Swiper('.swiper-container-exterior', {            
+    spaceBetween: 10,
+    breakpoints: {
+      800: {
+        slidesPerView: 4
+      },
+      600: {
+        slidesPerView: 2
+      },
+      300: {
+        slidesPerView: 1
+      }
+    }
+    });
+
+    $('.nav-link-exterior').click(function(e) {
+      $('.swiper-container-interior').css('display', 'none');            
+      $('.nav-link-interior').removeClass('active');      
+      $('.swiper-container-exterior').css('display', 'block');            
+      $(this).addClass('active');
+      e.preventDefault();
+    });
+
+    $('.nav-link-interior').click(function(e) {
+      $('.swiper-container-exterior').css('display', 'none');      
+      $('.nav-link-exterior').removeClass('active');      
+      $('.swiper-container-interior').css('display', 'block');      
+      $(this).addClass('active');
+      const swiperContainerInterior = new Swiper('.swiper-container-interior', {            
+        spaceBetween: 10,      
+        breakpoints: {
+          800: {
+            slidesPerView: 4
+          },
+          600: {
+            slidesPerView: 2
+          },
+          300: {
+            slidesPerView: 1
+          }
+        }
+      });
+      e.preventDefault();
+    });  
   });
 </script>

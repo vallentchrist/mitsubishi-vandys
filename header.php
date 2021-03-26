@@ -3,22 +3,26 @@
   <div class="row p-2">
     <div class="col-3 col-lg-2">
       <a target="_blank" href="https://mitsubishi-motors.co.id">
-        <img src="https://localhost/vandys/assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
+        <img src="https://mitsubishimedan-vandys.id/assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
+        <!-- <img src="https://localhost/vandys/assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo"> -->
         <!-- <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo"> -->
       </a>
     </div>
     <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
       <label class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
       <a href="https://mitsusbishimedan-vandys.id">
-        <img src="https://localhost/vandys/assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
-        <img src="https://localhost/vandys/assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
+        <img src="https://mitsubishimedan-vandys.id/assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
+        <img src="https://mitsubishimedan-vandys.id/assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
+        <!-- <img src="https://localhost/vandys/assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
+        <img src="https://localhost/vandys/assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block"> -->
         <!-- <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none"> -->
         <!-- <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block"> -->
       </a>
     </div>
     <div class="col-3 col-lg-2 text-right">
       <a target="_blank" href="https://ktbfuso.co.id">
-        <img src="https://localhost/vandys/assets/img/logo-fuso.png" alt="Sardana" class="logo">
+        <img src="https://mitsubishimedan-vandys.id/assets/img/logo-fuso.png" alt="Sardana" class="logo">
+        <!-- <img src="https://localhost/vandys/assets/img/logo-fuso.png" alt="Sardana" class="logo"> -->
         <!-- <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso.png" alt="Sardana" class="logo"> -->
       </a>
     </div>

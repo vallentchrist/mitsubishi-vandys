@@ -298,10 +298,80 @@ section.footer .tetap::after {
   text-align: right;
 }
 
+.label-sardana {
+  font-size: 14px;
+}
+
+.swiper-container-exterior,
+.swiper-container-interior,
+.swiper-container-detail {
+  overflow-x: hidden;
+}
+
+section.detail-product .nav-link.active {
+  border-top: 2px solid black;
+}
+
+section.main-product {
+  margin-top: 40px;
+}
+
+.select-car {
+  text-align: right;
+}
+
+section.mainProduct .whatsapp-bg {
+  background: #25d366;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+section.mainProduct .whatsapp-bg:hover {
+  background: #128c7e;
+  text-decoration: none;
+}
+
+section.mainProduct .spek-mobile {
+  display: none;
+}
+
+section.mainProduct .spek-desktop {
+  display: block;
+}
+
+.header-alamat {
+  color: black;
+}
+
+.header-alamat:hover {
+  text-decoration: none;
+  color: black;
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .container-dealer {
     margin-bottom: 1.5rem;
+  }
+
+  .container-profile {
+    text-align: center;
+    padding: 50px;
+  }
+
+  .bg-profile {
+    margin-top: 40px;
+  }
+
+  .p-profile {
+    text-align: justify;
+    margin-top: 40px !important;
+  }
+
+  .palet {
+    width: 30px;
+    height: 30px;
   }
 }
 

@@ -30,6 +30,8 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="<?= BASE_URL.DS ?>assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= BASE_URL.DS.'assets/css/lightbox.css'; ?>">      
     <script src="https://kit.fontawesome.com/00610b519d.js" crossorigin="anonymous"></script>
@@ -39,23 +41,6 @@
         background: white;
         color: black;
       }
-
-      .swiper-container-detail {overflow: hidden}
-      
-      section.mainProduct .whatsapp-bg {
-          background: #25D366;
-          color: white;
-          border-radius: 10px;
-          padding: 5px;
-      }
-
-      section.mainProduct .whatsapp-bg:hover {
-          background: #128C7E;
-          text-decoration: none;
-      }
-
-      section.mainProduct .spek-mobile {display: none}
-      section.mainProduct .spek-desktop {display: block}
     </style>
     <title>Mitsubishi Xpander - Promo & Simulasi Kredit Mitsubishi</title>
   </head>
@@ -69,8 +54,10 @@
           </a>
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
-          <a href="https://mitsubishimedan-vandys.id">            
+          <a href="https://mitsubishimedan-vandys.id" class="header-alamat">
+            <span class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</span>
+          </a>
+          <a href="https://mitsubishimedan-vandys.id">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
           </a>
@@ -112,7 +99,7 @@
     <!-- Akhir Navbar -->  
 
 <!-- Main -->
-<section class="mainProduct" id="mainProduct">
+<section class="main-product" id="mainProduct">
   <div class="container">
     <div class="row mb-3">
       <div class="col-lg-6 col-12">
@@ -135,7 +122,7 @@
       <div class="col-lg-6 pr-lg-5 scale-down">
         <div class="row">
           <div class="col-lg-12" style="border: 1px solid #aaa">
-            <div class="swiper-container-detail">            
+            <div class="swiper-container swiper-container-detail">            
               <div class="swiper-wrapper">
                 <div class="swiper-slide">                
                   <a href="<?= BASE_URL.DS.'assets/img/xpander/1.webp'; ?>" data-lightbox="view-xpander" class="display">
@@ -187,7 +174,7 @@
           <div class="col-lg-12" style="border: 1px solid #aaa">
             <div class="row">
               <div class="col-lg-12 text-center background-title p-2">
-                <h6 class="mt-1">Spesifikasi Utama</h6>
+                <h5 class="mt-1 mmc-medium">Spesifikasi Utama</h5>
               </div>
             </div>
             <div class="row spek-container" id="spekDesktop">
@@ -243,7 +230,7 @@
       <div class="col-lg-6 scale-down" style="border: 1px solid #aaa">          
         <div class="row">
           <div class="col-lg-12 text-center background-title p-2">
-            <h6 class="mt-1">Harga Mobil</h6>
+            <h5 class="mt-1 mmc-medium">Harga Mobil</h5>
           </div>
         </div>
         <form>
@@ -347,7 +334,7 @@
         </form>            
         <div class="row">
           <div class="col-lg-12 text-center p-2 background-title">
-            <h6 class="font-weight-bold text-white mt-1">Kontak Kami</h6>
+            <h5 class="mmc-medium mt-1">Kontak Kami</h5>
           </div>
         </div>
         <div class="row mt-3 mb-3">
@@ -449,7 +436,7 @@
 <!-- Akhir Warna -->
 
 <!-- Detail -->
-<section class="detailProduct mt-5" id="detailProduct">  
+<section class="detail-product mt-5" id="detailProduct">  
   <div class="container-fluid" style="padding-left: 0; padding-right: 0">      
     <div class="row" style="margin-right:0; margin-left:0">
       <div class="col-lg-12">          
@@ -855,7 +842,7 @@
     spaceBetween: 10,
     breakpoints: {
       800: {
-        slidesPerView: 4
+        slidesPerView: 3
       },
       600: {
         slidesPerView: 2
@@ -864,6 +851,11 @@
         slidesPerView: 1
       }
     }
+    });
+
+    const swiperContainerDetail = new Swiper('.swiper-container-detail', {            
+      spaceBetween: 10,
+      slidesPerView: 1    
     });
 
     $('.nav-link-exterior').click(function(e) {
@@ -883,7 +875,7 @@
         spaceBetween: 10,      
         breakpoints: {
           800: {
-            slidesPerView: 4
+            slidesPerView: 3
           },
           600: {
             slidesPerView: 2

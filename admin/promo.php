@@ -1,3 +1,57 @@
+<?php
+  require_once "../config.php";
+  date_default_timezone_set('Asia/Jakarta');
+  if (isset($_POST["submit"]))
+  {
+    $created = date("Y-m-d H:i:s");
+    $judul = $_POST["inputJudul"];
+    $deskripsi = $_POST["content"];
+    $namafile = $_FILES["fileGambar"]["name"];
+    $ukuranfile = $_FILES["fileGambar"]["size"];
+    $error = $_FILES["fileGambar"]["error"];
+    $tmpfile = $_FILES["fileGambar"]["tmp_name"];
+    $ekstensiGambarValid = ["jpg", "jpeg", "png"];
+    $ekstensiGambar = explode(".", $namafile);
+    $ekstensiGambar = strtolower(end($ekstensiGambar));    
+
+    // Cek tidak ada gambar yang diupload
+    if ($error === 4)
+    {
+      echo "<script>alert('Pilih gambar terlebih dahulu.');</script>";      
+    }
+    // Cek apakah gambar yang diupload
+    else if (!in_array($ekstensiGambar, $ekstensiGambarValid))
+    {
+      echo "<script>alert('Yang anda upload bukan gambar.');</script>";
+    }
+    // Cek apakah ukurannya terlalu besar
+    else if ($ukuranfile > 2048000)
+    {
+      echo "<script>alert('Ukuran gambar terlalu besar. Mohon kompress dibawah 2 MB.');</script>";
+    }
+    else
+    {
+      if ($judul != "" && $deskripsi != "")
+      {
+        move_uploaded_file($tmpfile, "../assets/img/promo/$namafile");
+        $result = mysqli_query($conn, "INSERT INTO tb_promo (created, judul, deskripsi, img_path) VALUES ('$created', '$judul', '$deskripsi', '$namafile')");
+        if ($result)
+        {
+          echo "<script>alert('Data berhasil ditambahkan');</script>";
+        }
+        else
+        {
+          echo "<script>alert('Data gagal ditambahkan. Silahkan input ulang');</script>";
+        }
+      }
+      else
+      {
+        echo "<script>alert('Data belum diisi. Silahkan input ulang');</script>";
+      }
+    }    
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +73,9 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/27.0.0/classic/ckeditor.js"></script>
 
     <!-- Style sendiri -->
     <link href="css/style.css" rel="stylesheet">
@@ -213,16 +270,20 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800 font-weight-bold">PROMO MITSUBISHI</h1>
-                    <form class="form-mitsubishi p-3">
+                    <form class="form-mitsubishi p-3" method="post" enctype="multipart/form-data">
                       <div class="form-group">
                         <label for="inputJudul">Judul</label>
-                        <input type="text" class="form-control" id="inputJudul" aria-describedby="emailHelp">                      
+                        <input type="text" class="form-control" name="inputJudul" id="inputJudul">
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Keterangan</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>                    
-                      <button type="submit" class="btn btn-primary">Simpan</button>
+                        <label for="editor">Deskripsi</label>
+                        <textarea name="content" id="editor"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label>Gambar</label>
+                        <input type="file" id="fileGambar" name="fileGambar">
+                      </div>
+                      <button type="submit" name="submit" id="submit" class="btn btn-primary">Simpan</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->
@@ -280,6 +341,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-</body>
 
+    <script>
+      ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    </script>
+</body>
 </html>

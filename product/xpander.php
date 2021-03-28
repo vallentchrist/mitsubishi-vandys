@@ -165,8 +165,8 @@
                   </a>                  
                 </div>                     
               </div>                   
-              <div class="swiper-button-next" style="color: black"></div>
-              <div class="swiper-button-prev" style="color: black"></div>
+              <div class="swiper-button-next swiper-button-next-detail" style="color: black"></div>
+              <div class="swiper-button-prev swiper-button-prev-detail" style="color: black"></div>
             </div>
           </div>
         </div>
@@ -855,7 +855,11 @@
 
     const swiperContainerDetail = new Swiper('.swiper-container-detail', {            
       spaceBetween: 10,
-      slidesPerView: 1    
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next-detail',
+        prevEl: '.swiper-button-prev-detail',
+      }
     });
 
     $('.nav-link-exterior').click(function(e) {
@@ -887,5 +891,7 @@
       });
       e.preventDefault();
     });  
+
+    lightbox.option({'wrapAround': true})
   });
 </script>

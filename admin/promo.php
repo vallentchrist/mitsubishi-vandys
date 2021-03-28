@@ -12,7 +12,10 @@
     $tmpfile = $_FILES["fileGambar"]["tmp_name"];
     $ekstensiGambarValid = ["jpg", "jpeg", "png"];
     $ekstensiGambar = explode(".", $namafile);
-    $ekstensiGambar = strtolower(end($ekstensiGambar));    
+    $ekstensiGambar = strtolower(end($ekstensiGambar));
+    $namafilebaru = uniqid();
+    $namafilebaru .= ".";
+    $namafilebaru .= $ekstensiGambar;
 
     // Cek tidak ada gambar yang diupload
     if ($error === 4)
@@ -33,8 +36,8 @@
     {
       if ($judul != "" && $deskripsi != "")
       {
-        move_uploaded_file($tmpfile, "../assets/img/promo/$namafile");
-        $result = mysqli_query($conn, "INSERT INTO tb_promo (created, judul, deskripsi, img_path) VALUES ('$created', '$judul', '$deskripsi', '$namafile')");
+        move_uploaded_file($tmpfile, "../assets/img/promo/$namafilebaru");
+        $result = mysqli_query($conn, "INSERT INTO tb_promo (created, judul, deskripsi, img_path) VALUES ('$created', '$judul', '$deskripsi', '$namafilebaru')");
         if ($result)
         {
           echo "<script>alert('Data berhasil ditambahkan');</script>";

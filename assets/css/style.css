@@ -320,23 +320,23 @@ section.main-product {
   text-align: right;
 }
 
-section.mainProduct .whatsapp-bg {
+section.main-product .whatsapp-bg {
   background: #25d366;
   color: white;
   border-radius: 10px;
   padding: 5px;
 }
 
-section.mainProduct .whatsapp-bg:hover {
+section.main-product .whatsapp-bg:hover {
   background: #128c7e;
   text-decoration: none;
 }
 
-section.mainProduct .spek-mobile {
+section.main-product .spek-mobile {
   display: none;
 }
 
-section.mainProduct .spek-desktop {
+section.main-product .spek-desktop {
   display: block;
 }
 
@@ -347,6 +347,16 @@ section.mainProduct .spek-desktop {
 .header-alamat:hover {
   text-decoration: none;
   color: black;
+}
+
+.car-title,
+.select-car {
+  text-align: center;
+}
+
+.background-title {
+  background: black;
+  color: white;
 }
 
 /* Tablet */
@@ -424,6 +434,26 @@ section.mainProduct .spek-desktop {
 
   .bg-profile {
     width: 60%;
+  }
+
+  section.main-product .spek-mobile {
+    display: block;
+  }
+
+  section.main-product .spek-desktop {
+    display: none;
+  }
+
+  section.main-product .scale-down {
+    transform: scale(0.95);
+  }
+
+  section.warna-product .img-color {
+    width: 80%;
+  }
+
+  section.warna-product p {
+    font-size: 12px;
   }
 }
 

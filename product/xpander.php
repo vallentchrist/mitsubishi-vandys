@@ -40,7 +40,7 @@
       body {
         background: white;
         color: black;
-      }
+      }      
     </style>
     <title>Mitsubishi Xpander - Promo & Simulasi Kredit Mitsubishi</title>
   </head>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
           <a href="https://mitsubishimedan-vandys.id" class="header-alamat">
-            <span class="text-uppercase text-center d-none d-sm-block"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</span>
+            <span class="text-uppercase text-center d-none d-sm-block label-sardana"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</span>
           </a>
           <a href="https://mitsubishimedan-vandys.id">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
@@ -103,7 +103,7 @@
   <div class="container">
     <div class="row mb-3">
       <div class="col-lg-6 col-12">
-        <h3 id="carTitle" class="mmc-bold">MITSUBISHI XPANDER GLX MT</h3>
+        <h3 id="carTitle" class="car-title mmc-bold">MITSUBISHI XPANDER GLX MT</h3>
       </div>    
       <div class="col-lg-6 col-12 select-car">        
         <select class="selectpicker" id="selectTipe" data-width="auto" data-live-search="true" title="Silahkan Pilih Mobil Lain...">            
@@ -221,7 +221,7 @@
                 <label id="spek7"><?= $xpander[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
-                <a class="btn btn-danger" data-toggle="modal">E-Brochure</a>
+                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/xpander.pdf'; ?>">E-Brochure</a>
               </div>
             </div>
           </div>  
@@ -247,7 +247,7 @@
           </div>
           <div class="form-group row">
             <div class="col-lg-12 text-right">
-              <a class="btn btn-danger" href="https://wa.me/+628116541800?text=Halo Mitsubishi Sardana" target="_blank">Beli Tunai</a>
+              <a class="btn btn-danger" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank">Beli Tunai</a>
             </div>
             <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
             <div class="col-lg-12"> 
@@ -272,10 +272,7 @@
               <input type="text" readonly class="form-control-plaintext text-right font-weight-bold" id="plainTextTenor" value="Rp 0">
             </div>
           </div>    
-          <div class="form-group row">
-            <div class="col-lg-12 text-right">
-              <a class="btn btn-danger" href="https://wa.me/+628116541800?text=Halo Mitsubishi Sardana" target="_blank">Booking Fee</a>
-            </div>
+          <div class="form-group row">            
             <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
             <div class="col-lg-12">
               <small class="text-muted">* Simulasi Kredit</small>
@@ -284,7 +281,7 @@
           <div class="form-group row">
             <label for="inputUangMuka" class="col-lg-6 col-md-6 col-12 col-form-label">Uang Muka : </label>
             <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end">
-              <input type="text" class="width-100 form-control form-control-sm form-control-width" id="inputUangMuka" name="inputUangMuka" pattern="^\Rp\d{1,3}(.\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Rp 10.000.000">
+              <input type="text" class="width-100 form-control form-control-sm form-control-width" id="inputUangMuka" name="inputUangMuka" data-type="currency" placeholder="Rp 10.000.000">
             </div>
           </div>
           <div class="form-group row">
@@ -307,7 +304,7 @@
           </div>
           <div class="form-group row">
             <div class="col-lg-12 text-right">
-              <a class="btn btn-danger" name="buttonHitung" id="buttonHitung">Simulasi Kredit</a>
+              <a class="btn btn-danger" name="buttonHitung" id="buttonHitung">Hitung</a>
             </div>
             <div class="col-lg-12 text-center perhitungan" style="display: none">
               <small class="text-danger">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
@@ -339,14 +336,14 @@
         </div>
         <div class="row mt-3 mb-3">
           <div class="col-lg-12 d-flex justify-content-between">
-            <span><i class="fas fa-lg fa-user"></i> Sardana Berlian</span>
-            <a href="https://wa.me/+628116541800?text=Halo Sardana, Saya ingin bertanya seputar produk Mitsubishi Xpander" target="_blank" class="whatsapp-bg"><i class="fab fa-lg fa-whatsapp"></i> 0811 6541 800
+            <span><i class="fas fa-lg fa-user"></i> Vandys</span>
+            <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank" class="whatsapp-bg"><i class="fab fa-lg fa-whatsapp"></i> 0811 6541 800
             </a>
           </div>                                                  
         </div>
         <div class="row mb-3">
           <div class="col-lg-12 text-center">
-            <a href="https://wa.me/+628116541800?text=Halo Mitsubishi Sardana." target="_blank" class="btn btn-danger">Chat</a>
+            <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank" class="btn btn-danger">Chat</a>
             <a href="<?= BASE_URL.DS.'promo.php'; ?>" class="btn btn-danger">Lihat Promo</a>
           </div> 
         </div>
@@ -401,7 +398,7 @@
                 <label id="spek7"><?= $xpander[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
-                <a class="btn btn-danger" data-toggle="modal" data-target="#modalXpander">E-Brochure</a>
+                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/xpander.pdf'; ?>">E-Brochure</a>
               </div>
             </div>
           </div>  
@@ -413,7 +410,7 @@
 <!-- Akhir Main -->
 
 <!-- Warna -->
-<section class="warnaProduct mt-5" id="warnaProduct">
+<section class="warna-product mt-5" id="warnaProduct">
   <div class="container">   
     <div class="row"> 
       <div class="col-12 text-center mb-5">      
@@ -691,6 +688,8 @@
   </div>
 </section> -->
 
+
+
 <?php require_once "../footer.php"; ?>
 <!-- Akhir Rekomendasi -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -732,7 +731,7 @@
       $.ajax ({
         type: "post",
         data: {kode: kode, tipe: tipe},
-        url: "../../json/data-xpander.php",
+        url: "../json/data-xpander.php",
         success: function(data) {
           let hasil = JSON.parse(data);
           let totalCicilan = 0.2 * hasil.harga;
@@ -771,7 +770,7 @@
             $('.color-red').css('display', 'none');
             $('.color-bronze').css('display', 'none');
             $('.color-silver').css('display', 'none'); 
-            $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/car/xpander-black.png');            
+            $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>');            
           }
           if (hasil.kode == '024' || hasil.kode == '062' || hasil.kode == '025' || hasil.kode == '026') {
             $('.color-white').css('display', 'inline-block');
@@ -788,7 +787,7 @@
             spanGrey.setAttribute('title', 'Graphite Grey Metallic');
             spanGrey.classList.add('grey', 'color-grey', 'palet');            
             tambahTombolWarna.appendChild(spanGrey);    
-            $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/car/xpander-black.png');            
+            $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>');            
           }
           if (hasil.kode == '063' || hasil.kode == '027' || hasil.kode == '028') {
             $('.color-white').css('display', 'inline-block');
@@ -828,7 +827,7 @@
             spanBronze.setAttribute('title', 'Deep Bronze Metallic');
             spanBronze.classList.add('bronze', 'color-bronze', 'mr-3', 'palet');            
             tambahTombolWarna.appendChild(spanBronze);
-            $('.img-color-xpander').attr('src', 'http://mitsubishimedan.sardanagroup.co.id/assets/img/xpander/car/xpander-black.png');          
+            $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>');          
           }         
 
           setWarna();
@@ -892,6 +891,38 @@
       e.preventDefault();
     });  
 
-    lightbox.option({'wrapAround': true})
+    lightbox.option({'wrapAround': true})    
+
+    $("#buttonHitung").click(function () {      
+      let sukuBunga = parseFloat($("#inputSukuBunga").val());
+      let tenor = parseInt($("#selectTenor option:selected").val());
+      let uangMuka = parseInt(
+        $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+      );
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+      );
+
+      // Perhitungan
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      // let tampilTotalCicilan = rpFormat.format(totalCicilan);
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      // $('#plainTextTotalCicilan').val(tampilTotalCicilan.substring(0, tampilTotalCicilan.length - 3));
+      $("#plainTextTotalUangMuka").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilan").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenor").val(tenor - 1 + " bulan");
+
+      // Tampilkan Perhitungan Selesai
+      $(".perhitungan").css("display", "block");
+    });
   });
 </script>

@@ -340,7 +340,7 @@
         <div class="row mt-3 mb-3">
           <div class="col-lg-12 d-flex justify-content-between">
             <span><i class="fas fa-lg fa-user"></i> Vandys</span>
-            <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank" class="whatsapp-bg"><i class="fab fa-lg fa-whatsapp"></i> 0811 6541 800
+            <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank" class="whatsapp-bg"><i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
             </a>
           </div>                                                  
         </div>

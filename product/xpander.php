@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="<?= BASE_URL.DS; ?>assets/css/style.css" />
     <style>
       body {
-        background: white;
+        background: #dadada;
         color: black;
       }      
     </style>
@@ -46,7 +46,7 @@
   </head>
   <body>   
    <!-- Header -->
-   <div class="container">
+   <div class="container-fluid" style="background-color: #b7b3b3;">
       <div class="row p-2">
         <div class="col-3 col-lg-2">
           <a target="_blank" href="https://mitsubishi-motors.co.id">            
@@ -307,7 +307,10 @@
               <a class="btn btn-danger" name="buttonHitung" id="buttonHitung">Hitung</a>
             </div>
             <div class="col-lg-12 text-center perhitungan" style="display: none">
-              <small class="text-danger">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+              <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+            </div>
+            <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+              <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
             </div>
             <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
           </div>          
@@ -850,25 +853,30 @@
       );
 
       // Perhitungan
-      let pokokCicilan = hargaOtr - uangMuka;
-      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-      let totalCicilan = pokokCicilan + bungaCicilan;
-      let cicilanPerBulan = totalCicilan / tenor;
-      let totalUangMuka = uangMuka + cicilanPerBulan;
-      // let tampilTotalCicilan = rpFormat.format(totalCicilan);
-      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-      // $('#plainTextTotalCicilan').val(tampilTotalCicilan.substring(0, tampilTotalCicilan.length - 3));
-      $("#plainTextTotalUangMuka").val(
-        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-      );
-      $("#plainTextCicilan").val(
-        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-      );
-      $("#plainTextTenor").val(tenor - 1 + " bulan");
-
-      // Tampilkan Perhitungan Selesai
-      $(".perhitungan").css("display", "block");
+      if (uangMuka < 20000000)
+      {      
+        $(".perhitungan").css("display", "none");
+        $(".perhitungan-salah").css("display", "block");
+      }
+      else
+      {
+        let pokokCicilan = hargaOtr - uangMuka;
+        let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+        let totalCicilan = pokokCicilan + bungaCicilan;
+        let cicilanPerBulan = totalCicilan / tenor;
+        let totalUangMuka = uangMuka + cicilanPerBulan;
+        let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+        let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);        
+        $("#plainTextTotalUangMuka").val(
+          tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+        );
+        $("#plainTextCicilan").val(
+          tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+        );
+        $("#plainTextTenor").val(tenor - 1 + " bulan");        
+        $(".perhitungan-salah").css("display", "none");
+        $(".perhitungan").css("display", "block");
+        }
     });
   });
 </script>

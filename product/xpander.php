@@ -54,10 +54,10 @@
           </a>
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <a href="https://mitsubishimedan-vandys.id" class="header-alamat">
+          <a href="<?= BASE_URL; ?>" class="header-alamat">
             <span class="text-uppercase text-center d-none d-sm-block label-sardana"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</span>
           </a>
-          <a href="https://mitsubishimedan-vandys.id">
+          <a href="<?= BASE_URL; ?>">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
           </a>
@@ -142,7 +142,7 @@
                 <div class="swiper-slide mt-2">
                   <a href="<?= BASE_URL.DS.'assets/img/xpander/4.webp'; ?>" data-lightbox="view-xpander" class="display">
                     <img src="<?= BASE_URL.DS.'assets/img/xpander/4.webp'; ?>" width="100%">
-                  </a>     
+                  </a>
                 </div>  
                 <div class="swiper-slide">
                   <a href="<?= BASE_URL.DS.'assets/img/xpander/5.webp'; ?>" data-lightbox="view-xpander" class="display">
@@ -325,7 +325,7 @@
               <small class="text-muted">* Harga dapat berubah sewaktu-waktu.</small>
             </div>
             <div class="col-lg-12 text-justify">
-              <small class="text-muted">* Simulasi ini hanya sebagai asumsi belum termasuk biaya admin dll. Untuk estimasi cicilan sesungguhnya harap konsultasi di dealer Sardana Berlian terdekat atau chat via Whatsapp pada kolom Kontak Kami dibawah ini.</small>
+              <small class="text-muted">* Simulasi ini hanya sebagai asumsi belum termasuk biaya admin, asuransi dll. Untuk estimasi cicilan sesungguhnya harap konsultasi di dealer Sardana Berlian terdekat atau chat via Whatsapp pada kolom Kontak Kami dibawah ini.</small>
             </div>                      
           </div>
         </form>            
@@ -413,8 +413,11 @@
 <section class="warna-product mt-5" id="warnaProduct">
   <div class="container">   
     <div class="row"> 
-      <div class="col-12 text-center mb-5">      
+      <div class="col-12 text-center mb-2">      
         <img src="<?= BASE_URL.DS.'assets/img/xpander/white-xpander.webp'; ?>" alt="Mitsubishi Sardana Xpander Medan" class="img-color img-color-xpander">
+      </div>
+      <div class="col-12 text-center mb-2">
+        <small class="text-muted">* Khusus Xpander Ultimate AT</small>
       </div>
       <div class="col-12 text-center tombol-warna">          
         <span class="mr-3 color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" style="background: #050505"></span>      
@@ -425,7 +428,7 @@
         <span class="mr-3 color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" style="background: #664019"></span>
       </div>
       <div class="col-12 text-center mt-3">
-        <p>* Warna dan bentuk di atas dapat berbeda dengan warna dan bentuk mobil sesungguhnya. Untuk konfirmasi ketersediaan warna silahkan hubungi <a href="https://wa.me/+628116541800?text=Halo Mitsubishi Sardana." target="_blank">Whatsapp</a> kami.</p>
+        <p>* Warna dan bentuk di atas dapat berbeda dengan warna dan bentuk mobil sesungguhnya. Untuk konfirmasi ketersediaan warna silahkan hubungi <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank">Whatsapp</a> kami.</p>
       </div>
     </div>
   </div>
@@ -718,7 +721,7 @@
     function setWarna() {
       $('[data-toggle="tooltip"]').tooltip();
       $('.color-black').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>'));
-      $('.color-red').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/red-xpander.webp'; ?>'));
+      $('.color-red').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/red-ultimate-xpander.webp'; ?>'));
       $('.color-silver').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/silver-xpander.webp'; ?>'));
       $('.color-grey').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/grey-xpander.webp'; ?>'));
       $('.color-white').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/white-xpander.webp'; ?>'));
@@ -889,9 +892,25 @@
         }
       });
       e.preventDefault();
-    });  
+    });
 
     lightbox.option({'wrapAround': true})    
+
+    // Hitung Langsung onload
+    let hargaOtr = parseInt(
+      $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+    );
+    let totalCicilan = 0.2 * hargaOtr;
+    let cicilanPerBulan = (hargaOtr - totalCicilan) / 60;
+    let tampilTotalCicilan = rpFormat.format(totalCicilan);
+    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+    $("#plainTextTotalUangMuka").val(
+      tampilTotalCicilan.substring(0, tampilTotalCicilan.length - 3)
+    );
+    $("#plainTextCicilan").val(
+      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+    );
+    $("#plainTextTenor").val("59 Bulan");
 
     $("#buttonHitung").click(function () {      
       let sukuBunga = parseFloat($("#inputSukuBunga").val());

@@ -243,7 +243,7 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="<?= BASE_URL.DS.'product/xpander-cross.php'; ?>" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Xpander Cross" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>

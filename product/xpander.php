@@ -716,17 +716,15 @@
     let rpFormat = new Intl.NumberFormat('id-id', {
         style: 'currency',
         currency: 'IDR'
-    });    
+    });
 
-    function setWarna() {
-      $('[data-toggle="tooltip"]').tooltip();
-      $('.color-black').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>'));
-      $('.color-red').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/red-ultimate-xpander.webp'; ?>'));
-      $('.color-silver').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/silver-xpander.webp'; ?>'));
-      $('.color-grey').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/grey-xpander.webp'; ?>'));
-      $('.color-white').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/white-xpander.webp'; ?>'));
-      $('.color-bronze').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/bronze-xpander.webp'; ?>'));      
-    }
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.color-black').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>'));
+    $('.color-red').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/red-ultimate-xpander.webp'; ?>'));
+    $('.color-silver').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/silver-xpander.webp'; ?>'));
+    $('.color-grey').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/grey-xpander.webp'; ?>'));
+    $('.color-white').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/white-xpander.webp'; ?>'));
+    $('.color-bronze').click(() => $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/bronze-xpander.webp'; ?>'));
 
     $('#selectTipe').change(function() {                  
       let kode = $('#selectTipe').val();
@@ -765,80 +763,9 @@
           $('#inputUangMuka').val('');
           $('#inputSukuBunga').val('');    
           $('.perhitungan').css('display', 'none');
-
-          if (hasil.kode == '023') {
-            $('.color-white').css('display', 'inline-block');
-            $('.color-black').css('display', 'inline-block');
-            $('.color-grey').css('display', 'none');
-            $('.color-red').css('display', 'none');
-            $('.color-bronze').css('display', 'none');
-            $('.color-silver').css('display', 'none'); 
-            $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>');            
-          }
-          if (hasil.kode == '024' || hasil.kode == '062' || hasil.kode == '025' || hasil.kode == '026') {
-            $('.color-white').css('display', 'inline-block');
-            $('.color-black').css('display', 'inline-block');
-            $('.color-grey').css('display', 'none');
-            $('.color-red').css('display', 'none');
-            $('.color-bronze').css('display', 'none');
-            $('.color-silver').css('display', 'none');            
-
-            const tambahTombolWarna = document.querySelector('.warnaProduct .row .tombol-warna');
-            const spanGrey = document.createElement('span');    
-            spanGrey.setAttribute('data-toggle', 'tooltip');
-            spanGrey.setAttribute('data-placement', 'bottom');
-            spanGrey.setAttribute('title', 'Graphite Grey Metallic');
-            spanGrey.classList.add('grey', 'color-grey', 'palet');            
-            tambahTombolWarna.appendChild(spanGrey);    
-            $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>');            
-          }
-          if (hasil.kode == '063' || hasil.kode == '027' || hasil.kode == '028') {
-            $('.color-white').css('display', 'inline-block');
-            $('.color-black').css('display', 'inline-block');
-            $('.color-grey').css('display', 'none');            
-            $('.color-red').css('display', 'none');
-            $('.color-bronze').css('display', 'none');
-            $('.color-silver').css('display', 'none');
-            $('.grey').css('display', 'none');
-            $('.red').css('display', 'none');
-            $('.silver').css('display', 'none');
-            $('.bronze').css('display', 'none');
-
-            const tambahTombolWarna = document.querySelector('.warnaProduct .row .tombol-warna');
-
-            const spanGrey = document.createElement('span');    
-            spanGrey.setAttribute('data-toggle', 'tooltip');
-            spanGrey.setAttribute('data-placement', 'bottom');
-            spanGrey.setAttribute('title', 'Graphite Grey Metallic');
-            spanGrey.classList.add('grey', 'color-grey', 'mr-3', 'palet');            
-            tambahTombolWarna.appendChild(spanGrey);          
-            const spanSilver = document.createElement('span');    
-            spanSilver.setAttribute('data-toggle', 'tooltip');
-            spanSilver.setAttribute('data-placement', 'bottom');
-            spanSilver.setAttribute('title', 'Sterling Silver Metallic');
-            spanSilver.classList.add('silver', 'color-silver', 'mr-3', 'palet');            
-            tambahTombolWarna.appendChild(spanSilver);  
-            const spanRed = document.createElement('span');    
-            spanRed.setAttribute('data-toggle', 'tooltip');
-            spanRed.setAttribute('data-placement', 'bottom');
-            spanRed.setAttribute('title', 'Red Metallic');
-            spanRed.classList.add('red', 'color-red', 'mr-3', 'palet');            
-            tambahTombolWarna.appendChild(spanRed);  
-            const spanBronze = document.createElement('span');    
-            spanBronze.setAttribute('data-toggle', 'tooltip');
-            spanBronze.setAttribute('data-placement', 'bottom');
-            spanBronze.setAttribute('title', 'Deep Bronze Metallic');
-            spanBronze.classList.add('bronze', 'color-bronze', 'mr-3', 'palet');            
-            tambahTombolWarna.appendChild(spanBronze);
-            $('.img-color-xpander').attr('src', '<?= BASE_URL.DS.'assets/img/xpander/black-xpander.webp'; ?>');          
-          }         
-
-          setWarna();
         }
       });
-    });           
-
-    setWarna();    
+    });
 
     const swiperContainerExterior = new Swiper('.swiper-container-exterior', {            
     spaceBetween: 10,

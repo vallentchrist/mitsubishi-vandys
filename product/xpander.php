@@ -91,7 +91,7 @@
             <a class="nav-link text-white" href="#">Testimoni</a>
           </li>
         </ul>
-        <span class="navbar-text text-white mmc-bold">
+        <span class="navbar-text text-white mmc-bold d-none d-lg-block">
           Vandystio Danantho
         </span>
       </div>
@@ -102,10 +102,10 @@
 <section class="main-product" id="mainProduct">
   <div class="container">
     <div class="row mb-3">
-      <div class="col-lg-6 col-12">
+      <div class="col-md-6 col-12">
         <h3 id="carTitle" class="car-title mmc-bold">MITSUBISHI XPANDER GLX MT</h3>
       </div>    
-      <div class="col-lg-6 col-12 select-car">        
+      <div class="col-md-6 col-12 select-car">        
         <select class="selectpicker" id="selectTipe" data-width="auto" data-live-search="true" title="Silahkan Pilih Mobil Lain...">            
           <option value="023">MITSUBISHI XPANDER GLX MT</option>
           <option value="024">MITSUBISHI XPANDER GLS MT</option>
@@ -178,46 +178,46 @@
               </div>
             </div>
             <div class="row spek-container" id="spekDesktop">
-              <div class="col-lg-6 col-md-6 mt-2">
+              <div class="col-6 mt-2">
                 <label>Displacement (cc) :</label>
               </div>
-              <div class="col-lg-6 col-md-6 mt-2">
+              <div class="col-6 mt-2">
                 <label id="spek1"><?= $xpander[$spesifikasi]['Displacement']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Transmission :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label id="spek2"><?= $xpander[$spesifikasi]['Transmission']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Wheel & Tire :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label id="spek3"><?= $xpander[$spesifikasi]['Wheel & Tire']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Dual SRS Airbags :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label id="spek4"><?= $xpander[$spesifikasi]['Dual SRS Airbags']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Hill Start Assist (HSA) :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label id="spek5"><?= $xpander[$spesifikasi]['Hill Start Assist']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Keyless Operation System :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label id="spek6"><?= $xpander[$spesifikasi]['Keyless Operation System']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Ground Clearance (mm) :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label id="spek7"><?= $xpander[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
@@ -279,20 +279,20 @@
             </div>
           </div>      
           <div class="form-group row">
-            <label for="inputUangMuka" class="col-lg-6 col-md-6 col-12 col-form-label">Uang Muka : </label>
-            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end">
+            <label for="inputUangMuka" class="col-6 col-form-label">Uang Muka : </label>
+            <div class="col-6 d-flex justify-content-end">
               <input type="text" class="width-100 form-control form-control-sm form-control-width" id="inputUangMuka" name="inputUangMuka" data-type="currency" placeholder="Rp 10.000.000">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputSukuBunga" class="col-lg-6 col-md-6 col-12 col-form-label">Suku Bunga (% per tahun) : </label>
-            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end">
+            <label for="inputSukuBunga" class="col-6 col-form-label">Suku Bunga (% per tahun) : </label>
+            <div class="col-6 d-flex justify-content-end">
               <input type="number" class="width-100 form-control form-control-sm form-control-width" id="inputSukuBunga" placeholder="10">
             </div>
           </div>
           <div class="form-group row">
-            <label for="selectTenor" class="col-lg-6 col-md-6 col-12 col-form-label">Tenor (bulan) : </label>
-            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end">
+            <label for="selectTenor" class="col-6 col-form-label">Tenor (bulan) : </label>
+            <div class="col-6 d-flex justify-content-end">
               <select class="width-100 form-control form-control-sm form-control-width" class="selectTenor" id="selectTenor">
                 <option value="12">12</option>
                 <option value="24">24</option>
@@ -490,7 +490,9 @@
                 <img src="<?= BASE_URL.DS.'assets/img/xpander/exterior/velg.jpg'; ?>" width="100%">
               </a>
             </div>
-          </div>        
+          </div>
+          <div class="swiper-button-prev swiper-button-prev-custom"></div>
+          <div class="swiper-button-next swiper-button-next-custom"></div>     
         </div>
         <div class="swiper-container-interior" style="display: none">      
           <div class="swiper-wrapper">                      
@@ -594,7 +596,9 @@
                 <img src="<?= BASE_URL.DS.'assets/img/xpander/interior/ruang-penyimpanan-serbaguna.jpg'; ?>" width="100%">
               </a>
             </div>
-          </div>        
+          </div>
+          <div class="swiper-button-prev swiper-button-prev-custom"></div>
+          <div class="swiper-button-next swiper-button-next-custom"></div>
         </div>          
       </div>
     </div>
@@ -782,7 +786,11 @@
       300: {
         slidesPerView: 1
       }
-    }
+    },
+    navigation: {
+        nextEl: '.swiper-button-next-custom',
+        prevEl: '.swiper-button-prev-custom',
+      }
     });
 
     const swiperContainerDetail = new Swiper('.swiper-container-detail', {            
@@ -819,7 +827,11 @@
           300: {
             slidesPerView: 1
           }
-        }
+        },
+        navigation: {
+        nextEl: '.swiper-button-next-custom',
+        prevEl: '.swiper-button-prev-custom',
+      }
       });
       e.preventDefault();
     });

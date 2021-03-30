@@ -340,6 +340,10 @@ section.main-product .spek-desktop {
   display: block;
 }
 
+section.detail-product .nav-link.active {
+  background-color: #eee5e5 !important;
+}
+
 .header-alamat {
   color: black;
 }
@@ -365,6 +369,57 @@ section.main-product .spek-desktop {
   color: black;
 }
 
+/* Swiper */
+.swiper-button-prev-custom::after,
+.swiper-button-next-custom::after {
+  content: "none";
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  height: 80px;
+  width: 80px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next-custom {
+  right: 2%;
+}
+
+.swiper-button-prev-custom {
+  left: 2%;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-button-prev-custom::before {
+  content: "<";
+}
+
+.swiper-button-next-custom::before {
+  content: ">";
+}
+
+.swiper-button-prev-custom::before,
+.swiper-button-next-custom::before {
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  color: #fff;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.swiper-pagination-bullets {
+  bottom: 0 !important;
+}
+/* Akhir Swiper */
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .container-dealer {
@@ -389,6 +444,14 @@ section.main-product .spek-desktop {
     width: 30px;
     height: 30px;
   }
+
+  section.main-product .spek-mobile {
+    display: block;
+  }
+
+  section.main-product .spek-desktop {
+    display: none;
+  }
 }
 
 /* Mobile (landscape) */
@@ -396,6 +459,18 @@ section.main-product .spek-desktop {
   .container-dealer,
   .container-tetap {
     margin-bottom: 1.5rem;
+  }
+
+  .label-sardana {
+    font-size: 12px;
+  }
+
+  section.main-product .spek-mobile {
+    display: block;
+  }
+
+  section.main-product .spek-desktop {
+    display: none;
   }
 }
 
@@ -460,6 +535,14 @@ section.main-product .spek-desktop {
 
   section.warna-product p {
     font-size: 12px;
+  }
+
+  .swiper-button-next-custom {
+    right: 5%;
+  }
+
+  .swiper-button-prev-custom {
+    left: 5%;
   }
 }
 

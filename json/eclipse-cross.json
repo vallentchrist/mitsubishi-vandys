@@ -1,29 +1,29 @@
 {
-   "MITSUBISHI ECLIPSE CROSS AMETHYST BLACK" : {
-      "Ground Clearance" : "183",
-      "Displacement (cc)" : "1499",
-      "Wheel & Tire" : "225/55 R18 Alloy Wheel",
-      "Cruise Control" : "Available",
-      "Transmission" : "CVT",
-      "Antenna" : "Shark Fin",
-      "Sunroof" : "Power Panoramic Sunroof"
-   },
-   "MITSUBISHI ECLIPSE CROSS SILKY WHITE" : {
-      "Ground Clearance" : "183",
-      "Displacement (cc)" : "1499",
-      "Wheel & Tire" : "225/55 R18 Alloy Wheel",
-      "Cruise Control" : "Available",
-      "Transmission" : "CVT",
-      "Antenna" : "Shark Fin",
-      "Sunroof" : "Power Panoramic Sunroof"
-   },
-   "MITSUBISHI ECLIPSE CROSS RED DIAMOND" : {
-      "Ground Clearance" : "183",
-      "Displacement (cc)" : "1499",
-      "Wheel & Tire" : "225/55 R18 Alloy Wheel",
-      "Cruise Control" : "Available",
-      "Transmission" : "CVT",
-      "Antenna" : "Shark Fin",
-      "Sunroof" : "Power Panoramic Sunroof"
-   }
+  "ECLIPSE CROSS AMETHYST BLACK": {
+    "Ground Clearance": "183",
+    "Displacement (cc)": "1499",
+    "Wheel & Tire": "225/55 R18 Alloy Wheel",
+    "Cruise Control": "Available",
+    "Transmission": "CVT",
+    "Antenna": "Shark Fin",
+    "Sunroof": "Power Panoramic Sunroof"
+  },
+  "ECLIPSE CROSS SILKY WHITE": {
+    "Ground Clearance": "183",
+    "Displacement (cc)": "1499",
+    "Wheel & Tire": "225/55 R18 Alloy Wheel",
+    "Cruise Control": "Available",
+    "Transmission": "CVT",
+    "Antenna": "Shark Fin",
+    "Sunroof": "Power Panoramic Sunroof"
+  },
+  "ECLIPSE CROSS RED DIAMOND": {
+    "Ground Clearance": "183",
+    "Displacement (cc)": "1499",
+    "Wheel & Tire": "225/55 R18 Alloy Wheel",
+    "Cruise Control": "Available",
+    "Transmission": "CVT",
+    "Antenna": "Shark Fin",
+    "Sunroof": "Power Panoramic Sunroof"
+  }
 }

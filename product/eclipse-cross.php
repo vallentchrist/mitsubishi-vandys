@@ -1,8 +1,8 @@
 <?php
   require_once "../config.php";
-  $data = file_get_contents(BASE_URL.DS.'json/xpander-cross.json');
-  $xpanderCross = json_decode($data, true);
-  $spesifikasi = "XPANDER CROSS 1.5L M/T";
+  $data = file_get_contents(BASE_URL.DS.'json/eclipse-cross.json');
+  $eclipseCross = json_decode($data, true);
+  $spesifikasi = "ECLIPSE CROSS AMETHYST BLACK";
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
         color: black;
       }      
     </style>
-    <title>Mitsubishi Xpander Cross - Promo & Simulasi Kredit Mitsubishi</title>
+    <title>Mitsubishi Eclipse Cross - Promo & Simulasi Kredit Mitsubishi</title>
   </head>
   <body>   
    <!-- Header -->
@@ -95,13 +95,13 @@
   <div class="container">
     <div class="row mb-3">
       <div class="col-md-6 col-12">
-        <h3 id="carTitle" class="car-title mmc-bold">XPANDER CROSS 1.5L M/T</h3>
+        <h3 id="carTitle" class="car-title mmc-bold">ECLIPSE CROSS AMETHYST BLACK</h3>
       </div>    
       <div class="col-md-6 col-12 select-car">        
         <select class="selectpicker" id="selectTipe" data-width="auto" data-live-search="true" title="Silahkan Pilih Mobil Lain...">            
-          <option value="090">XPANDER CROSS 1.5L M/T</option>
-          <option value="091">XPANDER CROSS 1.5L A/T</option>
-          <option value="092">XPANDER CROSS 1.5L A/T PREMIUM</option>
+          <option value="085">ECLIPSE CROSS AMETHYST BLACK</option>
+          <option value="086">ECLIPSE CROSS SILKY WHITE</option>
+          <option value="087">ECLIPSE CROSS RED DIAMOND</option>               
         </select>        
       </div>    
     </div>
@@ -112,43 +112,43 @@
             <div class="swiper-container swiper-container-detail">            
               <div class="swiper-wrapper">
                 <div class="swiper-slide">                
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/1.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/1.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/1.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/1.webp'; ?>" width="100%">
                   </a>                  
                 </div>                
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/2.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/2.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/2.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/2.webp'; ?>" width="100%">
                   </a>                  
                 </div>                                         
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/3.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/3.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/3.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/3.webp'; ?>" width="100%">
                   </a>                  
                 </div>                
                 <div class="swiper-slide mt-2">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/4.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/4.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/4.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/4.webp'; ?>" width="100%">
                   </a>
                 </div>  
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/5.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/5.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/5.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/5.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/6.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/6.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/6.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/6.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/7.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/7.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/7.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/7.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/cross/8.webp'; ?>" data-lightbox="view-xpander-cross" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/cross/8.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/8.webp'; ?>" data-lightbox="view-eclipse" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/8.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
               </div>                   
@@ -165,50 +165,50 @@
               </div>
             </div>
             <div class="row spek-container" id="spekDesktop">
-            <div class="col-lg-6 col-md-6 mt-2">
-                <label>Transmission :</label>
+              <div class="col-lg-6 col-md-6 mt-2">
+                <label>Ground Clearance :</label>
               </div>
               <div class="col-lg-6 col-md-6 mt-2">
-                <label id="spek1"><?= $xpanderCross[$spesifikasi]['Transmission']; ?></label>
+                <label id="spek1"><?= $eclipseCross[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Cruise Control :</label>
+                <label>Displacement :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek2"><?= $xpanderCross[$spesifikasi]['Cruise Control']; ?></label>
+                <label id="spek2"><?= $eclipseCross[$spesifikasi]['Displacement (cc)']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
                 <label>Wheel & Tire :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek3"><?= $xpanderCross[$spesifikasi]['Wheel & Tire']; ?></label>
+                <label id="spek3"><?= $eclipseCross[$spesifikasi]['Wheel & Tire']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Displacement (cc) :</label>
+                <label>Cruise Control :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek4"><?= $xpanderCross[$spesifikasi]['Displacement (cc)']; ?></label>
+                <label id="spek4"><?= $eclipseCross[$spesifikasi]['Cruise Control']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Ground Clearance :</label>
+                <label>Transmission :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek5"><?= $xpanderCross[$spesifikasi]['Ground Clearance']; ?></label>
+                <label id="spek5"><?= $eclipseCross[$spesifikasi]['Transmission']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Hill Start Assist :</label>
+                <label>Antenna :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek6"><?= $xpanderCross[$spesifikasi]['Hill Start Assist']; ?></label>
+                <label id="spek6"><?= $eclipseCross[$spesifikasi]['Antenna']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Parking Sensor + Rear View Camera :</label>
+                <label>Sunroof :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek7"><?= $xpanderCross[$spesifikasi]['Parking Sensor + Rear View Camera']; ?></label>
+                <label id="spek7"><?= $eclipseCross[$spesifikasi]['Sunroof']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
-                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/xpander.pdf'; ?>">E-Brochure</a>
+                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/pajero-sport.pdf'; ?>">E-Brochure</a>
               </div>
             </div>
           </div>  
@@ -225,7 +225,7 @@
             <label for="plainTextHargaOtr" class="font-weight-bold col-lg-4 col-5 col-form-label">Harga OTR :</label>
             <div class="col-lg-8 col-7">
               <?php
-                $tampil = $conn->query("SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER'");
+                $tampil = $conn->query("SELECT MIN(harga) FROM tb_harga WHERE merek = 'ECLIPSE CROSS'");
                 $harga = $tampil->fetch_array();                
                 $harga = $harga[0];
               ?>
@@ -345,50 +345,50 @@
               </div>
             </div>
             <div class="row spek-container-hidden" id="spekMobile">
-            <div class="col-lg-6 col-md-6 mt-2">
-                <label>Transmission :</label>
+              <div class="col-lg-6 col-md-6 mt-2">
+                <label>Ground Clearance :</label>
               </div>
               <div class="col-lg-6 col-md-6 mt-2">
-                <label id="spek1"><?= $xpanderCross[$spesifikasi]['Transmission']; ?></label>
+                <label id="spek1"><?= $eclipseCross[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Cruise Control :</label>
+                <label>Displacement :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek2"><?= $xpanderCross[$spesifikasi]['Cruise Control']; ?></label>
+                <label id="spek2"><?= $eclipseCross[$spesifikasi]['Displacement (cc)']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
                 <label>Wheel & Tire :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek3"><?= $xpanderCross[$spesifikasi]['Wheel & Tire']; ?></label>
+                <label id="spek3"><?= $eclipseCross[$spesifikasi]['Wheel & Tire']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Displacement (cc) :</label>
+                <label>Cruise Control :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek4"><?= $xpanderCross[$spesifikasi]['Displacement (cc)']; ?></label>
+                <label id="spek4"><?= $eclipseCross[$spesifikasi]['Cruise Control']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Ground Clearance :</label>
+                <label>Transmission :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek5"><?= $xpanderCross[$spesifikasi]['Ground Clearance']; ?></label>
+                <label id="spek5"><?= $eclipseCross[$spesifikasi]['Transmission']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Hill Start Assist :</label>
+                <label>Antenna :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek6"><?= $xpanderCross[$spesifikasi]['Hill Start Assist']; ?></label>
+                <label id="spek6"><?= $eclipseCross[$spesifikasi]['Antenna']; ?></label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label>Parking Sensor + Rear View Camera :</label>
+                <label>Sunroof :</label>
               </div>
               <div class="col-lg-6 col-md-6">
-                <label id="spek7"><?= $xpanderCross[$spesifikasi]['Parking Sensor + Rear View Camera']; ?></label>
+                <label id="spek7"><?= $eclipseCross[$spesifikasi]['Sunroof']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
-                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/xpander-cross.pdf'; ?>">E-Brochure</a>
+                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/pajero-sport.pdf'; ?>">E-Brochure</a>
               </div>
             </div>
           </div>  
@@ -404,14 +404,12 @@
   <div class="container">   
     <div class="row"> 
       <div class="col-12 text-center mb-2">      
-        <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" alt="Mitsubishi Xpander Cross" class="img-color img-color-xpander-cross">
-      </div>      
-      <div class="col-12 text-center tombol-warna">          
-        <span class="mr-3 color-orange palet" data-toggle="tooltip" data-placement="bottom" title="Sunrise Orange Metallic" style="background: #B66C3F" ></span>        
-        <span class="mr-3 color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" style="background: #676B76"></span>    
-        <span class="mr-3 color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" style="background: #CDC8CE"></span>
-        <span class="mr-3 color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" style="background: #F4F4F4"></span>  
-        <span class="mr-3 color-black palet" data-toggle="tooltip" data-placement="bottom" title="Jet Black Mica" style="background: #25252D"></span>
+        <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-black.webp'; ?>" alt="Mitsubishi Eclipse Cross" class="img-color img-color-eclipse">
+      </div>  
+      <div class="col-12 text-center tombol-warna">                        
+        <span class="mr-3 color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" style="background: #050505"></span>      
+        <span class="mr-3 color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" style="background: #F4F4F4"></span>                
+        <span class="mr-3 color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Diamond" style="background: #7D282B"></span>                
       </div>
       <div class="col-12 text-center mt-3">
         <p>* Warna dan bentuk di atas dapat berbeda dengan warna dan bentuk mobil sesungguhnya. Untuk konfirmasi ketersediaan warna silahkan hubungi <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank">Whatsapp</a> kami.</p>
@@ -425,7 +423,7 @@
 <section class="detail-product mt-5" id="detailProduct">  
   <div class="container-fluid" style="padding-left: 0; padding-right: 0">      
     <div class="row" style="margin-right:0; margin-left:0">
-      <div class="col-lg-12">
+      <div class="col-lg-12">          
         <ul class="nav nav-tabs nav-justified">
           <li class="nav-item">
             <a class="nav-link nav-link-exterior text-dark active" href="">Exterior</a>
@@ -437,158 +435,77 @@
       </div>
       <div class="col-lg-12 mb-5">
         <div class="swiper-container-exterior">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper">            
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/1.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/1.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" data-lightbox="exterior" data-title="Front/Rear Bumper">
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/2.jpg'; ?>" data-lightbox="exterior">       
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/2.jpg'; ?>" width="100%" >
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" data-lightbox="exterior" data-title="Rear Camera">       
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/3.jpg'; ?>" data-lightbox="exterior">          
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/3.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" data-lightbox="exterior" data-title="Rear Parking">          
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/4.jpg'; ?>" data-lightbox="exterior">           
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/4.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" data-lightbox="exterior" data-title="Rear Spoiler">           
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/5.jpg'; ?>" data-lightbox="exterior">           
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/5.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" width="100%">
               </a>
-            </div>
-            <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/6.jpg'; ?>" data-lightbox="exterior">           
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/6.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/7.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/7.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/8.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/8.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/9.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/9.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/10.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/10.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/11.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/11.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/exterior/12.jpg'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/exterior/12.jpg'; ?>" width="100%">
-              </a>
-            </div>
+            </div>   
           </div>
+          <div class="swiper-button-prev swiper-button-prev-custom"></div>
+          <div class="swiper-button-next swiper-button-next-custom"></div>     
+        </div>
+        <div class="swiper-container-interior" style="display: none">      
+          <div class="swiper-wrapper">                      
+            <div class="swiper-slide">              
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" data-lightbox="interior" data-title="Ac Double Blower">
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">       
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" data-lightbox="interior" data-title="Black Interior">       
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" width="100%" >
+              </a>
+            </div>
+            <div class="swiper-slide">    
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" data-lightbox="interior" data-title="Bottle Holder">          
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">   
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" data-lightbox="interior" data-title="Coin Box">           
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">   
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" data-lightbox="interior" data-title="Cup Holder Depan">           
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">   
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" data-lightbox="interior" data-title="Front Console Box">           
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">              
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
+                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" width="100%">
+              </a>
+            </div>              
+          </div>
+          <div class="swiper-button-prev swiper-button-prev-custom"></div>
+          <div class="swiper-button-next swiper-button-next-custom"></div>
         </div>          
-        <div class="swiper-container-interior" style="display: none">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/1.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/1.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/2.jpg'; ?>" data-lightbox="interior">       
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/2.jpg'; ?>" width="100%" >
-              </a>
-            </div>
-            <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/3.jpg'; ?>" data-lightbox="interior">          
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/3.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/4.jpg'; ?>" data-lightbox="interior">           
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/4.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/5.jpg'; ?>" data-lightbox="interior">           
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/5.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/6.jpg'; ?>" data-lightbox="interior">           
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/6.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/7.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/7.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/8.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/8.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/9.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/9.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/10.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/10.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/11.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/11.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/12.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/12.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/13.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/13.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/14.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/14.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/15.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/15.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/16.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/16.jpg'; ?>" width="100%">
-              </a>
-            </div>
-            <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/cross/interior/17.jpg'; ?>" data-lightbox="interior">
-                <img src="<?= BASE_URL.DS.'assets/img/cross/interior/17.jpg'; ?>" width="100%">
-              </a>
-            </div>
-          </div>
-        </div>      
       </div>
     </div>
   </div>
@@ -715,18 +632,17 @@
     });
 
     $('[data-toggle="tooltip"]').tooltip();
-    $('.color-black').click(() => $('.img-color-xpander-cross').attr('src', '<?= BASE_URL.DS.'assets/img/cross/xpander-cross-black.webp'; ?>'));
-    $('.color-orange').click(() => $('.img-color-xpander-cross').attr('src', '<?= BASE_URL.DS.'assets/img/cross/xpander-cross-orange.webp'; ?>'));
-    $('.color-silver').click(() => $('.img-color-xpander-cross').attr('src', '<?= BASE_URL.DS.'assets/img/cross/xpander-cross-silver.webp'; ?>'));
-    $('.color-white').click(() => $('.img-color-xpander-cross').attr('src', '<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>'));
-    $('.color-grey').click(() => $('.img-color-xpander-cross').attr('src', '<?= BASE_URL.DS.'assets/img/cross/xpander-cross-gray.webp'; ?>'));
+    $('.color-red').click(() => $('.img-color-eclipse').attr('src', '<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>'));
+    $('.color-white').click(() => $('.img-color-eclipse').attr('src', '<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-white.webp'; ?>'));
+    $('.color-black').click(() => $('.img-color-eclipse').attr('src', '<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-black.webp'; ?>'));    
+
     $('#selectTipe').change(function() {                  
       let kode = $('#selectTipe').val();
       let tipe = $('#selectTipe option:selected').text();      
       $.ajax ({
         type: "post",
         data: {kode: kode, tipe: tipe},
-        url: "../json/data-xpander-cross.php",
+        url: "../json/data-eclipse-cross.php",
         success: function(data) {
           let hasil = JSON.parse(data);
           let totalCicilan = 0.2 * hasil.harga;
@@ -734,7 +650,7 @@
           let tampilTotalCicilan = rpFormat.format(totalCicilan);
           let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
           let hargaOtr = rpFormat.format(hasil.harga);
-          $('#carTitle').html(hasil.tipe);
+          $('#carTitle').html('ECLIPSE CROSS ' + hasil.tipe);
           $('#plainTextHargaOtr').val(hargaOtr.substring(0, hargaOtr.length - 3));
 
           if (window.matchMedia("(min-width: 800px)").matches) {

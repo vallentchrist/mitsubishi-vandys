@@ -340,7 +340,7 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="<?= BASE_URL.DS.'product/pajero-sport.php'; ?>" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Pajero Sport" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
@@ -431,7 +431,7 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="<?= BASE_URL.DS.'product/eclipse-cross.php'; ?>" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Eclipse Cross" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
@@ -529,7 +529,7 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="<?= BASE_URL.DS.'product/triton.php'; ?>" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Triton" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
@@ -618,7 +618,7 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
+                      <a href="<?= BASE_URL.DS.'product/l300.php'; ?>" class="btn btn-dark btn-product">Detail</a>
                       <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk L300" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
@@ -711,8 +711,8 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Triton" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="<?= BASE_URL.DS.'product/colt-diesel.php'; ?>" class="btn btn-dark btn-product">Detail</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Colt Diesel" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  
@@ -800,8 +800,8 @@
                       <span class="mmc-bold">Rp <?= number_format($harga, 0, ",", "."); ?></span>
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
-                      <a href="#" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk L300" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="<?= BASE_URL.DS.'product/fuso.php'; ?>" class="btn btn-dark btn-product">Detail</a>
+                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Fuso" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
                     </div>
                   </div>
                   <button class="simulasi">Simulasi Kredit</button>                  

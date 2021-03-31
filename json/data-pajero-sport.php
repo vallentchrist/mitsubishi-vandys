@@ -1,11 +1,11 @@
 <?php
-require_once '../koneksi.php';
+require_once '../config.php';
 
 $res = [];
 if ( isset($_REQUEST['kode']) ) {
    $kode = $_REQUEST['kode'];    
    $tipe = $_POST['tipe'];
-   $sql = "SELECT kode, merek, tipe, harga FROM hargamobil WHERE kode = '$kode'";
+   $sql = "SELECT kode, merek, tipe, harga FROM tb_harga WHERE kode = '$kode'";
    $result = $conn->query($sql);
    while ( $row = $result->fetch_assoc()) {
       $res['kode'] = $row['kode'];

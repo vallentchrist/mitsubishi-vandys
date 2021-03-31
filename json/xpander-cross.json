@@ -1,38 +1,38 @@
 {
-   "MITSUBISHI XPANDER CROSS 1.5L M/T" : {
-      "Transmission" : "5 Speed M/T",
-      "Cruise Control" : "Not Available",
-      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R17",
-      "Displacement (cc)" : "1499",
-      "Ground Clearance" : "225",
-      "Hill Start Assist" : "Available",
-      "Parking Sensor + Rear View Camera" : "Available"
-   },
-   "MITSUBISHI XPANDER CROSS 1.5L A/T" : {
-      "Transmission" : "4 Speed A/T",
-      "Cruise Control" : "Available",
-      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R17",
-      "Displacement (cc)" : "1499",
-      "Ground Clearance" : "225",
-      "Hill Start Assist" : "Available",
-      "Parking Sensor + Rear View Camera" : "Available"
-   },
-   "MITSUBISHI XPANDER CROSS 1.5L A/T PREMIUM" : {
-      "Transmission" : "4 Speed A/T",
-      "Cruise Control" : "Available",
-      "Wheel & Tire" : "Two-tone Alloy Wheel 205/55 R17",
-      "Displacement (cc)" : "1499",
-      "Ground Clearance" : "225",
-      "Hill Start Assist" : "Available",
-      "Parking Sensor + Rear View Camera" : "Available"
-   },
-   "MITSUBISHI XPANDER CROSS RF" : {
-      "Transmission" : "4 Speed A/T",
-      "Cruise Control" : "Available",
-      "Wheel & Tire" : "Black Paint Alloy Wheel 205/55 R17",
-      "Displacement (cc)" : "1499",
-      "Ground Clearance" : "225",
-      "Hill Start Assist" : "Available",
-      "Parking Sensor + Rear View Camera" : "Available"
-   }
+  "XPANDER CROSS 1.5L M/T": {
+    "Transmission": "5 Speed M/T",
+    "Cruise Control": "Not Available",
+    "Wheel & Tire": "Two-tone Alloy Wheel 205/55 R17",
+    "Displacement (cc)": "1499",
+    "Ground Clearance": "225",
+    "Hill Start Assist": "Available",
+    "Parking Sensor + Rear View Camera": "Available"
+  },
+  "XPANDER CROSS 1.5L A/T": {
+    "Transmission": "4 Speed A/T",
+    "Cruise Control": "Available",
+    "Wheel & Tire": "Two-tone Alloy Wheel 205/55 R17",
+    "Displacement (cc)": "1499",
+    "Ground Clearance": "225",
+    "Hill Start Assist": "Available",
+    "Parking Sensor + Rear View Camera": "Available"
+  },
+  "XPANDER CROSS 1.5L A/T PREMIUM": {
+    "Transmission": "4 Speed A/T",
+    "Cruise Control": "Available",
+    "Wheel & Tire": "Two-tone Alloy Wheel 205/55 R17",
+    "Displacement (cc)": "1499",
+    "Ground Clearance": "225",
+    "Hill Start Assist": "Available",
+    "Parking Sensor + Rear View Camera": "Available"
+  },
+  "XPANDER CROSS RF": {
+    "Transmission": "4 Speed A/T",
+    "Cruise Control": "Available",
+    "Wheel & Tire": "Black Paint Alloy Wheel 205/55 R17",
+    "Displacement (cc)": "1499",
+    "Ground Clearance": "225",
+    "Hill Start Assist": "Available",
+    "Parking Sensor + Rear View Camera": "Available"
+  }
 }

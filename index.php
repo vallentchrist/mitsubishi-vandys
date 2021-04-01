@@ -70,7 +70,7 @@
             <a class="nav-link text-white" href="#">Testimoni</a>
           </li>
         </ul>
-        <span class="navbar-text text-white mmc-bold">
+        <span class="navbar-text text-white mmc-bold d-none d-lg-block">
           Vandystio Danantho
         </span>
       </div>

@@ -93,6 +93,13 @@
 <!-- Main -->
 <section class="main-product" id="mainProduct">
   <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <a class="link-360" href="https://andshant.sirv.com/new-pajero-sport/product.spin" target="_blank">
+          <img class="img-360" src="<?= BASE_URL.DS.'assets/img/pajero/img-360.jpg'; ?>" alt="New Pajero Sport 360">
+        </a>
+      </div>
+    </div>
     <div class="row mb-3">
       <div class="col-md-6 col-12">
         <h3 id="carTitle" class="car-title mmc-bold">PAJERO SPORT EXCEED (4X2) MT</h3>

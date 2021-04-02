@@ -1,8 +1,8 @@
 <?php
   require_once "../config.php";
-  $data = file_get_contents(BASE_URL.DS.'json/eclipse-cross.json');
-  $eclipseCross = json_decode($data, true);
-  $spesifikasi = "ECLIPSE CROSS AMETHYST BLACK";
+  $data = file_get_contents(BASE_URL.DS.'json/triton.json');
+  $triton = json_decode($data, true);
+  $spesifikasi = "TRITON GLX MT 4X2 SINGLE CABIN";
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
         color: black;
       }      
     </style>
-    <title>Mitsubishi Eclipse Cross - Promo & Simulasi Kredit Mitsubishi</title>
+    <title>Mitsubishi Triton - Promo & Simulasi Kredit Mitsubishi</title>
   </head>
   <body>   
    <!-- Header -->
@@ -95,13 +95,16 @@
   <div class="container">
     <div class="row mb-3">
       <div class="col-md-6 col-12">
-        <h3 id="carTitle" class="car-title mmc-bold">ECLIPSE CROSS AMETHYST BLACK</h3>
+        <h3 id="carTitle" class="car-title mmc-bold">TRITON GLX MT 4X2 SINGLE CABIN</h3>
       </div>    
       <div class="col-md-6 col-12 select-car">        
         <select class="selectpicker" id="selectTipe" data-width="auto" data-live-search="true" title="Silahkan Pilih Mobil Lain...">            
-          <option value="085">ECLIPSE CROSS AMETHYST BLACK</option>
-          <option value="086">ECLIPSE CROSS SILKY WHITE</option>
-          <option value="087">ECLIPSE CROSS RED DIAMOND</option>               
+          <option value="021">TRITON GLX MT 4X2 SINGLE CABIN</option>
+          <option value="020">TRITON HDX MT SINGLE CABIN 4X4</option>
+          <option value="019">TRITON HDX MT D-CABIN 4X4</option>
+          <option value="018">TRITON GLS MT D-CABIN 4X4</option>
+          <option value="017">TRITON EXCEED MT 4X4</option>
+          <option value="016">TRITON ULTIMATE AT 4X4</option>    
         </select>        
       </div>    
     </div>
@@ -112,43 +115,43 @@
             <div class="swiper-container swiper-container-detail">            
               <div class="swiper-wrapper">
                 <div class="swiper-slide">                
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/1.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/1.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/1.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/1.webp'; ?>" width="100%">
                   </a>                  
                 </div>                
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/2.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/2.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/2.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/2.webp'; ?>" width="100%">
                   </a>                  
                 </div>                                         
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/3.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/3.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/3.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/3.webp'; ?>" width="100%">
                   </a>                  
                 </div>                
                 <div class="swiper-slide mt-2">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/4.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/4.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/4.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/4.webp'; ?>" width="100%">
                   </a>
                 </div>  
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/5.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/5.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/5.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/5.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/6.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/6.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/6.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/6.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/7.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/7.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/7.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/7.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
                 <div class="swiper-slide">
-                  <a href="<?= BASE_URL.DS.'assets/img/eclipse/8.webp'; ?>" data-lightbox="view-eclipse" class="display">
-                    <img src="<?= BASE_URL.DS.'assets/img/eclipse/8.webp'; ?>" width="100%">
+                  <a href="<?= BASE_URL.DS.'assets/img/triton/8.webp'; ?>" data-lightbox="view-triton" class="display">
+                    <img src="<?= BASE_URL.DS.'assets/img/triton/8.webp'; ?>" width="100%">
                   </a>                  
                 </div>                     
               </div>                   
@@ -165,50 +168,50 @@
               </div>
             </div>
             <div class="row spek-container" id="spekDesktop">
-              <div class="col-lg-6 col-md-6 mt-2">
-                <label>Ground Clearance :</label>
+              <div class="col-6 mt-2">
+                <label>Displacement (cc) :</label>
               </div>
-              <div class="col-lg-6 col-md-6 mt-2">
-                <label id="spek1"><?= $eclipseCross[$spesifikasi]['Ground Clearance']; ?></label>
+              <div class="col-6 mt-2">
+                <label id="spek1"><?= $triton[$spesifikasi]['Displacement (cc)']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Displacement :</label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek2"><?= $eclipseCross[$spesifikasi]['Displacement (cc)']; ?></label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Wheel & Tire :</label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek3"><?= $eclipseCross[$spesifikasi]['Wheel & Tire']; ?></label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Cruise Control :</label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek4"><?= $eclipseCross[$spesifikasi]['Cruise Control']; ?></label>
-              </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Transmission :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek5"><?= $eclipseCross[$spesifikasi]['Transmission']; ?></label>
+              <div class="col-6">
+                <label id="spek2"><?= $triton[$spesifikasi]['Transmission']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Antenna :</label>
+              <div class="col-6">
+                <label>Wheel & Tire :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek6"><?= $eclipseCross[$spesifikasi]['Antenna']; ?></label>
+              <div class="col-6">
+                <label id="spek3"><?= $triton[$spesifikasi]['Wheel & Tire']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Sunroof :</label>
+              <div class="col-6">
+                <label>Dual SRS Airbags :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek7"><?= $eclipseCross[$spesifikasi]['Sunroof']; ?></label>
+              <div class="col-6">
+                <label id="spek4"><?= $triton[$spesifikasi]['Dual SRS Airbags']; ?></label>
+              </div>
+              <div class="col-6">
+                <label>Hill Start Assist (HSA) :</label>
+              </div>
+              <div class="col-6">
+                <label id="spek5"><?= $triton[$spesifikasi]['Hill Start Assist']; ?></label>
+              </div>
+              <div class="col-6">
+                <label>Keyless Operation System :</label>
+              </div>
+              <div class="col-6">
+                <label id="spek6"><?= $triton[$spesifikasi]['Keyless Operation System']; ?></label>
+              </div>
+              <div class="col-6">
+                <label>Ground Clearance (mm) :</label>
+              </div>
+              <div class="col-6">
+                <label id="spek7"><?= $triton[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
-                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/pajero-sport.pdf'; ?>">E-Brochure</a>
+                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/triton.pdf'; ?>">E-Brochure</a>
               </div>
             </div>
           </div>  
@@ -225,7 +228,7 @@
             <label for="plainTextHargaOtr" class="font-weight-bold col-lg-4 col-5 col-form-label">Harga OTR :</label>
             <div class="col-lg-8 col-7">
               <?php
-                $tampil = $conn->query("SELECT MIN(harga) FROM tb_harga WHERE merek = 'ECLIPSE CROSS'");
+                $tampil = $conn->query("SELECT MIN(harga) FROM tb_harga WHERE merek = 'TRITON'");
                 $harga = $tampil->fetch_array();                
                 $harga = $harga[0];
               ?>
@@ -345,50 +348,50 @@
               </div>
             </div>
             <div class="row spek-container-hidden" id="spekMobile">
-              <div class="col-lg-6 col-md-6 mt-2">
-                <label>Ground Clearance :</label>
+              <div class="col-6 mt-2">
+                <label>Displacement (cc) :</label>
               </div>
-              <div class="col-lg-6 col-md-6 mt-2">
-                <label id="spek1"><?= $eclipseCross[$spesifikasi]['Ground Clearance']; ?></label>
+              <div class="col-6 mt-2">
+                <label id="spek1"><?= $triton[$spesifikasi]['Displacement (cc)']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Displacement :</label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek2"><?= $eclipseCross[$spesifikasi]['Displacement (cc)']; ?></label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Wheel & Tire :</label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek3"><?= $eclipseCross[$spesifikasi]['Wheel & Tire']; ?></label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Cruise Control :</label>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek4"><?= $eclipseCross[$spesifikasi]['Cruise Control']; ?></label>
-              </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="col-6">
                 <label>Transmission :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek5"><?= $eclipseCross[$spesifikasi]['Transmission']; ?></label>
+              <div class="col-6">
+                <label id="spek2"><?= $triton[$spesifikasi]['Transmission']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Antenna :</label>
+              <div class="col-6">
+                <label>Wheel & Tire :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek6"><?= $eclipseCross[$spesifikasi]['Antenna']; ?></label>
+              <div class="col-6">
+                <label id="spek3"><?= $triton[$spesifikasi]['Wheel & Tire']; ?></label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label>Sunroof :</label>
+              <div class="col-6">
+                <label>Dual SRS Airbags :</label>
               </div>
-              <div class="col-lg-6 col-md-6">
-                <label id="spek7"><?= $eclipseCross[$spesifikasi]['Sunroof']; ?></label>
+              <div class="col-6">
+                <label id="spek4"><?= $triton[$spesifikasi]['Dual SRS Airbags']; ?></label>
+              </div>
+              <div class="col-6">
+                <label>Hill Start Assist (HSA) :</label>
+              </div>
+              <div class="col-6">
+                <label id="spek5"><?= $triton[$spesifikasi]['Hill Start Assist']; ?></label>
+              </div>
+              <div class="col-6">
+                <label>Keyless Operation System :</label>
+              </div>
+              <div class="col-6">
+                <label id="spek6"><?= $triton[$spesifikasi]['Keyless Operation System']; ?></label>
+              </div>
+              <div class="col-6">
+                <label>Ground Clearance (mm) :</label>
+              </div>
+              <div class="col-6">
+                <label id="spek7"><?= $triton[$spesifikasi]['Ground Clearance']; ?></label>
               </div>
               <div class="col-lg-12 mb-2 mt-2">
-                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/pajero-sport.pdf'; ?>">E-Brochure</a>
+                <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/triton.pdf'; ?>">E-Brochure</a>
               </div>
             </div>
           </div>  
@@ -404,15 +407,18 @@
   <div class="container">   
     <div class="row"> 
       <div class="col-12 text-center mb-2">      
-        <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-black.webp'; ?>" alt="Mitsubishi Eclipse Cross" class="img-color img-color-eclipse">
+        <img src="<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>" alt="Mitsubishi Triton" class="img-color img-color-triton">
       </div>
       <div class="col-12 text-center mb-2">
-        <small class="text-muted khusus">* Khusus Eclipse Cross Amethyst Black</small>
+        <small class="text-muted">* Khusus Triton Ultimate AT 4x4</small>
       </div>
       <div class="col-12 text-center tombol-warna">                        
-        <span class="mr-3 color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" style="background: #050505"></span>      
-        <span class="mr-3 color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" style="background: #F4F4F4"></span>                
-        <span class="mr-3 color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Diamond" style="background: #7D282B"></span>                
+        <span class="mr-3 color-black palet" data-toggle="tooltip" data-placement="bottom" title="Jet Black Mica" style="background: #202020"></span>      
+        <span class="mr-3 color-white palet" data-toggle="tooltip" data-placement="bottom" title="White Solid" style="background: #FFF"></span>
+        <span class="mr-3 color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" style="background: #AEB4B2" ></span> 
+        <span class="mr-3 color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Solid Clear" style="background: #B40E12"></span>                   
+        <span class="mr-3 color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" style="background: #747C7E"></span>        
+        <span class="mr-3 color-white-diamond palet" data-toggle="tooltip" data-placement="bottom" title="White Diamond" style="background: #F4F4F4"></span>
       </div>
       <div class="col-12 text-center mt-3">
         <p>* Warna dan bentuk di atas dapat berbeda dengan warna dan bentuk mobil sesungguhnya. Untuk konfirmasi ketersediaan warna silahkan hubungi <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi" target="_blank">Whatsapp</a> kami.</p>
@@ -440,30 +446,40 @@
         <div class="swiper-container-exterior">
           <div class="swiper-wrapper">            
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" data-lightbox="exterior" data-title="Front/Rear Bumper">
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/1.jpg'; ?>" data-lightbox="exterior" data-title="Front/Rear Bumper">
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" data-lightbox="exterior" data-title="Rear Camera">       
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" width="100%" >
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/2.jpg'; ?>" data-lightbox="exterior" data-title="Rear Camera">       
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" data-lightbox="exterior" data-title="Rear Parking">          
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/3.jpg'; ?>" data-lightbox="exterior" data-title="Rear Parking">          
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" data-lightbox="exterior" data-title="Rear Spoiler">           
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/4.jpg'; ?>" data-lightbox="exterior" data-title="Rear Spoiler">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/5.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/5.jpg'; ?>" width="100%">
               </a>
             </div>   
+            <div class="swiper-slide">   
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/6.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/6.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">   
+              <a href="<?= BASE_URL.DS.'assets/img/triton/exterior/7.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/exterior/7.jpg'; ?>" width="100%">
+              </a>
+            </div>
           </div>
           <div class="swiper-button-prev swiper-button-prev-custom"></div>
           <div class="swiper-button-next swiper-button-next-custom"></div>     
@@ -471,40 +487,50 @@
         <div class="swiper-container-interior" style="display: none">      
           <div class="swiper-wrapper">                      
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" data-lightbox="interior" data-title="Ac Double Blower">
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/1.jpg'; ?>" data-lightbox="interior" data-title="Ac Double Blower">
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" data-lightbox="interior" data-title="Black Interior">       
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" width="100%" >
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/2.jpg'; ?>" data-lightbox="interior" data-title="Black Interior">       
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" data-lightbox="interior" data-title="Bottle Holder">          
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/3.jpg'; ?>" data-lightbox="interior" data-title="Bottle Holder">          
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" data-lightbox="interior" data-title="Coin Box">           
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/4.jpg'; ?>" data-lightbox="interior" data-title="Coin Box">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" data-lightbox="interior" data-title="Cup Holder Depan">           
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/5.jpg'; ?>" data-lightbox="interior" data-title="Cup Holder Depan">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/5.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" data-lightbox="interior" data-title="Front Console Box">           
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/6.jpg'; ?>" data-lightbox="interior" data-title="Front Console Box">           
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/6.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
-                <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/7.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/7.jpg'; ?>" width="100%">
               </a>
-            </div>              
+            </div>
+            <div class="swiper-slide">              
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/8.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/8.jpg'; ?>" width="100%">
+              </a>
+            </div>
+            <div class="swiper-slide">              
+              <a href="<?= BASE_URL.DS.'assets/img/triton/interior/9.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
+                <img src="<?= BASE_URL.DS.'assets/img/triton/interior/9.jpg'; ?>" width="100%">
+              </a>
+            </div>
           </div>
           <div class="swiper-button-prev swiper-button-prev-custom"></div>
           <div class="swiper-button-next swiper-button-next-custom"></div>
@@ -608,7 +634,6 @@
 </section> -->
 
 
-
 <?php require_once "../footer.php"; ?>
 <!-- Akhir Rekomendasi -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -635,18 +660,12 @@
     });
 
     $('[data-toggle="tooltip"]').tooltip();
-    $('.color-red').click(() => {
-      $('.img-color-eclipse').attr('src', '<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>');
-      $('.khusus').text('* Khusus Eclipse Cross Red Diamond');
-    });
-    $('.color-white').click(() => {
-      $('.img-color-eclipse').attr('src', '<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-white.webp'; ?>');
-      $('.khusus').text('* Khusus Eclipse Cross Silky White');
-    });
-    $('.color-black').click(() => {
-      $('.img-color-eclipse').attr('src', '<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-black.webp'; ?>');
-      $('.khusus').text('* Khusus Eclipse Cross Amethyst Black');
-    });    
+    $('.color-red').click(() => $('.img-color-triton').attr('src', '<?= BASE_URL.DS.'assets/img/triton/triton-red.webp'; ?>'));
+    $('.color-white').click(() => $('.img-color-triton').attr('src', '<?= BASE_URL.DS.'assets/img/triton/triton-white.webp'; ?>'));
+    $('.color-black').click(() => $('.img-color-triton').attr('src', '<?= BASE_URL.DS.'assets/img/triton/triton-black.webp'; ?>'));
+    $('.color-grey').click(() => $('.img-color-triton').attr('src', '<?= BASE_URL.DS.'assets/img/triton/triton-gray.webp'; ?>'));
+    $('.color-white-diamond').click(() => $('.img-color-triton').attr('src', '<?= BASE_URL.DS.'assets/img/triton/triton-white-diamond.webp'; ?>'));
+    $('.color-silver').click(() => $('.img-color-triton').attr('src', '<?= BASE_URL.DS.'assets/img/triton/triton-silver.webp'; ?>'));
 
     $('#selectTipe').change(function() {                  
       let kode = $('#selectTipe').val();
@@ -654,7 +673,7 @@
       $.ajax ({
         type: "post",
         data: {kode: kode, tipe: tipe},
-        url: "../json/data-eclipse-cross.php",
+        url: "../json/data-triton.php",
         success: function(data) {
           let hasil = JSON.parse(data);
           let totalCicilan = 0.2 * hasil.harga;
@@ -662,7 +681,7 @@
           let tampilTotalCicilan = rpFormat.format(totalCicilan);
           let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
           let hargaOtr = rpFormat.format(hasil.harga);
-          $('#carTitle').html('ECLIPSE CROSS ' + hasil.tipe);
+          $('#carTitle').html('TRITON ' + hasil.tipe);
           $('#plainTextHargaOtr').val(hargaOtr.substring(0, hargaOtr.length - 3));
 
           if (window.matchMedia("(min-width: 800px)").matches) {

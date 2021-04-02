@@ -1,0 +1,29 @@
+{
+  "L300 PICK UP STANDARD": {
+    "Overall Length": "4170",
+    "Overall Width": "1700",
+    "Overall Height": "1845",
+    "Transmission": "5 Speed Manual",
+    "Tank Capacity": "47 Litre",
+    "Steering": "Ball Nut Type with Power Steering",
+    "Ground Clearance": "200"
+  },
+  "L300 PICK UP FLATDECK": {
+    "Overall Length": "4170",
+    "Overall Width": "1700",
+    "Overall Height": "1935",
+    "Transmission": "5 Speed Manual",
+    "Tank Capacity": "47 Litre",
+    "Steering": "Ball Nut Type with Power Steering",
+    "Ground Clearance": "200"
+  },
+  "L300 CAB CHASSIS": {
+    "Overall Length": "4015",
+    "Overall Width": "1695",
+    "Overall Height": "1810",
+    "Transmission": "5 Speed Manual",
+    "Tank Capacity": "47 Litre",
+    "Steering": "Ball Nut Type with Power Steering",
+    "Ground Clearance": "200"
+  }
+}

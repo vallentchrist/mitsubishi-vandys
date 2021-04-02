@@ -476,6 +476,10 @@ section.detail-product .nav-link.active {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  .img-360 {
+    width: 100%;
+  }
+
   .container-dealer,
   .container-tetap {
     margin-bottom: 1.5rem;

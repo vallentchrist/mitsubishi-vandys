@@ -440,27 +440,27 @@
         <div class="swiper-container-exterior">
           <div class="swiper-wrapper">            
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" data-lightbox="exterior" data-title="Front/Rear Bumper">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" data-lightbox="exterior" >
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" data-lightbox="exterior" data-title="Rear Camera">       
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" data-lightbox="exterior" >       
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" data-lightbox="exterior" data-title="Rear Parking">          
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" data-lightbox="exterior" ">          
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" data-lightbox="exterior" data-title="Rear Spoiler">           
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" data-lightbox="exterior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" data-lightbox="exterior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/exterior/5.jpg'; ?>" width="100%">
               </a>
             </div>   
@@ -471,37 +471,37 @@
         <div class="swiper-container-interior" style="display: none">      
           <div class="swiper-wrapper">                      
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" data-lightbox="interior" data-title="Ac Double Blower">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" data-lightbox="interior" data-title="Black Interior">       
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" data-lightbox="interior">       
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" data-lightbox="interior" data-title="Bottle Holder">          
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" data-lightbox="interior" >          
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" data-lightbox="interior" data-title="Coin Box">           
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" data-lightbox="interior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" data-lightbox="interior" data-title="Cup Holder Depan">           
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" data-lightbox="interior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/5.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" data-lightbox="interior" data-title="Front Console Box">           
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" data-lightbox="interior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/6.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
+              <a href="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/eclipse/interior/7.jpg'; ?>" width="100%">
               </a>
             </div>              

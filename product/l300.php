@@ -388,13 +388,13 @@
         <div class="swiper-container-exterior">
           <div class="swiper-wrapper">            
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/l300/exterior/1.webp'; ?>" data-lightbox="exterior">
-                <img src="<?= BASE_URL.DS.'assets/img/l300/exterior/1.webp'; ?>" width="100%">
+              <a href="<?= BASE_URL.DS.'assets/img/l300/exterior/1.png'; ?>" data-lightbox="exterior">
+                <img src="<?= BASE_URL.DS.'assets/img/l300/exterior/1.png'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/l300/exterior/2.webp'; ?>" data-lightbox="exterior">       
-                <img src="<?= BASE_URL.DS.'assets/img/l300/exterior/2.webp'; ?>" width="100%" >
+              <a href="<?= BASE_URL.DS.'assets/img/l300/exterior/2.png'; ?>" data-lightbox="exterior">       
+                <img src="<?= BASE_URL.DS.'assets/img/l300/exterior/2.png'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    

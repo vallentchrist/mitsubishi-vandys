@@ -452,47 +452,47 @@
         <div class="swiper-container-exterior">
           <div class="swiper-wrapper">            
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/1.jpg'; ?>" data-lightbox="exterior" data-title="Front/Rear Bumper">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/1.jpg'; ?>" data-lightbox="exterior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/2.jpg'; ?>" data-lightbox="exterior" data-title="Rear Camera">       
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/2.jpg'; ?>" data-lightbox="exterior" >       
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/3.jpg'; ?>" data-lightbox="exterior" data-title="Rear Parking">          
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/3.jpg'; ?>" data-lightbox="exterior" >          
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/4.jpg'; ?>" data-lightbox="exterior" data-title="Rear Spoiler">           
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/4.jpg'; ?>" data-lightbox="exterior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/5.jpg'; ?>" data-lightbox="exterior" data-title="Rear Window Defogger">           
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/5.jpg'; ?>" data-lightbox="exterior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/5.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/6.jpg'; ?>" data-lightbox="exterior" data-title="Shark Fin Antenna">           
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/6.jpg'; ?>" data-lightbox="exterior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/6.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/7.jpg'; ?>" data-lightbox="exterior" data-title="7">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/7.jpg'; ?>" data-lightbox="exterior">
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/7.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/8.jpg'; ?>" data-lightbox="exterior" data-title="8">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/8.jpg'; ?>" data-lightbox="exterior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/8.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/9.jpg'; ?>" data-lightbox="exterior" data-title="7">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/exterior/9.jpg'; ?>" data-lightbox="exterior">
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/exterior/9.jpg'; ?>" width="100%">
               </a>
             </div>
@@ -503,62 +503,62 @@
         <div class="swiper-container-interior" style="display: none">      
           <div class="swiper-wrapper">                      
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/1.jpg'; ?>" data-lightbox="interior" data-title="Ac Double Blower">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/1.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/1.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">       
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/2.jpg'; ?>" data-lightbox="interior" data-title="Black Interior">       
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/2.jpg'; ?>" data-lightbox="interior" >       
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/2.jpg'; ?>" width="100%" >
               </a>
             </div>
             <div class="swiper-slide">    
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/3.jpg'; ?>" data-lightbox="interior" data-title="Bottle Holder">          
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/3.jpg'; ?>" data-lightbox="interior" >          
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/3.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/4.jpg'; ?>" data-lightbox="interior" data-title="Coin Box">           
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/4.jpg'; ?>" data-lightbox="interior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/4.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/5.jpg'; ?>" data-lightbox="interior" data-title="Cup Holder Depan">           
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/5.jpg'; ?>" data-lightbox="interior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/5.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">   
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/6.jpg'; ?>" data-lightbox="interior" data-title="Front Console Box">           
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/6.jpg'; ?>" data-lightbox="interior" >           
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/6.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/7.jpg'; ?>" data-lightbox="interior" data-title="Front Door Pocket">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/7.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/7.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/8.jpg'; ?>" data-lightbox="interior" data-title="Gantungan Serbaguna">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/8.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/8.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/9.jpg'; ?>" data-lightbox="interior" data-title="Glove Box">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/9.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/9.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/10.jpg'; ?>" data-lightbox="interior" data-title="Ruang Bagasi Luas">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/10.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/10.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/11.jpg'; ?>" data-lightbox="interior" data-title="High Contrast Speedometer">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/11.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/11.jpg'; ?>" width="100%">
               </a>
             </div>
             <div class="swiper-slide">              
-              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/12.jpg'; ?>" data-lightbox="interior" data-title="Instrument Panel Lower Tray">
+              <a href="<?= BASE_URL.DS.'assets/img/pajero/interior/12.jpg'; ?>" data-lightbox="interior" >
                 <img src="<?= BASE_URL.DS.'assets/img/pajero/interior/12.jpg'; ?>" width="100%">
               </a>
             </div>            

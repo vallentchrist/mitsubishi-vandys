@@ -38,7 +38,7 @@
   </head>
   <body>   
    <!-- Header -->
-   <div class="container-fluid" style="background-color: #b7b3b3;">
+    <div class="container-fluid" style="background-color: #b7b3b3;">
       <div class="row p-2">
         <div class="col-3 col-lg-2">
           <a target="_blank" href="https://mitsubishi-motors.co.id">            
@@ -667,7 +667,6 @@
 
 
 <?php require_once "../footer.php"; ?>
-<!-- Akhir Rekomendasi -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

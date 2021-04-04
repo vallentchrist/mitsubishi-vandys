@@ -38,22 +38,6 @@ const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
   },
 });
 
-const swiperProduct = new Swiper(".swiper-container-product", {
-  autoplay: {
-    delay: 2000,
-  },
-  slidesPerView: 2,
-  spaceBetween: 30,
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
-    },
-    300: {
-      slidesPerView: 1,
-    },
-  },
-});
-
 // Simulasi Kredit Accordion
 const acc = document.querySelectorAll(".simulasi");
 acc.forEach((v) =>
@@ -112,6 +96,40 @@ $(document).ready(function () {
     $(this).keyup(function () {
       formatCurrency($(this));
     });
+  });
+
+  new Swiper(".swiper-container-product", {
+    autoplay: {
+      delay: 2000,
+    },
+    slidesPerView: 2,
+    spaceBetween: 30,
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+      },
+      300: {
+        slidesPerView: 1,
+      },
+    },
+    disableOnInteraction: true,
+  });
+
+  const swiperProduct = document.querySelector(".swiper-container-product")
+    .swiper;
+  $(".swiper-container-product").mouseenter(function () {
+    swiperProduct.autoplay.stop();
+    console.log("Slider Stopped");
+  });
+  $(".swiper-container-product").mouseleave(function () {
+    swiperProduct.autoplay.start();
+    // const resetAcc = document.querySelectorAll(".simulasi");
+    // resetAcc.forEach((v) => {
+    //   v.classList.remove("active");
+    //   const resetPanel = v.nextElementSibling;
+    //   resetPanel.style.maxHeight = 0;
+    // });
+    console.log("Slider Started Again");
   });
 
   const warnaMobil = [

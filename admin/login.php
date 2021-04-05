@@ -1,13 +1,26 @@
 <?php
+  session_start();
   require_once "../config.php";
   $username = (isset($_POST['username']) ? $_POST['username'] : '');
   $password = (isset($_POST['password']) ? $_POST['password'] : '');
   if ( isset($_POST['btnLogin']) ) {
-    if ( $username == 'admin' && $password == 'admin' ) {
-      header("Location: index.html");
+    $result = $conn->query("SELECT * FROM tb_user WHERE username = '$username'");
+    if ($result->num_rows > 0)
+    {
+      $row = $result->fetch_array();
+      if ($password == $row["password"])
+      {
+        $_SESSION["login"] = true;
+        header("Location: promo.php");
+      }
+      else
+      {
+        echo "<script>alert('Password Salah!')</script>";  
+      }
     }
-    else {
-      echo "<script>alert('Mohon masukkan username dan password yang benar!')</script>";
+    else 
+    {
+      echo "<script>alert('Username tidak tersedia!')</script>";
     }
   }  
 ?>
@@ -72,7 +85,7 @@
                             <div class="col-lg-12">
                                 <div class="p-5 inner-padding">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back, Vandys ^_^</h1>
                                     </div>
                                     <form class="user" method="post">
                                         <div class="form-group">

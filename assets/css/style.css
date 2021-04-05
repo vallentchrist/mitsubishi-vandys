@@ -486,6 +486,12 @@ section.detail-product .nav-link.active {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  section.promo img,
+  section.promo .table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
   section.video iframe {
     width: 90%;
   }

@@ -64,7 +64,7 @@
             <a class="nav-link text-white" href="#">Produk <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Promo</a>
+            <a class="nav-link text-white" href="<?=BASE_URL.DS.'promo.php'?>">Promo</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#">Testimoni</a>

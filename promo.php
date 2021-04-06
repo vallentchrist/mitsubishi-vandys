@@ -36,19 +36,19 @@
       <div class="row p-2">
         <div class="col-3 col-lg-2">
           <a target="_blank" href="https://mitsubishi-motors.co.id">            
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi-hitam.png" alt="Mitsubishi Motors" class="logo">
           </a>
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase text-center d-none d-sm-block label-sardana"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
+          <label class="text-uppercase text-center d-none d-sm-block label-sardana text-black"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
           <a href="https://mitsubishimedan-vandys.id">            
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Mitsubishi Sardana" class="w-100 d-block d-sm-none">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Mitsubishi Sardana" class="logo d-none d-sm-block">
           </a>
         </div>
         <div class="col-3 col-lg-2 text-right">
           <a target="_blank" href="https://ktbfuso.co.id">            
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso.png" alt="Sardana" class="logo">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso-hitam.png" alt="Mitsubishi Fuso" class="logo">
           </a>
         </div>
       </div>
@@ -94,7 +94,7 @@
             <h2 class="mmc-bold text-center"><?=$row["judul"]?></h2>
           </div>
           <div class="col-12 mb-5 text-center">
-            <img src="<?=BASE_URL.DS.'assets/img/promo/'.$row['img_path']?>" alt="Promo Mitsubishi">;        
+            <img src="<?=BASE_URL.DS.'assets/img/promo/'.$row['img_path']?>" alt="Promo Mitsubishi">        
           </div>
           <div class="col-11 col-sm-8 mb-5">
             <?=$row["deskripsi"]?>

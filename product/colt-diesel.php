@@ -5,6 +5,13 @@
     $hasil = "Rp " . number_format($angka,0,',','.');
     return $hasil;
   }
+
+  $tampil = $conn->query("SELECT MIN(harga) FROM tb_harga WHERE merek = 'COLT DIESEL'");
+  $harga = mysqli_fetch_array($tampil);
+  $hargaFull = $harga[0];
+  $harga = number_format($harga[0] / 1000000, 1, ',', '.');  
+  setlocale(LC_ALL, 'IND');  
+  $time = strftime('%B %Y');
 ?>
   
 <!DOCTYPE html>
@@ -97,7 +104,7 @@
     <img src="<?= BASE_URL.DS.'assets/img/colt-diesel/banner-colt-mb.jpg'; ?>" alt="Mitsubishi Colt Diesel" class="w-100 d-block d-sm-none">
   </div>
 
-  <div class="container mt-5 mt-lg-3">
+  <div class="container mt-3 mt-lg-3">
     <div class="row align-items-center">
       <div class="col-12 col-lg-4">
         <h2 class="text-uppercase mmc-bold">Varian Produk</h2>
@@ -159,7 +166,7 @@
     </table>
     <small class="text-muted">* Harga OTR Sumatera Utara.</small><br />
     <small class="text-muted">* Harga dapat berubah sewaktu-waktu tanpa pemberitahuan sebelumnya.</small><br />
-    <small class="text-muted">* Info lebih lengkap dapat menghubungi kami disini <a href="https://wa.me/+628116541800?text=[WS]Halo Sardana Berlian, Saya ingin bertanya detail estimasi cicilan produk Colt Diesel." class="text-success" target="_blank"><i class="fa fa-whatsapp"></i> 08116541800</a></small>
+    <small class="text-muted">* Info lebih lengkap dapat menghubungi kami disini <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya detail harga produk Colt Diesel." class="text-success" target="_blank"><i class="fa fa-whatsapp"></i> 082370304974</a></small>
   </div>
 
   <section class="video-colt mt-5 mb-5 bg-parallax" id="video-colt">
@@ -191,16 +198,16 @@
           </div>
           <div class="col-12 col-md-6 order-2 order-sm-1">
             <div class="row">
-              <div class="col-6">
+              <div class="col-4">
                 Harga OTR    
               </div>        
-              <div class="col-6 text-right">
+              <div class="col-8 text-right">
                 <input type="text" readonly class="font-weight-bold form-control-plaintext text-right" id="plainTextHargaOtr" value="<?= rupiah($hargaFull); ?>">
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 order-1 order-sm-2 text-right select-picker-colt">
-            <select class="selectpicker" id="selectTipe" data-width="100%" data-container="body" data-live-search="true" title="Silahkan Pilih Tipe Lain...">
+            <select class="selectpicker mb-4 mb-sm-0" id="selectTipe" data-width="100%" data-container="body" data-live-search="true" title="Silahkan Pilih Tipe Lain...">
               <option value="066">FE 71 BC</option>
               <option value="089">FE 71 LONG BC NC</option>
               <option value="065">FE 71</option>
@@ -251,6 +258,12 @@
               <div class="form-group row justify-content-center">
                 <a id="buttonHitung" class="col-sm-12 btn btn-danger" role="button">Hitung</a>
               </div>
+              <div class="col-lg-12 text-center perhitungan" style="display: none">
+                <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+              </div>
+              <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                <small class="text-danger">* Uang DP minimum Rp 50 juta. Silahkan hitung kembali.</small>              
+              </div>
             </form>
           </div>
           <div class="col-12 col-md-6">
@@ -276,7 +289,7 @@
               <div class="form-group row">
                 <div class="col-12">
                   <small class="text-muted">* Simulasi ini hanya sebagai asumsi belum termasuk biaya admin, asuransi dll.</small><br />
-                  <small class="text-muted">* Untuk estimasi cicilan sesungguhnya harap konsultasi dengan kami lewat <a href="https://wa.me/+628116541800?text=[WS]Halo Sardana Berlian, Saya ingin bertanya detail estimasi cicilan produk Colt Diesel." class="text-success" target="_blank">chat</a> atau panggilan ke <a href="https://wa.me/+628116541800?text=[WS]Halo Sardana Berlian, Saya ingin bertanya detail estimasi cicilan produk Colt Diesel." class="text-success" target="_blank"><i class="fa fa-whatsapp"></i> 08116541800</a></small>
+                  <small class="text-muted">* Untuk estimasi cicilan sesungguhnya harap konsultasi dengan kami lewat <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya detail estimasi cicilan produk Colt Diesel." class="text-success" target="_blank">chat</a> atau panggilan ke <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya detail estimasi cicilan produk Colt Diesel." class="text-success" target="_blank"><i class="fa fa-whatsapp"></i> 08116541800</a></small>
                 </div>                
               </div>
             </form>
@@ -321,26 +334,25 @@
             <p class="text-uppercase mmc-medium">Bus</p>
           </div>
           <div class="col-12 mt-3">
-            <p class="text-muted">Jika masih belum jelas, kami akan membantu melalui <a href="https://wa.me/+628116541800?text=[WS]Halo Sardana Berlian, Saya ingin bertanya detail karoseri Colt Diesel." class="text-success" target="_blank">chat</a> atau call ke nomor <a href="https://wa.me/+628116541800?text=[WS]Halo Sardana Berlian, Saya ingin bertanya detail karoseri Colt Diesel." class="text-success" target="_blank"><i class="fa fa-whatsapp"></i> 08116541800</a></p>
+            <p class="text-muted">Jika masih belum jelas, kami akan membantu melalui <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya detail karoseri Colt Diesel." class="text-success" target="_blank">chat</a> atau call ke nomor <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya detail karoseri Colt Diesel." class="text-success" target="_blank"><i class="fa fa-whatsapp"></i> 082370304974</a></p>
           </div>
         </div>
       </div>
-    </div>
-    <button class="spesifikasi mmc-bold">Spesifikasi Lengkap Mitsubishi Colt Diesel All Variant</button>
+    </div>    
   </div>  
   <!-- Akhir Pertanyaan -->
 
   <div class="container-fluid bg-red">
     <div class="row align-items-center container-tokopedia">
       <div class="col-12 col-sm-6 text-center">
-        <img src="<?=BASE_URL.DS.'assets/img/colt-diesel/tokopedia.jpg'?>" alt="Mitsubishi Colt Diesel" class="w-100">
+        <img src="<?=BASE_URL.DS.'assets/img/bg-foto.png'?>" alt="Vandystio Danantho" class="img-vandys">
       </div>
       <div class="col-12 col-sm-6 text-white">
-        <h3 class="mmc-bold hadir-toped">Kini Hadir di Tokopedia</h3>
-        <p>Dapatkan hadiah langsung pembelian unit truk Mitsubishi FUSO khusus melalui official store kami di Tokopedia selama periode 1 April - 30 Juni 2021. Ada cashback Saldo Gopay senilai 2 juta + extra 1 juta. Untuk info lebih lengkap, silahkan kunjungi link berikut : <a href="https://www.tokopedia.com/fusosardanagroup" target="_blank" class="text-white mmc-bold">https://www.tokopedia.com/fusosardanagroup</a></p>
-        <small>*Syarat & Ketentutan Berlaku.</p>
+        <h3 class="mmc-bold hadir-toped">Sales Kami</h3>
+        <p>Kami siap membantu anda mendapatkan deal terbaik untuk pembelian truk Mitsubishi pilihan anda. Silahkan hubungi kami untuk mendapatkan info lebih lengkap terkait proses pembiayaannya, simulasi kredit, info stok, Test Drive serta Pemesanan.</p>
+        <small>- Vandystio Danantho <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya detail harga produk Colt Diesel." class="text-white" target="_blank"><i class="fa fa-whatsapp ml-2"></i> 0823 7030 4974</a></small>
       </div>
-    </div>    
+    </div>
   </div>
 
   <?php    
@@ -370,7 +382,7 @@
       $(".c-all").addClass("variant-active");
       $.ajax({
         type: "post",
-        url: "../data-colt.php",
+        url: "data-colt.php",
         data: {kategori: kategori},
         success: function(data) {
           $("#kategori-colt").html(data);
@@ -388,7 +400,7 @@
       $(".c-economical").addClass("variant-active");
       $.ajax({
         type: "post",
-        url: "../data-colt.php",
+        url: "data-colt.php",
         data: {kategori: kategori},
         success: function(data) {
           $("#kategori-colt").html(data);
@@ -406,7 +418,7 @@
       $(".c-capacity").addClass("variant-active");
       $.ajax({
         type: "post",
-        url: "../data-colt.php",
+        url: "data-colt.php",
         data: {kategori: kategori},
         success: function(data) {
           $("#kategori-colt").html(data);
@@ -424,7 +436,7 @@
       $(".c-speed").addClass("variant-active");
       $.ajax({
         type: "post",
-        url: "../data-colt.php",
+        url: "data-colt.php",
         data: {kategori: kategori},
         success: function(data) {
           $("#kategori-colt").html(data);
@@ -442,7 +454,7 @@
       $(".c-power").addClass("variant-active");
       $.ajax({
         type: "post",
-        url: "../data-colt.php",
+        url: "data-colt.php",
         data: {kategori: kategori},
         success: function(data) {
           $("#kategori-colt").html(data);
@@ -460,7 +472,7 @@
       $(".c-bus").addClass("variant-active");
       $.ajax({
         type: "post",
-        url: "../data-colt.php",
+        url: "data-colt.php",
         data: {kategori: kategori},
         success: function(data) {
           $("#kategori-colt").html(data);
@@ -482,7 +494,7 @@
       $.ajax ({
         type: "post",
         data: {kode: kode, tipe: tipe},
-        url: "../../json/data-colt.php",
+        url: "../json/data-colt.php",
         success: function(data) {
           let hasil = JSON.parse(data);
           let totalCicilan = 0.2 * hasil.harga;
@@ -500,6 +512,43 @@
           $('#selectTenor').val('12');
         }
       });
+    });
+
+    $("#buttonHitung").click(function () {      
+      let sukuBunga = parseFloat($("#inputSukuBunga").val());
+      let tenor = parseInt($("#selectTenor option:selected").val());
+      let uangMuka = parseInt(
+        $("#inputUangMuka").val().substr(3).replace(/\./g, "")
+      );
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+      );
+
+      // Perhitungan
+      if (uangMuka < 50000000)
+      {      
+        $(".perhitungan").css("display", "none");
+        $(".perhitungan-salah").css("display", "block");
+      }
+      else
+      {
+        let pokokCicilan = hargaOtr - uangMuka;
+        let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+        let totalCicilan = pokokCicilan + bungaCicilan;
+        let cicilanPerBulan = totalCicilan / tenor;
+        let totalUangMuka = uangMuka + cicilanPerBulan;
+        let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+        let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);        
+        $("#plainTextTotalUangMuka").val(
+          tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+        );
+        $("#plainTextCicilan").val(
+          tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+        );
+        $("#plainTextTenor").val(tenor - 1 + " bulan");        
+        $(".perhitungan-salah").css("display", "none");
+        $(".perhitungan").css("display", "block");
+        }
     });
 
     $(".spesifikasi").click(function() {

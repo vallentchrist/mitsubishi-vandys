@@ -39,7 +39,7 @@ const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
 });
 
 // Simulasi Kredit Accordion
-const acc = document.querySelectorAll(".simulasi");
+const acc = document.querySelectorAll(".accordion");
 acc.forEach((v) =>
   v.addEventListener("click", function () {
     this.classList.toggle("active");

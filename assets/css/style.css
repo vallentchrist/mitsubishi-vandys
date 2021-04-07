@@ -426,12 +426,80 @@ section.detail-product .nav-link.active {
 }
 
 .bg-parallax {
-  background: url("http://localhost/vandys/assets/img/colt-diesel/parallax.jpg");
+  background: url(http://mitsubishimedan-vandys.id/assets/img/colt-diesel/parallax.jpg);
   background-size: cover;
+}
+
+.menu-varian {
+  justify-content: center;
+  gap: 20px;
+}
+
+.variant-active {
+  color: rgb(223, 182, 2) !important;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion,
+.spesifikasi {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active,
+.accordion:hover,
+.spesifikasi:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Plus Sign */
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+}
+
+/* Minus Sign */
+.accordion.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.bg-red {
+  background: url(https://hargamitsubishimedan.id/assets/img/bg.jpg);
+  background-size: cover;
+}
+
+.container-tokopedia {
+  padding: 3rem;
+}
+
+.img-vandys {
+  width: 50%;
 }
 
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
+  .img-vandys {
+    width: 70%;
+  }
+
   .container-dealer {
     margin-bottom: 1.5rem;
   }
@@ -486,6 +554,25 @@ section.detail-product .nav-link.active {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  .img-vandys {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  section.video-colt iframe {
+    width: 100%;
+  }
+
+  .bg-red {
+    background-position-x: -100px;
+  }
+
+  .menu-varian {
+    justify-content: flex-start;
+    gap: 20px;
+    overflow: auto;
+  }
+
   section.promo img,
   section.promo .table {
     width: 100%;

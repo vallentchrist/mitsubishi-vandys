@@ -430,6 +430,11 @@ section.detail-product .nav-link.active {
   background-size: cover;
 }
 
+.video-fuso {
+  background: url(http://mitsubishimedan-vandys.id/assets/img/fuso/bg.jpg);
+  background-size: cover;
+}
+
 .menu-varian {
   justify-content: center;
   gap: 20px;
@@ -559,7 +564,8 @@ section.detail-product .nav-link.active {
     margin-bottom: 20px;
   }
 
-  section.video-colt iframe {
+  section.video-colt iframe,
+  section.video-fuso iframe {
     width: 100%;
   }
 

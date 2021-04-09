@@ -6,7 +6,7 @@
     $uri = 'http://';
   }
 
-  $uri = $_SERVER['HTTP_HOST'];
+  $uri .= $_SERVER['HTTP_HOST'];
   
   // local
   define ('BASE_URL', $uri.'/vandys');

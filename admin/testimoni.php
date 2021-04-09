@@ -44,6 +44,24 @@
 
     <!-- Style sendiri -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+      .image-preview {
+        width: 300px;
+        min-height: 100px;
+        border: 2px solid #ddd;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: mmc-medium;
+        color: #ccc;
+      }  
+
+      .image-preview__image {
+        display: none;
+        width: 100%;
+      }
+    </style>
 </head>
 
 <body id="page-top">
@@ -142,12 +160,16 @@
                     <h1 class="h3 mb-2 text-gray-800 font-weight-bold">UPLOAD TESTIMONI</h1>
                     <form class="form-mitsubishi p-3">
                       <div class="form-group">
-                        <label for="inputJudul">Judul</label>
+                        <label for="inputJudul">Caption</label>
                         <input type="text" class="form-control" id="inputJudul" aria-describedby="emailHelp">                      
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Keterangan</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1">Foto</label>
+                        <input type="file" name="inpFile" id="inpFile">
+                        <div class="image-preview" id="imagePreview">
+                          <img src="" alt="Image Preview" class="image-preview__image">
+                          <span class="image-preview__default-text">Image Preview</span>
+                        </div>
                       </div>                    
                       <button type="submit" class="btn btn-primary">Simpan</button>
                     </form>
@@ -228,6 +250,36 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <script>
+      const inpFile = document.getElementById('inpFile');
+      const previewContainer = document.getElementById('imagePreview');
+      const previewImage = previewContainer.querySelector(".image-preview__image");
+      const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+
+      inpFile.addEventListener("change", function() {
+        const file = this.files[0];
+        
+        if (file) 
+        {
+          const reader = new FileReader();
+
+          previewDefaultText.style.display = "none";
+          previewImage.style.display = "block";
+
+          reader.addEventListener("load", function() {
+            previewImage.setAttribute("src", this.result);
+          })
+
+          reader.readAsDataURL(file);
+        }
+        else
+        {
+          previewDefaultText.style.display = null;
+          previewImage.style.display = null;
+          previewImage.setAttribute("src", "");
+        }
+      })
+    </script>
 </body>
 
 </html>

@@ -12,6 +12,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="fvNZOv4Grsg_Mui4HHEs4CvNSmF1iWSCwZ1qTRg-J_I" />
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R0DN5V1XZD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-R0DN5V1XZD');
+    </script>
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -90,7 +103,7 @@
           <div class="mb-5">
             <a target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger">Hubungi Saya!</a>
           </div>
-        </div>  
+        </div>
       </div>      
     </div>
     <!-- Akhir Profile -->

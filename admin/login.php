@@ -85,7 +85,7 @@
                             <div class="col-lg-12">
                                 <div class="p-5 inner-padding">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back, Vandys ^_^</h1>
+                                        <h1 class="h4 text-gray-900 mb-4 font-weight-bold">Welcome Back, Vandys ^_^</h1>
                                     </div>
                                     <form class="user" method="post">
                                         <div class="form-group">
@@ -106,7 +106,10 @@
                                         </div>
                                         <button class="btn btn-primary btn-user btn-block" type="submit" name="btnLogin">
                                             Login
-                                        </button>                                        
+                                        </button>
+                                        <div class="form-group text-center">
+                                          <a href="<?=BASE_URL?>" class="mt-3 d-inline-block">Go Home Page</a>
+                                        </div>                                        
                                     </form>                                                                        
                                 </div>
                             </div>

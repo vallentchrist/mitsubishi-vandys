@@ -18,6 +18,58 @@
     session_abort();
     header("Location: login.php");
   }
+
+  if (isset($_POST["upload"]))
+  {
+    $created = date("Y-m-d H:i:s");
+    $caption = $_POST["inputCaption"];    
+    $namafile = $_FILES["inpFile"]["name"];
+    $ukuranfile = $_FILES["inpFile"]["size"];
+    $error = $_FILES["inpFile"]["error"];
+    $tmpfile = $_FILES["inpFile"]["tmp_name"];
+    $ekstensiGambarValid = ["jpg", "jpeg", "png"];
+    $ekstensiGambar = explode(".", $namafile);
+    $ekstensiGambar = strtolower(end($ekstensiGambar));
+    $namafilebaru = uniqid();
+    $namafilebaru .= ".";
+    $namafilebaru .= $ekstensiGambar;
+
+    // Cek tidak ada gambar yang diupload
+    if ($error === 4)
+    {
+      echo "<script>alert('Pilih gambar terlebih dahulu.');</script>";      
+    }
+    // Cek apakah gambar yang diupload
+    else if (!in_array($ekstensiGambar, $ekstensiGambarValid))
+    {
+      echo "<script>alert('Yang anda upload bukan gambar.');</script>";
+    }
+    // Cek apakah ukurannya terlalu besar
+    else if ($ukuranfile > 2048000)
+    {
+      echo "<script>alert('Ukuran gambar terlalu besar. Mohon kompress dibawah 2 MB.');</script>";
+    }
+    else
+    {
+      if ($caption != "")
+      {
+        move_uploaded_file($tmpfile, "../assets/img/testimoni/$namafilebaru");
+        $result = mysqli_query($conn, "INSERT INTO tb_testimoni (tgl_buat, nama, caption) VALUES ('$created', '$namafilebaru', '$caption')");
+        if ($result)
+        {
+          echo "<script>alert('Data berhasil ditambahkan');</script>";
+        }
+        else
+        {
+          echo "<script>alert('Data gagal ditambahkan. Silahkan input ulang');</script>";
+        }
+      }
+      else
+      {
+        echo "<script>alert('Data belum diisi. Silahkan input ulang');</script>";
+      }
+    }    
+  }
 ?>
 
 <!DOCTYPE html>
@@ -158,20 +210,20 @@
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800 font-weight-bold">UPLOAD TESTIMONI</h1>
-                    <form class="form-mitsubishi p-3">
+                    <form class="form-mitsubishi p-3" method="post" enctype="multipart/form-data">
                       <div class="form-group">
-                        <label for="inputJudul">Caption</label>
-                        <input type="text" class="form-control" id="inputJudul" aria-describedby="emailHelp">                      
+                        <label for="inputCaption">Caption</label>
+                        <input type="text" class="form-control" name="inputCaption" id="inputCaption" aria-describedby="emailHelp">                      
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Foto</label>
+                        <label for="inpFile">Foto</label>
                         <input type="file" name="inpFile" id="inpFile">
                         <div class="image-preview" id="imagePreview">
                           <img src="" alt="Image Preview" class="image-preview__image">
                           <span class="image-preview__default-text">Image Preview</span>
                         </div>
                       </div>                    
-                      <button type="submit" class="btn btn-primary">Simpan</button>
+                      <button type="submit" class="btn btn-primary" name="upload">Upload</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->
@@ -256,9 +308,8 @@
       const previewImage = previewContainer.querySelector(".image-preview__image");
       const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
 
-      inpFile.addEventListener("change", function() {
-        const file = this.files[0];
-        
+      inpFile.addEventListener("change", function() {        
+        const file = this.files[0];        
         if (file) 
         {
           const reader = new FileReader();
@@ -271,7 +322,8 @@
           })
 
           reader.readAsDataURL(file);
-        }
+          console.log('exist');
+        }    
         else
         {
           previewDefaultText.style.display = null;

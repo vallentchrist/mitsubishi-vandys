@@ -102,9 +102,11 @@ $(document).ready(function () {
     autoplay: {
       delay: 2000,
     },
-    slidesPerView: 2,
-    spaceBetween: 30,
+    spaceBetween: 20,
     breakpoints: {
+      800: {
+        slidesPerView: 3,
+      },
       600: {
         slidesPerView: 2,
       },

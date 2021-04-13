@@ -499,6 +499,12 @@ section.detail-product .nav-link.active {
   width: 50%;
 }
 
+section.product .produk {
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.4);
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .img-vandys {
@@ -559,6 +565,10 @@ section.detail-product .nav-link.active {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  section.product .produk {
+    font-size: 35px;
+  }
+
   .img-vandys {
     width: 80%;
     margin-bottom: 20px;
@@ -614,7 +624,8 @@ section.detail-product .nav-link.active {
   }
 
   .btn-product {
-    width: 140px;
+    width: 120px;
+    font-size: 14px;
   }
 
   .bg-profile {

@@ -6,7 +6,7 @@
     $uri = 'http://';
   }
 
-  $uri .= $_SERVER['HTTP_HOST'];
+  $uri .= $_SERVER['HTTP_HOST'];  
   
   // local
   define ('BASE_URL', $uri.'/vandys');
@@ -36,9 +36,3 @@
     echo "Failed to connect!";
   }
   // Akhir Koneksi Local
-
-  // File .htacess redirect to https
-  // RewriteEngine on
-  // RewriteCond %{SERVER_PORT} ^80$
-  // RewriteRule ^(.*)$ https://%{SERVER_NAME}/%{REQUEST_URI} [R=301,L]
-  // Akhir File .htaccess

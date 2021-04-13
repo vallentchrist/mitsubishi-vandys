@@ -135,7 +135,7 @@
     <!-- Product -->
     <section class="product" id="product">
       <div class="container-100 mt-5 p-4">
-        <h1 class="mmc-bold text-center mb-3">Produk Mitsubishi</h1>
+        <h2 class="mmc-bold text-center mb-5 produk text-uppercase">Produk Mitsubishi</h2>
         <div class="swiper-container swiper-container-product text-dark">
           <div class="swiper-wrapper">
             <div class="swiper-slide">

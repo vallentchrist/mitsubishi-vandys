@@ -101,7 +101,7 @@
           <h5 class="mmc-bold">Counter Sales</h5>
           <p class="mt-2 p-profile">Percayakan urusan mobil Mitsubishi anda bersama kami. Vandys – Counter Sales dari Mitsubishi Sardana Medan Siap melayani anda dan memberikan penawaran spesial yang terbaik bagi anda. Pertanyaan seputar Spesifikasi , Simulasi Kredit, Info Stok, Promo Terbaru, Booking Service, Test Drive dan Pemesanan Silahkan menghubungi kami disini.
           <div class="mb-5">
-            <a target="_blank" href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger">Hubungi Saya!</a>
+            <a target="_blank" href="https://wa.me/+6282370304974?text=Hai, Kak Vandys. Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger">Hubungi Saya!</a>
           </div>
         </div>
       </div>      
@@ -109,7 +109,7 @@
     <!-- Akhir Profile -->
 
     <!-- Testimoni -->    
-    <div class="swiper-container swiper-container-testimoni mt-4">
+    <div class="swiper-container swiper-container-testimoni mt-2">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide-testimoni">
           <a href="<?= BASE_URL.DS.'assets/img/testimoni/1.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
@@ -129,6 +129,19 @@
       </div>
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
+    </div>
+    <div class="container-fluid mt-5">    
+      <div class="row">
+        <div class="col-6 col-sm-3 col-lg-2 text-center">
+          <a target="_blank" href="https://wa.me/+6282370304974?text=Hai, Kak Vandys. Saya ingin bertanya tentang produk Mitsubishi" class="btn btn-danger"><i class="fab fa-lg fa-whatsapp"></i> Hubungi Kami</a>                    
+        </div>        
+        <div class="col-sm-6 col-lg-8 text-center d-none d-sm-block">
+          <hr style="height: 2px;background-color: red;border: none;">
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2 text-center">
+          <a href="<?=BASE_URL.DS.'testimoni.php'?>" class="btn btn-danger"><i class="far fa-images"></i> Ke Galeri</a>
+        </div>
+      </div>
     </div>
     <!-- Akhir Testimoni -->
 

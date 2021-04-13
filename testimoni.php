@@ -23,12 +23,7 @@
     <link rel="stylesheet" href="<?= BASE_URL.DS.'assets/css/lightbox.css'; ?>">      
     <script src="https://kit.fontawesome.com/00610b519d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?= BASE_URL.DS; ?>assets/css/style.css" />
-    <title>Vandys Mitsubishi Medan - Promo & Simulasi Kredit Mitsubishi</title>
-    <style>
-      body {
-        background: white;
-      }      
-    </style>
+    <title>Vandys Mitsubishi Medan - Promo & Simulasi Kredit Mitsubishi</title> 
   </head>
   <body>    
     <!-- Header -->
@@ -82,27 +77,24 @@
     </nav>  
     <!-- Akhir Navbar --> 
 
-    <!-- content -->
-    <?php
-      $result = $conn->query("SELECT * FROM tb_promo WHERE id = (SELECT MAX(id) FROM tb_promo)");
-      $row = $result->fetch_array();
-    ?>
-    <section class="promo" id="promo">
-      <div class="container text-black">
-        <div class="row justify-content-center mt-5">
-          <div class="col-12 mb-3">
-            <h2 class="mmc-bold text-center"><?=$row["judul"]?></h2>
-          </div>
-          <div class="col-12 mb-5 text-center">
-            <img src="<?=BASE_URL.DS.'assets/img/promo/'.$row['img_path']?>" alt="Promo Mitsubishi">        
-          </div>
-          <div class="col-11 col-sm-8 mb-5">
-            <?=$row["deskripsi"]?>
+    <div class="container mt-5">
+      <div class="row align-items-center">      
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-6 mb-5">
+          <div class="container" style="position: relative;">
+            <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100" style="position:absolute; top:0; left:0;">          
+            <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100" style="position:absolute; top:0; left:0;">
           </div>
         </div>
+        <div class="col-6 mb-5">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h3 class="mmc-bold"><?=$row["caption"]?></h3>          
+        </div>
       </div>
-    </section>
-    <!-- akhir content -->
+    </div>
 
     <!-- Footer -->
     <?php require_once 'footer.php'; ?>

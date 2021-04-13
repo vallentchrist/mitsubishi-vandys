@@ -80,7 +80,7 @@
             <a class="nav-link text-white" href="<?=BASE_URL.DS.'promo.php'?>">Promo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Testimoni</a>
+            <a class="nav-link text-white" href="<?=BASE_URL.DS.'testimoni.php'?>">Testimoni</a>
           </li>
         </ul>
         <span class="navbar-text text-white mmc-bold d-none d-lg-block">
@@ -109,26 +109,28 @@
     <!-- Akhir Profile -->
 
     <!-- Testimoni -->    
-    <div class="swiper-container swiper-container-testimoni mt-2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/testimoni/1.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/1.jpeg" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>        
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/testimoni/3.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/3.jpeg" alt="Vandystio Danantho" class="w-100">
-          </a>
+    <div class="container-fluid">
+      <div class="swiper-container swiper-container-testimoni mt-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-testimoni">
+            <a href="<?= BASE_URL.DS.'assets/img/testimoni/1.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/1.jpeg" alt="Vandystio Danantho" class="w-100">
+            </a>
+          </div>        
+          <div class="swiper-slide swiper-slide-testimoni">
+            <a href="<?= BASE_URL.DS.'assets/img/testimoni/3.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/3.jpeg" alt="Vandystio Danantho" class="w-100">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide-testimoni">
+            <a href="<?= BASE_URL.DS.'assets/img/testimoni/4.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/4.jpeg" alt="Vandystio Danantho" class="w-100">
+            </a>
+          </div>        
         </div>
-        <div class="swiper-slide swiper-slide-testimoni">
-          <a href="<?= BASE_URL.DS.'assets/img/testimoni/4.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-            <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/4.jpeg" alt="Vandystio Danantho" class="w-100">
-          </a>
-        </div>        
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
     </div>
     <div class="container-fluid mt-5">    
       <div class="row">

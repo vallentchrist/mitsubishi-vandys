@@ -23,7 +23,23 @@
     <link rel="stylesheet" href="<?= BASE_URL.DS.'assets/css/lightbox.css'; ?>">      
     <script src="https://kit.fontawesome.com/00610b519d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="<?= BASE_URL.DS; ?>assets/css/style.css" />
-    <title>Vandys Mitsubishi Medan - Promo & Simulasi Kredit Mitsubishi</title> 
+    <title>Vandys Mitsubishi Medan - Promo & Simulasi Kredit Mitsubishi</title>
+    <style>
+      body {
+        background: #e6dada; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to bottom,
+          #274046,
+          #e6dada
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to bottom,
+          #274046,
+          #e6dada
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>    
     <!-- Header -->
@@ -31,11 +47,11 @@
       <div class="row p-2">
         <div class="col-3 col-lg-2">
           <a target="_blank" href="https://mitsubishi-motors.co.id">            
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi-hitam.png" alt="Mitsubishi Motors" class="logo">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi Motors" class="logo">
           </a>
         </div>
         <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase text-center d-none d-sm-block label-sardana text-black"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
+          <label class="text-uppercase text-center d-none d-sm-block label-sardana text-white"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
           <a href="https://mitsubishimedan-vandys.id">            
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Mitsubishi Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Mitsubishi Sardana" class="logo d-none d-sm-block">
@@ -43,7 +59,7 @@
         </div>
         <div class="col-3 col-lg-2 text-right">
           <a target="_blank" href="https://ktbfuso.co.id">            
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso-hitam.png" alt="Mitsubishi Fuso" class="logo">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-fuso.png" alt="Mitsubishi Fuso" class="logo">
           </a>
         </div>
       </div>
@@ -83,13 +99,23 @@
         $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) FROM tb_testimoni)");
         $row = $result->fetch_array();
       ?>
-        <div class="col-6 mb-5">
-          <div class="container" style="position: relative;">
-            <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100" style="position:absolute; top:0; left:0;">          
-            <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100" style="position:absolute; top:0; left:0;">
-          </div>
+        <div class="col-12 col-sm-6 mb-5">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
         </div>
-        <div class="col-6 mb-5">
+        <div class="col-12 col-sm-6 mb-5">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h3 class="mmc-bold"><?=$row["caption"]?></h3>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5">
           <hr style="height: 2px;background-color: red;border: none;">
           <h3 class="mmc-bold"><?=$row["caption"]?></h3>          
         </div>

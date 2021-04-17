@@ -109,7 +109,7 @@
       </div>
       <div class="row align-items-center">
       <?php
-        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) FROM tb_testimoni)");
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 1 FROM tb_testimoni)");
         $row = $result->fetch_array();
       ?>
         <div class="col-12 col-sm-6 mb-5">

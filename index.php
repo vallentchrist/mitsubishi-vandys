@@ -112,21 +112,18 @@
     <div class="container-fluid">
       <div class="swiper-container swiper-container-testimoni mt-2">
         <div class="swiper-wrapper">
+          <?php
+            $result = $conn->query("SELECT * FROM tb_testimoni");
+            while ($row = $result->fetch_array()) :
+          ?>
           <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?= BASE_URL.DS.'assets/img/testimoni/1.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/1.jpeg" alt="Vandystio Danantho" class="w-100">
-            </a>
-          </div>        
-          <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?= BASE_URL.DS.'assets/img/testimoni/3.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/3.jpeg" alt="Vandystio Danantho" class="w-100">
+            <a href="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+              <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Vandystio Danantho" class="w-100">
             </a>
           </div>
-          <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?= BASE_URL.DS.'assets/img/testimoni/4.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/4.jpeg" alt="Vandystio Danantho" class="w-100">
-            </a>
-          </div>        
+          <?php
+            endwhile;
+          ?>             
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>

@@ -91,7 +91,7 @@
         </span>
       </div>
     </nav>  
-    <!-- Akhir Navbar -->     
+    <!-- Akhir Navbar -->
     <div class="container mt-5">
       <div class="row align-items-center">      
       <?php

@@ -691,6 +691,8 @@ $(document).ready(function () {
         tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
       );
       $("#plainTextTenorFuso").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
     }
   });
 

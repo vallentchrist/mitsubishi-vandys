@@ -74,11 +74,11 @@ const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
 const simulasi = document.querySelectorAll(".simulasi");
 simulasi.forEach((v) =>
   v.addEventListener("click", function () {
-    console.log("ok");
     this.classList.toggle("active");
     const panel = this.nextElementSibling;
+    const tinggi = panel.scrollHeight + 30;
     panel.style.maxHeight == 0
-      ? (panel.style.maxHeight = `${panel.scrollHeight}px`)
+      ? (panel.style.maxHeight = `${tinggi}px`)
       : (panel.style.maxHeight = null);
   })
 );
@@ -88,7 +88,6 @@ simulasi.forEach((v) =>
 const acc = document.querySelectorAll(".accordion");
 acc.forEach((v) =>
   v.addEventListener("click", function () {
-    console.log("ok");
     this.classList.toggle("active");
     const panel = this.nextElementSibling;
     panel.style.maxHeight == 0
@@ -409,235 +408,290 @@ $(document).ready(function () {
 
   //  Simulasi Kredit
   $("#hitungXpander").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBunga").val());
-    let tenor = parseInt($("#selectTenor option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMuka").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMuka").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilan").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenor").val(tenor - 1 + " bulan");
+    if (uangMuka < 20000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBunga").val());
+      let tenor = parseInt($("#selectTenor option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtr").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMuka").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilan").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenor").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
+    }
   });
 
   $("#hitungXpanderCross").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaXpanderCross").val());
-    let tenor = parseInt($("#selectTenorXpanderCross option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaXpanderCross").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrXpanderCross").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaXpanderCross").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanXpanderCross").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorXpanderCross").val(tenor - 1 + " bulan");
+    if (uangMuka < 20000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaXpanderCross").val());
+      let tenor = parseInt($("#selectTenorXpanderCross option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrXpanderCross").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaXpanderCross").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanXpanderCross").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorXpanderCross").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
+    }
   });
 
   $("#hitungPajeroSport").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaPajero").val());
-    let tenor = parseInt($("#selectTenorPajero option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaPajero").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrPajero").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaPajero").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanPajero").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorPajero").val(tenor - 1 + " bulan");
+    if (uangMuka < 20000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaPajero").val());
+      let tenor = parseInt($("#selectTenorPajero option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrPajero").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaPajero").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanPajero").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorPajero").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
+    }
   });
 
   $("#hitungEclipse").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaEclipse").val());
-    let tenor = parseInt($("#selectTenorEclipse option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaEclipse").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrEclipse").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaEclipse").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanEclipse").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorEclipse").val(tenor - 1 + " bulan");
+    if (uangMuka < 20000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaEclipse").val());
+      let tenor = parseInt($("#selectTenorEclipse option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrEclipse").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaEclipse").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanEclipse").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorEclipse").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
+    }
   });
 
   $("#hitungTriton").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaTriton").val());
-    let tenor = parseInt($("#selectTenorTriton option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaTriton").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrTriton").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaTriton").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanTriton").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorTriton").val(tenor - 1 + " bulan");
+    if (uangMuka < 20000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaTriton").val());
+      let tenor = parseInt($("#selectTenorTriton option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrTriton").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaTriton").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanTriton").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorTriton").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
+    }
   });
 
   $("#hitungL300").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaL300").val());
-    let tenor = parseInt($("#selectTenorL300 option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaL300").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrL300").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaL300").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanL300").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorL300").val(tenor - 1 + " bulan");
+    if (uangMuka < 20000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaL300").val());
+      let tenor = parseInt($("#selectTenorL300 option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrL300").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaL300").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanL300").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorL300").val(tenor - 1 + " bulan");
+      $(".perhitungan-salah").css("display", "none");
+      $(".perhitungan").css("display", "block");
+    }
   });
 
   $("#hitungColt").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaColt").val());
-    let tenor = parseInt($("#selectTenorColt option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaColt").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrColt").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaColt").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanColt").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorColt").val(tenor - 1 + " bulan");
+    if (uangMuka < 50000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaColt").val());
+      let tenor = parseInt($("#selectTenorColt option:selected").val());
+
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrColt").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaColt").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanColt").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorColt").val(tenor - 1 + " bulan");
+      $(".perhitungan").css("display", "block");
+      $(".perhitungan-salah").css("display", "none");
+    }
   });
 
   $("#hitungFuso").click(function () {
-    let rpFormat = new Intl.NumberFormat("id-id", {
-      style: "currency",
-      currency: "IDR",
-    });
-    let sukuBunga = parseFloat($("#inputSukuBungaFuso").val());
-    let tenor = parseInt($("#selectTenorFuso option:selected").val());
     let uangMuka = parseInt(
       $("#inputUangMukaFuso").val().substr(3).replace(/\./g, "")
     );
-    let hargaOtr = parseInt(
-      $("#plainTextHargaOtrFuso").val().substr(3).replace(/\./g, "")
-    );
-    let pokokCicilan = hargaOtr - uangMuka;
-    let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
-    let totalCicilan = pokokCicilan + bungaCicilan;
-    let cicilanPerBulan = totalCicilan / tenor;
-    let totalUangMuka = uangMuka + cicilanPerBulan;
-    let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
-    let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
-    $("#plainTextTotalUangMukaFuso").val(
-      tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
-    );
-    $("#plainTextCicilanFuso").val(
-      tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
-    );
-    $("#plainTextTenorFuso").val(tenor - 1 + " bulan");
+    if (uangMuka < 50000000) {
+      $(".perhitungan").css("display", "none");
+      $(".perhitungan-salah").css("display", "block");
+    } else {
+      let rpFormat = new Intl.NumberFormat("id-id", {
+        style: "currency",
+        currency: "IDR",
+      });
+      let sukuBunga = parseFloat($("#inputSukuBungaFuso").val());
+      let tenor = parseInt($("#selectTenorFuso option:selected").val());
+      let hargaOtr = parseInt(
+        $("#plainTextHargaOtrFuso").val().substr(3).replace(/\./g, "")
+      );
+      let pokokCicilan = hargaOtr - uangMuka;
+      let bungaCicilan = (pokokCicilan * sukuBunga) / 100;
+      let totalCicilan = pokokCicilan + bungaCicilan;
+      let cicilanPerBulan = totalCicilan / tenor;
+      let totalUangMuka = uangMuka + cicilanPerBulan;
+      let tampilTotalUangMuka = rpFormat.format(totalUangMuka);
+      let tampilCicilanPerBulan = rpFormat.format(cicilanPerBulan);
+      $("#plainTextTotalUangMukaFuso").val(
+        tampilTotalUangMuka.substring(0, tampilTotalUangMuka.length - 3)
+      );
+      $("#plainTextCicilanFuso").val(
+        tampilCicilanPerBulan.substring(0, tampilCicilanPerBulan.length - 3)
+      );
+      $("#plainTextTenorFuso").val(tenor - 1 + " bulan");
+    }
   });
 
   // function hitungKredit() {

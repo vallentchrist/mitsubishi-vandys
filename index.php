@@ -223,6 +223,18 @@
                       <div class="form-group row">
                         <a id="hitungXpander" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
                       </div>
+                      <div class="form-group row">
+                        <div class="col-lg-12 text-right">
+                          <a class="btn btn-danger" name="buttonHitung" id="buttonHitung">Hitung</a>
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
+                      </div>
                     </form>
                     <form>
                       <div class="form-group row">
@@ -315,6 +327,13 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungXpanderCross" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>
                     </form>
                     <form>
@@ -412,6 +431,13 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungPajeroSport" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>
                     </form>
                     <form>
@@ -503,6 +529,13 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungEclipse" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>
                     </form>
                     <form>
@@ -601,6 +634,13 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungTriton" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>
                     </form>
                     <form>
@@ -690,7 +730,14 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungL300" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                      </div>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
+                      </div>                      
                     </form>
                     <form>
                       <div class="form-group row">
@@ -783,6 +830,13 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungColt" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 50 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>
                     </form>
                     <form>
@@ -872,6 +926,13 @@
                       </div>
                       <div class="form-group row">
                         <a id="hitungFuso" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
+                        <div class="col-lg-12 text-center perhitungan" style="display: none">
+                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
+                        </div>
+                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
+                          <small class="text-danger">* Uang DP minimum Rp 50 juta. Silahkan hitung kembali.</small>              
+                        </div>
+                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>
                     </form>
                     <form>

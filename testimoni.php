@@ -103,7 +103,7 @@
         </div>
         <div class="col-12 col-sm-6 mb-5">
           <hr style="height: 2px;background-color: red;border: none;">
-          <h3 class="mmc-bold"><?=$row["caption"]?></h3>          
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
         </div>
       </div>
       <div class="row align-items-center">
@@ -116,7 +116,7 @@
         </div>
         <div class="col-12 col-sm-6 mb-5 order-2 order-sm-1">
           <hr style="height: 2px;background-color: red;border: none;">
-          <h3 class="mmc-bold"><?=$row["caption"]?></h3>          
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
         </div>
       </div>
       <div class="row align-items-center">
@@ -129,9 +129,100 @@
         </div>
         <div class="col-12 col-sm-6 mb-5 order-2">
           <hr style="height: 2px;background-color: red;border: none;">
-          <h3 class="mmc-bold"><?=$row["caption"]?></h3>          
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
         </div>
       </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 3 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1 order-sm-2">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2 order-sm-1">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 4 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 5 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1 order-sm-2">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2 order-sm-1">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 6 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 7 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1 order-sm-2">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2 order-sm-1">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 8 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+      <?php
+        $result = $conn->query("SELECT * FROM tb_testimoni WHERE id = (SELECT MAX(id) - 9 FROM tb_testimoni)");
+        $row = $result->fetch_array();
+      ?>
+        <div class="col-12 col-sm-6 mb-5 order-1 order-sm-2">
+          <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Galeri Vandys" class="w-100 img-testimoni">
+        </div>
+        <div class="col-12 col-sm-6 mb-5 order-2 order-sm-1">
+          <hr style="height: 2px;background-color: red;border: none;">
+          <h5 class="mmc-bold"><?=$row["caption"]?></h5>          
+        </div>
+      </div>      
     </div>
 
     <!-- Footer -->

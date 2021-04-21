@@ -39,7 +39,8 @@ function stickyNavbar() {
 // });
 const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
   autoplay: {
-    delay: 2000,
+    delay: 4000,
+    disableOnInteraction: false,
   },
   effect: "coverflow",
   grabCursor: true,
@@ -69,10 +70,25 @@ const swiperTestimoni = new Swiper(".swiper-container-testimoni", {
   },
 });
 
+// Simulasi Kredit Home Page
+const simulasi = document.querySelectorAll(".simulasi");
+simulasi.forEach((v) =>
+  v.addEventListener("click", function () {
+    console.log("ok");
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    panel.style.maxHeight == 0
+      ? (panel.style.maxHeight = `${panel.scrollHeight}px`)
+      : (panel.style.maxHeight = null);
+  })
+);
+// Akhir Simulasi Kredit Home Page
+
 // Simulasi Kredit Accordion
 const acc = document.querySelectorAll(".accordion");
 acc.forEach((v) =>
   v.addEventListener("click", function () {
+    console.log("ok");
     this.classList.toggle("active");
     const panel = this.nextElementSibling;
     panel.style.maxHeight == 0
@@ -148,22 +164,17 @@ $(document).ready(function () {
     disableOnInteraction: true,
   });
 
-  const swiperProduct = document.querySelector(".swiper-container-product")
-    .swiper;
-  $(".swiper-container-product").mouseenter(function () {
-    swiperProduct.autoplay.stop();
-    console.log("Slider Stopped");
-  });
-  $(".swiper-container-product").mouseleave(function () {
-    swiperProduct.autoplay.start();
-    // const resetAcc = document.querySelectorAll(".simulasi");
-    // resetAcc.forEach((v) => {
-    //   v.classList.remove("active");
-    //   const resetPanel = v.nextElementSibling;
-    //   resetPanel.style.maxHeight = 0;
-    // });
-    console.log("Slider Started Again");
-  });
+  // Untuk mulai dan berhenti slider simulasi kredit
+  // const swiperProduct = document.querySelector(".swiper-container-product")
+  //   .swiper;
+  // $(".swiper-container-product").mouseenter(function () {
+  //   swiperProduct.autoplay.stop();
+  //   console.log("Slider Stopped");
+  // });
+  // $(".swiper-container-product").mouseleave(function () {
+  //   swiperProduct.autoplay.start();
+  //   console.log("Slider Started Again");
+  // });
 
   const warnaMobil = [
     "black-xpander",
@@ -687,4 +698,8 @@ $(document).ready(function () {
   // buttonHitung.forEach((v) => console.log(v));
   // buttonHitung.forEach((v) => v.addEventListener("click", hitungKredit()));
   // Akhir Simulasi Kredit
+
+  lightbox.option({
+    showImageNumberLabel: false,
+  });
 });

@@ -113,11 +113,11 @@
       <div class="swiper-container swiper-container-testimoni mt-2">
         <div class="swiper-wrapper">
           <?php
-            $result = $conn->query("SELECT * FROM tb_testimoni");
+            $result = $conn->query("SELECT * FROM tb_testimoni ORDER BY id DESC");
             while ($row = $result->fetch_array()) :
           ?>
           <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
+            <a href="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" data-lightbox="galeri" data-title="<?=$row['caption']?>">
               <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="Vandystio Danantho" class="w-100">
             </a>
           </div>

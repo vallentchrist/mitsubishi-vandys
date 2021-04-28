@@ -72,15 +72,27 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Produk <span class="sr-only">(current)</span></a>
-          </li>
+        <ul class="navbar-nav mr-auto">   
           <li class="nav-item">
             <a class="nav-link text-white" href="<?=BASE_URL.DS.'promo.php'?>">Promo</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="<?=BASE_URL.DS.'testimoni.php'?>">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: black; border: 1px solid black">Produk</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/xpander.php'?>">XPANDER</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/xpander-cross.php'?>">XPANDER CROSS</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/pajero-sport.php'?>">PAJERO SPORT</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/eclipse-cross.php'?>">ECLIPSE CROSS</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/triton.php'?>">TRITON</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/l300.php'?>">L300</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/colt-diesel.php'?>">COLT DIESEL</a>
+                <a class="dropdown-item" href="<?=BASE_URL.DS.'product/fuso.php'?>">FUSO</a>
+              </div>
+            </div>
           </li>
         </ul>
         <span class="navbar-text text-white mmc-bold d-none d-lg-block">
@@ -638,7 +650,7 @@
                           <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
                         </div>
                         <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
+                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>
                         </div>
                         <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
                       </div>

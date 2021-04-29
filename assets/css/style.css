@@ -514,6 +514,21 @@ section.product .produk {
   background: red;
 }
 
+.dropdown-hover:hover {
+  color: black !important;
+}
+
+.dropdown-hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-dropdown {
+  width: 100px;
+  margin-left: 10px;
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .img-vandys {
@@ -574,6 +589,10 @@ section.product .produk {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  .dropdown-produk {
+    padding: 5px 0;
+  }
+
   section.product .produk {
     font-size: 35px;
   }

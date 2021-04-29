@@ -27,7 +27,7 @@
     <style>
       body {
         background: white;
-      }      
+      }
     </style>
   </head>
   <body>    
@@ -106,7 +106,7 @@
             <h2 class="mmc-bold text-center"><?=$row["judul"]?></h2>
           </div>
           <div class="col-12 mb-5 text-center">
-            <img src="<?=BASE_URL.DS.'assets/img/promo/'.$row['img_path']?>" alt="Promo Mitsubishi">        
+            <img src="<?=BASE_URL.DS.'assets/img/promo/'.$row['img_path']?>" alt="Promo Mitsubishi" class="img-promo">        
           </div>
           <div class="col-11 col-sm-8 mb-5">
             <?=$row["deskripsi"]?>

@@ -529,6 +529,10 @@ section.product .produk {
   margin-left: 10px;
 }
 
+.img-promo {
+  width: 70%;
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .img-vandys {
@@ -589,6 +593,10 @@ section.product .produk {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  .img-promo {
+    width: 100%;
+  }
+
   .dropdown-produk {
     padding: 5px 0;
   }

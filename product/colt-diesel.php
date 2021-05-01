@@ -74,30 +74,42 @@
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-    <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi">
-      <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Produk <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Promo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Testimoni</a>
-        </li>
-      </ul>
-      <span class="navbar-text text-white mmc-bold d-none d-lg-block">
-        Vandystio Danantho
-      </span>
-    </div>
-  </nav>  
-  <!-- Akhir Navbar -->
+      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi">
+        <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">   
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase mmc-bold" href="<?=BASE_URL.DS.'promo.php'?>">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white text-uppercase mmc-bold" href="<?=BASE_URL.DS.'testimoni.php'?>">Testimoni</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn btn-dark dropdown-toggle dropdown-produk text-uppercase mmc-bold" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: black; border: 1px solid black">Produk</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background: black">
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/xpander.php'?>">XPANDER <img src="https://sardanagroup.co.id/mitsubishi-medan/assets/img/thumbnail/xpander-thumb.jpg" alt="Mitsubishi Xpander" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/xpander-cross.php'?>">XPANDER CROSS <img src="https://sardanagroup.co.id/mitsubishi-medan/assets/img/thumbnail/xpander-cross-thumb.jpg" alt="Mitsubishi Xpander Cross" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/pajero-sport.php'?>">PAJERO SPORT <img src="https://sardanagroup.co.id/mitsubishi-medan/assets/img/thumbnail/new-pajero-sport-thumb.png" alt="Mitsubishi Pajero Sport" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/eclipse-cross.php'?>">ECLIPSE CROSS <img src="https://sardanagroup.co.id/mitsubishi-medan/assets/img/thumbnail/eclipse-cross-thumb.png" alt="Mitsubishi Eclipse Cross" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/triton.php'?>">TRITON <img src="https://sardanagroup.co.id/mitsubishi-medan/assets/img/thumbnail/triton-thumb.png" alt="Mitsubishi Triton" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/l300.php'?>">L300 <img src="https://sardanagroup.co.id/mitsubishi-medan/assets/img/thumbnail/l300-thumb.png" alt="Mitsubishi L300" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/colt-diesel.php'?>">COLT DIESEL <img src="https://sardanagroup.co.id/fuso-medan/assets/img/thumbnails/CD01.png" alt="Mitsubishi Colt Diesel" class="img-dropdown"></a>
+                <a class="dropdown-item dropdown-hover text-white mmc-bold" href="<?=BASE_URL.DS.'product/fuso.php'?>">FUSO <img src="https://sardanagroup.co.id/fuso-medan/assets/img/thumbnails/FS01.png" alt="Mitsubishi Fuso" class="img-dropdown"></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <span class="navbar-text text-white mmc-bold d-none d-lg-block">
+          Vandystio Danantho
+        </span>
+      </div>
+    </nav>  
+    <!-- Akhir Navbar -->  
 
   <div class="container-100">
     <img src="<?= BASE_URL.DS.'assets/img/colt-diesel/banner-colt.jpg'; ?>" alt="Mitsubishi Colt Diesel" class="w-100 d-none d-sm-block">

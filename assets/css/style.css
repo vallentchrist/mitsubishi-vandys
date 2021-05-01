@@ -573,6 +573,29 @@ section.footer .tutup i {
   font-size: 40px;
 }
 
+.swiper-container-testimoni .swiper-pagination-bullet-active {
+  background: red;
+}
+
+.dropdown-hover:hover {
+  color: black !important;
+}
+
+.dropdown-hover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-dropdown {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.img-promo {
+  width: 70%;
+}
+
 /* Tablet */
 @media only screen and (min-device-width: 577px) and (max-device-width: 768px) and (orientation: portrait) {
   .img-vandys {
@@ -633,6 +656,14 @@ section.footer .tutup i {
 
 /* Mobile (Portrait) */
 @media (max-width: 576px) {
+  .img-promo {
+    width: 100%;
+  }
+
+  .dropdown-produk {
+    padding: 5px 0;
+  }
+
   section.product .produk {
     font-size: 35px;
   }

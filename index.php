@@ -47,11 +47,11 @@
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi" class="logo">
           </a>
         </div>
-        <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase text-center d-none d-sm-block label-sardana"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
-          <a href="https://mitsubishimedan-vandys.id">            
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Sardana" class="w-100 d-block d-sm-none">
-            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Sardana" class="logo d-none d-sm-block">
+        <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center" onclick="window.location='https://mitsubishimedan-vandys.id/'">
+          <label class="text-uppercase text-center d-none d-sm-block label-sardana text-white" style="cursor: pointer"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
+          <a href="<?=BASE_URL?>">            
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Mitsubishi Sardana" class="w-100 d-block d-sm-none">
+            <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Mitsubishi Sardana" class="logo d-none d-sm-block">
           </a>
         </div>
         <div class="col-3 col-lg-2 text-right">
@@ -65,7 +65,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
-      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi">
+      <a class="navbar-brand text-success mmc-bold" target="_blank" href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi.">
         <i class="fab fa-lg fa-whatsapp"></i> 0823 7030 4974
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,21 +112,18 @@
     <div class="container-fluid">
       <div class="swiper-container swiper-container-testimoni mt-2">
         <div class="swiper-wrapper">
+          <?php
+            $result = $conn->query("SELECT * FROM tb_testimoni LIMIT 0, 10");
+            while ($row = $result->fetch_array()) :
+          ?>
           <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?= BASE_URL.DS.'assets/img/testimoni/1.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/1.jpeg" alt="Vandystio Danantho" class="w-100">
+            <a href="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" data-lightbox="galeri" data-title="<?=$row['caption']?>">
+              <img src="<?=BASE_URL.DS.'assets/img/testimoni/'.$row['nama']?>" alt="<?=$row['caption']?>" class="w-100">
             </a>
           </div>        
-          <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?= BASE_URL.DS.'assets/img/testimoni/3.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/3.jpeg" alt="Vandystio Danantho" class="w-100">
-            </a>
-          </div>
-          <div class="swiper-slide swiper-slide-testimoni">
-            <a href="<?= BASE_URL.DS.'assets/img/testimoni/4.jpeg'; ?>" data-lightbox="galeri" data-title="Terima Kasih Bapak atas pembelian 1 unit Mitsubishi Xpander.">
-              <img src="<?= BASE_URL.DS; ?>/assets/img/testimoni/4.jpeg" alt="Vandystio Danantho" class="w-100">
-            </a>
-          </div>        
+          <?php
+            endwhile;
+          ?>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>

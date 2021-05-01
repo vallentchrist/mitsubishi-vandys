@@ -30,4 +30,16 @@
       </div>
     </div> 
   </div>
+  
+  <div class="tutup"><i class="fas fa-lg fa-times"></i></div>
+  <div class="hoverable-sidenav" id="hoverableSidenav">
+    <a href="https://wa.me/+6282370304974?text=Hai Kak Vandys, Saya ingin bertanya tentang produk Mitsubishi." id="whatsapp" target="_blank">
+      <span>Whatsapp</span>
+      <i class="fab fa-lg fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/vandys_mitsubishi" id="instagram" target="_blank">
+      <span>Instagram</span>
+      <i class="fab fa-lg fa-instagram"></i>
+    </a>
+  </div>
 </section>

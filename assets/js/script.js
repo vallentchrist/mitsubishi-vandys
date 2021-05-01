@@ -123,6 +123,10 @@ function formatCurrency(input) {
 
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
+  lightbox.option({
+    showImageNumberLabel: false,
+    wrapAround: true,
+  });
   $("input[data-type='currency']").each(function () {
     $(this).keyup(function () {
       formatCurrency($(this));

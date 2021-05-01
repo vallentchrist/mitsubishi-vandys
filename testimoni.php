@@ -50,9 +50,9 @@
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-mitsubishi.png" alt="Mitsubishi Motors" class="logo">
           </a>
         </div>
-        <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center">
-          <label class="text-uppercase text-center d-none d-sm-block label-sardana text-white"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
-          <a href="https://mitsubishimedan-vandys.id">            
+        <div class="col-6 col-lg-8 d-flex justify-content-center align-items-center" onclick="window.location='https://mitsubishimedan-vandys.id/'">
+          <label class="text-uppercase text-center d-none d-sm-block label-sardana text-white" style="cursor: pointer"><span class="mmc-bold">PT. Sardana IndahBerlian Motor</span> <br /> Jl. Jend Gatot Subroto No. 437 Medan</label>          
+          <a href="<?=BASE_URL?>">            
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana-putih.png" alt="Mitsubishi Sardana" class="w-100 d-block d-sm-none">
             <img src="<?= BASE_URL.DS; ?>assets/img/logo-sardana.png" alt="Mitsubishi Sardana" class="logo d-none d-sm-block">
           </a>

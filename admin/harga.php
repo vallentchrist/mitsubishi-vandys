@@ -18,6 +18,20 @@
     session_abort();
     header("Location: login.php");
   }
+
+  if(isset($_POST['simpan']))
+  {    
+    $model = isset($_POST['model_mobil']) ? $_POST['model_mobil'] : '';
+    $harga = isset($_POST['harga_mobil']) ? $_POST['harga_mobil'] : '';
+    if ($model == '') echo "<script>alert('Mohon untuk memilih model mobil')</script>";      
+    else if ($harga == '') echo "<script>alert('Mohon untuk mengisi harga terbaru.')</script";
+    else
+    {      
+      $hasil = $conn->query("UPDATE `tb_harga` SET `harga` = '$harga' WHERE `kode` = '$model'");
+      if ($conn->affected_rows) echo "<script>alert('Harga berhasil diubah.')</script>";
+      else echo "<script>alert('Ubah gagal. Silahkan coba kembali.')</script>";
+    }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -82,6 +96,17 @@
             </li>
 
             <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Harga -->
+            <li class="nav-item">
+              <a class="nav-link" href="harga.php">
+                <i class="fas fa-tags"></i>
+                <span>Harga</span></a
+              >
+            </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">           
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -139,17 +164,26 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800 font-weight-bold">UPLOAD TESTIMONI</h1>
-                    <form class="form-mitsubishi p-3">
-                      <div class="form-group">
-                        <label for="inputJudul">Judul</label>
-                        <input type="text" class="form-control" id="inputJudul" aria-describedby="emailHelp">                      
+                    <h1 class="h3 mb-2 text-gray-800 font-weight-bold">HARGA MOBIL</h1>
+                    <form class="form-mitsubishi p-3" method="post">
+                      <div class="form-group">                                      
+                        <label for="model_mobil">Model</label>
+                        <select class="form-control" id="model_mobil" name="model_mobil">
+                        <?php
+                          $tampilHarga = $conn->query('SELECT * FROM tb_harga WHERE discontinue = 0 ORDER BY urutan');
+                          while ($row = $tampilHarga->fetch_array()) :
+                        ?>
+                          <option value="<?=$row['kode']?>"><?=$row['merek'].' '.$row['tipe']?></option>                          
+                        <?php
+                          endwhile;
+                        ?>
+                        </select>  
                       </div>
                       <div class="form-group">
-                        <label for="exampleInputPassword1">Keterangan</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="harga_mobil">Harga Terbaru</label>
+                        <input type="text" class="form-control" id="harga_mobil" name="harga_mobil">
                       </div>                    
-                      <button type="submit" class="btn btn-primary">Simpan</button>
+                      <button type="submit" class="btn btn-primary" name="simpan">Simpan</button>
                     </form>
                 </div>
                 <!-- /.container-fluid -->

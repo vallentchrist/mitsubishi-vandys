@@ -152,6 +152,17 @@
             </li>
 
             <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Harga -->
+            <li class="nav-item">
+              <a class="nav-link" href="harga.php">
+                <i class="fas fa-tags"></i>
+                <span>Harga</span></a
+              >
+            </li>
+
+            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">           
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">

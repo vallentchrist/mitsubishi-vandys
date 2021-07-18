@@ -177,7 +177,7 @@
               </div>
             </div>
             <div class="row spek-container" id="spekDesktop">
-            <div class="col-lg-6 col-md-6 mt-2">
+              <div class="col-lg-6 col-md-6 mt-2">
                 <label>Transmission :</label>
               </div>
               <div class="col-lg-6 col-md-6 mt-2">
@@ -222,6 +222,30 @@
               <div class="col-lg-12 mb-2 mt-2">
                 <a class="btn btn-danger" target="_blank" href="<?= BASE_URL.DS.'brosur/xpander.pdf'; ?>">E-Brochure</a>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12" style="border: 1px solid #aaa">
+                <div class="row">
+                  <div class="col-lg-12 text-center background-title p-2">
+                    <h6 class="font-weight-bold text-white mt-1">Price List</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <?php
+                    $query = $conn->query("SELECT harga, tipe, merek FROM tb_harga WHERE merek = 'XPANDER CROSS' AND discontinue = 0 ORDER BY urutan");
+                    while ($row = $query->fetch_assoc()) :
+                  ?>
+                    <div class="col-lg-6 col-md-6 mt-2">
+                      <label><?=$row['merek'].' '.$row['tipe']?></label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-2">
+                      <label class="mmc-bold"><?="Rp ".number_format($row["harga"], 0, ",", ".")?></label>
+                    </div>
+                  <?php
+                    endwhile;
+                  ?>
+                </div>
+              </div>  
             </div>
           </div>  
         </div>

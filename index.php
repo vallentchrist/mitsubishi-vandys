@@ -163,7 +163,7 @@
 
     <!-- Product -->
     <section class="product" id="product">
-      <div class="container-100 mt-5 p-4">
+      <div class="container-100 p-4">
         <h2 class="mmc-bold text-center mb-5 produk text-uppercase">Produk Mitsubishi</h2>
         <div class="swiper-container swiper-container-product text-dark">
           <div class="swiper-wrapper">
@@ -174,18 +174,18 @@
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">Xpander</h3>
-                    <p class="card-text text-center">
+                    <!-- <p class="card-text text-center">
                       <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-xpander"></span>      
                       <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-xpander"></span>
                       <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" id="grey-xpander"></span>
                       <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" id="silver-xpander"></span>
                       <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Metallic" id="red-xpander"></span>    
                       <span class="color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" id="bronze-xpander"></span>
-                    </p>
+                    </p> -->
                     <div class="container-100 d-flex justify-content-between">
                       <span>Harga OTR Mulai</span>
                       <?php
-                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER'");
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER' AND discontinue = 0");
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
@@ -193,10 +193,11 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/xpander.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Xpander" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Xpander." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Xpander." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
                   </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
+                  <!-- <button class="simulasi">Simulasi Kredit</button>                  
                   <div class="panel">
                     <div class="row">
                       <div class="col-12">
@@ -273,24 +274,17 @@
                         </div>
                       </div>
                     </form>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="card n2 bg-xpander-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/cross/xpander-cross-white.webp'; ?>" class="card-img-top" alt="Mitsubishi Xpander" id="img-xpander-cross">
                   <hr class="line">
                   <div class="card-body">
-                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Xpander Cross</h3>                    
-                    <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-xpander-cross"></span>      
-                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-xpander-cross"></span>
-                      <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" id="grey-xpander-cross"></span>
-                      <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" id="silver-xpander-cross"></span>
-                      <span class="color-orange palet" data-toggle="tooltip" data-placement="bottom" title="Orange Metallic" id="orange-xpander-cross"></span>    
-                    </p>
+                    <h3 class="card-title text-uppercase text-center mmc-bold text-black">Xpander Cross</h3>
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
-                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER CROSS'");
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'XPANDER CROSS' AND discontinue = 0");
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
@@ -298,82 +292,10 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/xpander-cross.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Xpander Cross" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Xpander Cross." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Xpander Cross." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian Xpander Cross MT</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrXpanderCross" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaXpanderCross" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBungaXpanderCross" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorXpanderCross">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungXpanderCross" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaXpanderCross" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanXpanderCross" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorXpanderCross" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
               </div>
             </div>
@@ -384,17 +306,10 @@
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">Pajero Sport</h3>
-                    <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-pajero"></span>      
-                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-pajero"></span>
-                      <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" id="grey-pajero"></span>
-                      <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" id="silver-pajero"></span>   
-                      <span class="color-bronze palet" data-toggle="tooltip" data-placement="bottom" title="Deep Bronze Metallic" id="bronze-pajero"></span>
-                    </p>
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
-                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'PAJERO SPORT'");
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'PAJERO SPORT' AND discontinue = 0");
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
@@ -402,97 +317,20 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/pajero-sport.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Pajero Sport" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Pajero Sport." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Pajero Sport." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian New Pajero Sport Exceed 4x2MT</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrPajero" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaPajero" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBungaPajero" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorPajero">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungPajeroSport" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaPajero" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanPajero" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorPajero" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
                 <div class="card n2 bg-eclipse-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/eclipse/eclipse-cross-red.webp'; ?>" class="card-img-top" alt="Eclipse Cross" id="img-eclipse-cross">
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">Eclipse Cross</h3>
-                    <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-eclipse-cross"></span>      
-                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-eclipse-cross"></span>
-                      <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Diamond" id="red-eclipse-cross"></span>    
-                    </p>
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
-                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'ECLIPSE CROSS'");
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'ECLIPSE CROSS' AND discontinue = 0");
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
@@ -500,82 +338,10 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/eclipse-cross.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Eclipse Cross" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Eclipse Cross." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Eclipse Cross." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian Eclipse Cross Black</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrEclipse" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaEclipse" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBungaEclipse" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBungaEclipse" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorEclipse">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungEclipse" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaEclipse" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanEclipse" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorEclipse" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
               </div>
             </div>
@@ -586,18 +352,10 @@
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">TRITON</h3>
-                    <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Diamond Black Mica" id="black-triton"></span>      
-                      <span class="color-white palet" data-toggle="tooltip" data-placement="bottom" title="Quartz White Pearl" id="white-triton"></span>
-                      <span class="color-grey palet" data-toggle="tooltip" data-placement="bottom" title="Graphite Grey Metallic" id="grey-triton"></span>
-                      <span class="color-silver palet" data-toggle="tooltip" data-placement="bottom" title="Sterling Silver Metallic" id="silver-triton"></span>
-                      <span class="color-red palet" data-toggle="tooltip" data-placement="bottom" title="Red Metallic" id="red-triton"></span>    
-                      <span class="color-white-diamond palet" data-toggle="tooltip" data-placement="bottom" title="White Diamond Metallic" id="white-diamond-triton"></span>
-                    </p>
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
-                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'TRITON'");
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'TRITON' AND discontinue = 0");
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
@@ -605,95 +363,20 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/triton.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Triton" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Triton." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Triton." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian Triton GLX MT 4x2 Single Cabin</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrTriton" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaTriton" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBungaTriton" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorTriton">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungTriton" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaTriton" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanTriton" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorTriton" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
                 <div class="card n2 bg-l300">
                   <img src="<?= BASE_URL.DS.'assets/img/l300/1.webp'; ?>" class="card-img-top" alt="L300">
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">L300</h3>
-                    <p class="card-text text-center">
-                      <span class="color-black palet" data-toggle="tooltip" data-placement="bottom" title="Black" id="black-l300"></span>
-                    </p>  
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
-                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'L300'");
+                        $harga = mysqli_query($conn, "SELECT MIN(harga) FROM tb_harga WHERE merek = 'L300' AND discontinue = 0");
                         $harga = mysqli_fetch_array($harga);
                         $harga = $harga[0];
                       ?>
@@ -701,82 +384,10 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/l300.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk L300" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang L300." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang L300." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian L300 Pick Up Standard</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrL300" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaL300" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBungaL300" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorL300">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungL300" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 20 juta. Silahkan hitung kembali.</small>              
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>                      
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaL300" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanL300" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorL300" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
               </div>
             </div>
@@ -787,9 +398,6 @@
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">COLT DIESEL</h3>
-                    <p class="card-text text-center">
-                      <span class="color-yellow palet" data-toggle="tooltip" data-placement="bottom" title="Yellow" id="yellow-colt-diesel"></span>
-                    </p>  
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
@@ -801,91 +409,16 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/colt-diesel.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Colt Diesel" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Colt Diesel." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Colt Diesel." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian Colt Diesel FE 71 PS</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrColt" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaColt" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right" id="inputSukuBungaColt" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right" class="selectTenor" id="selectTenorColt">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungColt" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 50 juta. Silahkan hitung kembali.</small>              
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTotalUangMukaColt" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextCicilanColt" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right" id="plainTextTenorColt" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
                 <div class="card n2 bg-eclipse-cross">
                   <img src="<?= BASE_URL.DS.'assets/img/colt-diesel/2.webp'; ?>" class="card-img-top" alt="L300">
                   <hr class="line">
                   <div class="card-body">
                     <h3 class="card-title text-uppercase text-center mmc-bold text-black">FUSO</h3>
-                    <p class="card-text text-center">
-                      <span class="color-orange palet" data-toggle="tooltip" data-placement="bottom" title="Orange" id="orange-fuso"></span>
-                    </p>  
                     <div class="container-100 d-flex justify-content-between">
                     <span>Harga OTR Mulai</span>
                       <?php
@@ -897,82 +430,10 @@
                     </div>
                     <div class="container-100 mt-3 d-flex justify-content-between">
                       <a href="<?= BASE_URL.DS.'product/fuso.php'; ?>" class="btn btn-dark btn-product">Detail</a>
-                      <a href="https://wa.me/+6282370304974?text=Saya ingin bertanya tentang produk Fuso" class="btn btn-dark btn-product" target="_blank">Hubungi Kami</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Fuso." class="btn btn-success d-none d-sm-block" target="_blank"><i class="fa fa-lg fa-whatsapp"></i> 0823 7030 4974</a>
+                      <a href="https://wa.me/+6282370304974?text=Halo Kak Vandys, Saya ingin bertanya tentang Fuso." class="btn btn-success d-block d-sm-none" target="_blank"><i class="fa fa-lg fa-whatsapp"></i></a>
                     </div>
-                  </div>
-                  <button class="simulasi">Simulasi Kredit</button>                  
-                  <div class="panel">
-                    <div class="row">
-                      <div class="col-12">
-                        <small class="text-muted">* Harga OTR Varian Fuso FM517HS 4x2</small>
-                      </div>
-                    </div>
-                    <div class="row mt-3 mb-3">
-                      <div class="col-6 mmc-bold">
-                        Harga OTR
-                      </div>  
-                      <div class="col-6">
-                        <input type="text" readonly class="mmc-bold form-control-plaintext text-right" id="plainTextHargaOtrFuso" value="Rp <?= number_format($harga, 0, ",", "."); ?>">
-                      </div>                        
-                    </div>
-                    <hr class="line" />
-                    <form>
-                      <div class="form-group row">
-                        <label for="inputUangMuka" class="col-sm-6 col-form-label">Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control text-right" id="inputUangMukaFuso" name="inputUangMuka" value="" data-type="currency" placeholder="Rp 10.000.000">
-                        </div>
-                      </div>            
-                      <div class="form-group row">
-                        <label for="inputSukuBunga" class="col-sm-6 col-form-label">Suku Bunga (% per tahun)</label>
-                        <div class="col-sm-6">
-                          <input type="text" class="form-control text-right text-black" id="inputSukuBungaFuso" placeholder="10">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="selectTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <select class="form-control form-control-sm form-control-width text-right text-black" class="selectTenor" id="selectTenorFuso">
-                            <option value="12">12</option>
-                            <option value="24">24</option>
-                            <option value="36">36</option>
-                            <option value="48">48</option>
-                            <option value="60">60</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <a id="hitungFuso" class="col-12 btn btn-outline-dark" role="button">Hitung</a>
-                        <div class="col-lg-12 text-center perhitungan" style="display: none">
-                          <small class="text-success">* Perhitungan selesai. Silahkan cek kembali harga.</small>              
-                        </div>
-                        <div class="col-lg-12 text-center perhitungan-salah" style="display: none">
-                          <small class="text-danger">* Uang DP minimum Rp 50 juta. Silahkan hitung kembali.</small>              
-                        </div>
-                        <div class="col-lg-12"><hr class="hr-perhitungan" style="margin-bottom: 0 !important" /></div>
-                      </div>
-                    </form>
-                    <form>
-                      <div class="form-group row">
-                        <label for="plainTextTotalUangMuka" class="col-sm-6 col-form-label">Total Uang Muka</label>
-                        <div class="col-sm-6">
-                        <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTotalUangMukaFuso" value="Rp -">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="plainTextCicilan" class="col-sm-6 col-form-label">Cicilan / Bulan</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextCicilanFuso" value="Rp 0">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="plainTextTenor" class="col-sm-6 col-form-label">Tenor (bulan)</label>
-                        <div class="col-sm-6">
-                          <input type="text" readonly class="form-control-plaintext text-right text-black" id="plainTextTenorFuso" value="0">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </div>                  
                 </div>
               </div>
             </div>

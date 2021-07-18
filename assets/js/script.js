@@ -150,7 +150,7 @@ $(document).ready(function () {
 
   new Swiper(".swiper-container-product", {
     autoplay: {
-      delay: 2000,
+      delay: 5000,
     },
     spaceBetween: 20,
     breakpoints: {

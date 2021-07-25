@@ -113,7 +113,7 @@
         <select class="selectpicker" id="selectTipe" data-width="auto" data-live-search="true" title="Silahkan Pilih Mobil Lain...">            
           <option value="031">L300 PICK UP STANDARD</option>
           <option value="032">L300 PICK UP FLATDECK</option>
-          <option value="034">L300 CAB CHASIS</option>          
+          <option value="034">L300 CAB CHASIS</option>
         </select>        
       </div>    
     </div>
